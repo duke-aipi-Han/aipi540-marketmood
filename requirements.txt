@@ -1,0 +1,15 @@
+streamlit
+gradio
+pandas
+numpy
+scikit-learn
+joblib
+matplotlib
+seaborn
+torch
+transformers
+accelerate
+yfinance
+PyYAML
+pytest
+ipykernel

@@ -1,0 +1,26 @@
+.venv/
+AGENTS.md
+planner.md
+
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.DS_Store
+
+# Local datasets and generated artifacts.
+data/*
+!data/stockemo/
+data/stockemo/*
+!data/stockemo/readme.md
+!data/**/.gitkeep
+
+outputs/*
+!outputs/**/.gitkeep
+
+models/*
+!models/**/.gitkeep
+
+*.log
