@@ -2,16 +2,11 @@
 
 from __future__ import annotations
 
-import argparse
 from datetime import timedelta
 from pathlib import Path
 
 import pandas as pd
 import yfinance as yf
-
-from marketmood.config import load_config
-from marketmood.data_load import load_stockemo_splits
-
 
 CANONICAL_PRICE_COLUMNS = [
     "date",
@@ -166,33 +161,3 @@ def ensure_price_cache(
             continue
         statuses[ticker] = f"{len(prices)} rows"
     return statuses
-
-
-def main() -> None:
-    """CLI for the price-cache pipeline."""
-    parser = argparse.ArgumentParser(description="Download/cache ticker prices.")
-    parser.add_argument("--config", default="config.yaml")
-    parser.add_argument("--refresh", action="store_true", help="Refresh cached price CSVs.")
-    args = parser.parse_args()
-
-    config = load_config(args.config)
-    stockemo = load_stockemo_splits(
-        config.get_path("train_csv"),
-        config.get_path("val_csv"),
-        config.get_path("test_csv"),
-    )
-    price_config = config.values.get("prices", {})
-    statuses = ensure_price_cache(
-        stockemo,
-        config.get_path("price_cache_dir"),
-        start_buffer_days=price_config.get("start_buffer_days", 90),
-        end_buffer_days=price_config.get("end_buffer_days", 10),
-        refresh=args.refresh or price_config.get("refresh_cache", False),
-        ticker_aliases=price_config.get("ticker_aliases", {}),
-    )
-    for ticker, status in statuses.items():
-        print(f"{ticker}: {status}")
-
-
-if __name__ == "__main__":
-    main()

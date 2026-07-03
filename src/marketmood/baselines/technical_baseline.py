@@ -2,14 +2,12 @@
 
 from __future__ import annotations
 
-import argparse
 import json
 from dataclasses import dataclass
 from pathlib import Path
 
 import pandas as pd
 
-from marketmood.config import load_config
 from marketmood.labels import LABEL_ORDER
 from marketmood.metrics import classification_metrics
 from marketmood.models.base import MarketMoodModel
@@ -182,28 +180,3 @@ def evaluate_technical_baseline(
     with metrics_output.open("w", encoding="utf-8") as file:
         json.dump(metrics, file, indent=2)
     return metrics
-
-
-def main() -> None:
-    """CLI for evaluating the technical-analysis baseline."""
-    parser = argparse.ArgumentParser(description="Evaluate the technical-analysis baseline.")
-    parser.add_argument("--config", default="config.yaml")
-    parser.add_argument("--split", default="test")
-    args = parser.parse_args()
-
-    config = load_config(args.config)
-    baseline_config = config.values["baseline"]
-    metrics = evaluate_technical_baseline(
-        modeling_dataset_path=config.get_path("modeling_dataset"),
-        predictions_path=config.get_path("predictions_dir") / "ta_baseline_test_predictions.csv",
-        metrics_path=config.get_path("metrics_dir") / "ta_baseline_metrics.json",
-        threshold=float(baseline_config["technical_breakout_threshold"]),
-        upper_range=float(baseline_config["breakout_upper_range"]),
-        lower_range=float(baseline_config["breakout_lower_range"]),
-        split=args.split,
-    )
-    print(json.dumps(metrics, indent=2))
-
-
-if __name__ == "__main__":
-    main()
