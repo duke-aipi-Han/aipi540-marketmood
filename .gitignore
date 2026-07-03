@@ -1,6 +1,5 @@
 .venv/
-AGENTS.md
-planner.md
+.vscode/
 
 __pycache__/
 *.py[cod]
@@ -24,3 +23,6 @@ models/*
 !models/**/.gitkeep
 
 *.log
+
+AGENTS.md
+planner.md

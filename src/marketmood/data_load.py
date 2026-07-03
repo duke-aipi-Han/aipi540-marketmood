@@ -25,3 +25,24 @@ def load_stockemo_split(csv_path: str | Path) -> pd.DataFrame:
     if missing:
         raise ValueError(f"Missing StockEmotions columns: {sorted(missing)}")
     return frame
+
+
+def load_stockemo_splits(
+    train_csv: str | Path,
+    val_csv: str | Path,
+    test_csv: str | Path,
+) -> pd.DataFrame:
+    """Load StockEmotions train/validation/test splits into one frame."""
+    split_paths = {
+        "train": train_csv,
+        "validation": val_csv,
+        "test": test_csv,
+    }
+    frames: list[pd.DataFrame] = []
+    for split, path in split_paths.items():
+        frame = load_stockemo_split(path).copy()
+        frame["split"] = split
+        frame["date"] = pd.to_datetime(frame["date"], errors="coerce")
+        frame["ticker"] = frame["ticker"].astype(str).str.upper().str.strip()
+        frames.append(frame)
+    return pd.concat(frames, ignore_index=True)

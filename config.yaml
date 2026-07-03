@@ -19,6 +19,14 @@ paths:
   classical_model_dir: models/classical
   deep_fusion_model_dir: models/deep_fusion
 
+prices:
+  start_buffer_days: 90
+  end_buffer_days: 10
+  refresh_cache: false
+  ticker_aliases:
+    BRK.B: BRK-B
+    FB: META
+
 labels:
   abnormal_threshold: 0.75
   feature_price_cutoff: t_minus_1
