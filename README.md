@@ -12,6 +12,7 @@ This is a research demo only and is not financial advice.
 
 ## Setup
 
+Use Python 3.13
 ```bash
 python -m venv .venv
 source .venv/bin/activate
