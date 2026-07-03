@@ -30,13 +30,15 @@ Place StockEmotions CSV files in `data/stockemo/`:
 
 Historical prices will be cached under `data/prices/`.
 
-## Planned Commands
+## Main Commands
 
 ```bash
-python -m marketmood.prices --config config.yaml
-python -m marketmood.features --config config.yaml
-python -m marketmood.training.train_classical --config config.yaml
-python -m marketmood.training.train_deep_fusion --config config.yaml
-python -m marketmood.evaluation.evaluate_models --config config.yaml
+python scripts/prepare_data.py
+python scripts/train_models.py
+python scripts/evaluate_models.py
 python app/app.py
 ```
+
+`prepare_data.py` caches prices and builds `data/processed/modeling_dataset.csv`.
+`train_models.py` trains all implemented trainable models. The current technical-analysis baseline has no training step.
+`evaluate_models.py` evaluates all implemented models and writes metrics/predictions under `outputs/`.
