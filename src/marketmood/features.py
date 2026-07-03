@@ -2,16 +2,13 @@
 
 from __future__ import annotations
 
-import argparse
 from pathlib import Path
 
 import numpy as np
 import pandas as pd
 
-from marketmood.config import load_config
-from marketmood.data_load import load_stockemo_splits
 from marketmood.labels import label_from_abnormal_score
-from marketmood.prices import ensure_price_cache, load_cached_prices
+from marketmood.prices import load_cached_prices
 from marketmood.text_processing import build_text_input
 
 
@@ -30,6 +27,9 @@ PRICE_FEATURE_COLUMNS = [
     "close_to_sma20",
     "high_low_range",
     "gap_return",
+    "range_position_20d",
+    "breakout_strength_20d",
+    "breakdown_strength_20d",
 ]
 
 
@@ -58,6 +58,9 @@ def compute_price_feature_frame(prices: pd.DataFrame, threshold: float) -> pd.Da
     volume_std_20 = prev_volume.rolling(20).std()
     sma_5 = prev_close.rolling(5).mean()
     sma_20 = prev_close.rolling(20).mean()
+    prior_high_20 = close.shift(2).rolling(20).max()
+    prior_low_20 = close.shift(2).rolling(20).min()
+    prior_range_20 = prior_high_20 - prior_low_20
     rolling_vol_20d = daily_return.shift(1).rolling(20).std()
 
     features = pd.DataFrame(index=data.index)
@@ -72,6 +75,9 @@ def compute_price_feature_frame(prices: pd.DataFrame, threshold: float) -> pd.Da
     features["close_to_sma20"] = prev_close / sma_20 - 1
     features["high_low_range"] = (data["high"].shift(1) - data["low"].shift(1)) / prev_close
     features["gap_return"] = data["open"].shift(1) / close.shift(2) - 1
+    features["range_position_20d"] = (prev_close - prior_low_20) / prior_range_20
+    features["breakout_strength_20d"] = prev_close / prior_high_20 - 1
+    features["breakdown_strength_20d"] = prev_close / prior_low_20 - 1
 
     features["event_date"] = features.index
     features["feature_cutoff_date"] = features.index.to_series().shift(1)
@@ -207,48 +213,3 @@ def print_class_distribution(modeling: pd.DataFrame) -> None:
         return
     distribution = pd.crosstab(modeling["split"], modeling["target"], margins=True)
     print(distribution)
-
-
-def main() -> None:
-    """CLI for modeling-dataset feature generation."""
-    parser = argparse.ArgumentParser(description="Build modeling features.")
-    parser.add_argument("--config", default="config.yaml")
-    parser.add_argument(
-        "--download-missing-prices",
-        action="store_true",
-        help="Download missing price caches before building features.",
-    )
-    args = parser.parse_args()
-
-    config = load_config(args.config)
-    stockemo = load_stockemo_splits(
-        config.get_path("train_csv"),
-        config.get_path("val_csv"),
-        config.get_path("test_csv"),
-    )
-
-    price_config = config.values.get("prices", {})
-    if args.download_missing_prices:
-        ensure_price_cache(
-            stockemo,
-            config.get_path("price_cache_dir"),
-            start_buffer_days=price_config.get("start_buffer_days", 90),
-            end_buffer_days=price_config.get("end_buffer_days", 10),
-            refresh=price_config.get("refresh_cache", False),
-            ticker_aliases=price_config.get("ticker_aliases", {}),
-        )
-
-    modeling, dropped_rows = build_modeling_dataset(
-        stockemo,
-        config.get_path("price_cache_dir"),
-        threshold=float(config.values["labels"]["abnormal_threshold"]),
-        text_format=config.values["features"].get("text_format", "raw"),
-    )
-    save_modeling_outputs(modeling, dropped_rows, config.get_path("modeling_dataset"))
-    print(f"Saved {len(modeling)} modeling rows to {config.get_path('modeling_dataset')}")
-    print(f"Saved {len(dropped_rows)} dropped-row records")
-    print_class_distribution(modeling)
-
-
-if __name__ == "__main__":
-    main()

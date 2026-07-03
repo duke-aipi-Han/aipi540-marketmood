@@ -3,7 +3,7 @@
 
 ## Problem Statement
 
-MarketMood studies whether StockTwits-style investor posts, combined with recent (to post) ticker-level price context, can help detect short-term abnormal stock movements. For each post, the system predicts one of three classes for the next trading-day move of the referenced ticker: `positive`, `neutral`, or `negative`.
+MarketMood studies whether StockTwits-style investor posts, combined with recent (to post) ticker-level price context, can help detect short-term abnormal stock movements. For each post, the system predicts one of three classes for the next trading-day move of the referenced ticker: `positive`, `neutral`, or `negative`, indicating signals of next day abnormal price action.
 
 This is an educational research demo only. It is not financial advice and is not intended for real-money trading decisions.
 
@@ -19,7 +19,7 @@ The text data come from the StockEmotions dataset, stored locally in `data/stock
 
 The dataset spans January 1, 2020 through December 31, 2020 and covers 37 tickers. The most common tickers are TSLA, AAPL, BA, DIS, and AMZN. Sentiment labels are roughly balanced, with 5,474 bullish posts and 4,526 bearish posts.
 
-Historical daily OHLCV prices are downloaded with `yfinance` and cached locally in `data/prices/{ticker}.csv`. The current cache contains 37 non-empty ticker files. Ticker aliases are used where needed, including `BRK.B -> BRK-B` and `FB -> META`.
+Historical daily OHLCV prices are downloaded with `yfinance` and cached locally in `data/prices/{ticker}.csv`. The current cache contains 37 non-empty ticker files. Ticker aliases are used where needed due to symbol changes over time (e.g `BRK.B -> BRK-B` and `FB -> META`).
 
 ## Related Work
 
@@ -69,13 +69,13 @@ negative if abnormal_score < -0.75
 neutral otherwise
 ```
 
-Generated price features include returns over 1, 3, 5, 10, and 20 days; volatility over 5, 10, and 20 days; 20-day volume z-score; 5- and 20-day moving averages; close-to-SMA20; high-low range; and gap return.
+Generated price features include returns over 1, 3, 5, 10, and 20 days; volatility over 5, 10, and 20 days; 20-day volume z-score; 5- and 20-day moving averages; close-to-SMA20; high-low range; gap return; 20-day range position; and volatility-adjusted breakout/breakdown strength.
 
 ## Modeling Approach
 
 The project will compare three required modeling families:
 
-1. Naive baseline: a deterministic momentum-volatility technical-analysis rule using `ret_5d / vol_20d`.
+1. Naive baseline: a deterministic technical-analysis rule using 20-day range position, volatility-adjusted breakout/breakdown strength, and 5-day momentum.
 2. Classical ML: TF-IDF text features, engineered price features, and logistic regression variants.
 3. Deep learning: transformer text encoder with optional price-feature MLP fusion.
 
@@ -89,23 +89,32 @@ No hyperparameter choices will be made using test performance.
 
 ## Models Evaluated
 
-[TODO] update
-
-Planned model table:
-
 | Model | Status | Notes |
 |---|---|---|
-| Technical-analysis baseline | Deterministic rule, no training |
-| Majority baseline | Reference only |
-| Classical price-only | Engineered price features |
-| Classical text-only |  TF-IDF over original post text |
-| Classical text + price |  TF-IDF plus engineered price features |
-| Deep text-only transformer |  Transformer classifier |
-| Deep text + price fusion |  Transformer embedding plus price MLP |
+| Technical-analysis baseline | Complete | Deterministic volatility-adjusted range-breakout rule, no training |
+| Classical price-only | Pending | Engineered price features |
+| Classical text-only | Pending | TF-IDF over original post text |
+| Classical text + price | Pending | TF-IDF plus engineered price features |
+| Deep text-only transformer | Pending | Transformer classifier |
+| Deep text + price fusion | Pending | Transformer embedding plus price MLP |
 
 ## Results
 
-Final quantitative results are pending model implementation. This section will include a comparison table with accuracy, macro F1, weighted F1, per-class scores, and confusion matrices for each model.
+Current quantitative results:
+
+| Model | Split | Accuracy | Macro F1 | Weighted F1 |
+|---|---|---:|---:|---:|
+| Technical-analysis baseline | Test | 0.476 | 0.412 | 0.475 |
+
+Technical-analysis baseline confusion matrix, ordered as `negative`, `neutral`, `positive`:
+
+| True \ Predicted | Negative | Neutral | Positive |
+|---|---:|---:|---:|
+| Negative | 45 | 89 | 64 |
+| Neutral | 42 | 323 | 174 |
+| Positive | 38 | 114 | 105 |
+
+The technical-analysis rule is intentionally simple but now mirrors the target more closely than pure trailing momentum. It predicts a positive setup when the prior close sits in the top 20% of its recent 20-day range and either 5-day momentum or 20-day breakout strength exceeds `0.75` trailing-volatility units. It predicts a negative setup symmetrically near the bottom 20% of the recent range. All other rows are neutral. On the test set, this produces a more neutral-aware baseline than the earlier pure-momentum rule.
 
 Current completed outputs:
 
@@ -114,6 +123,8 @@ Current completed outputs:
 - `data/processed/modeling_dataset.csv`
 - `data/processed/modeling_dataset_dropped_rows.csv`
 - `data/processed/modeling_dataset_class_distribution.csv`
+- `outputs/predictions/ta_baseline_test_predictions.csv`
+- `outputs/metrics/ta_baseline_metrics.json`
 
 ## Error Analysis
 
@@ -129,7 +140,7 @@ Planned comparisons:
 
 | Condition | Status |
 |---|---|
-| Technical-analysis baseline | Pending |
+| Technical-analysis baseline | Complete |
 | Classical price-only | Pending |
 | Classical text-only | Pending |
 | Classical text + price | Pending |
@@ -146,7 +157,7 @@ Interpretation and recommendations will be added after results are generated.
 
 ## Future Work
 
-With another semester, useful extensions would include:
+With more time, useful extensions would include:
 * more recent market and sentiment data
 * backtesting with some simple strategies to see if the signals are tradeable
 
@@ -167,3 +178,14 @@ This is for research and educational investor-sentiment dashboard.
 The predictions are educational and not financial advice.
 
 ## Rubric Alignment Snapshot
+
+| Rubric requirement | Current status |
+|---|---|
+| Naive baseline | Complete: technical-analysis baseline implemented and evaluated |
+| Classical non-deep-learning model | Pending |
+| Neural-network deep-learning model | Pending |
+| Focused experiment | Planned as a price-only, text-only, and text-plus-price ablation |
+| Interactive inference app | Placeholder exists; model-loading app still pending |
+| Written report | Draft started and updated with current data pipeline and baseline results |
+| Error analysis | Pending model predictions beyond baseline |
+| Deployment link | Pending |

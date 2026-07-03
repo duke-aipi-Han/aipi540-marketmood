@@ -48,10 +48,15 @@ features:
     - close_to_sma20
     - high_low_range
     - gap_return
+    - range_position_20d
+    - breakout_strength_20d
+    - breakdown_strength_20d
   text_format: raw
 
 baseline:
-  technical_momentum_threshold: 0.5
+  technical_breakout_threshold: 0.75
+  breakout_upper_range: 0.8
+  breakout_lower_range: 0.2
 
 classical:
   max_features: 50000
