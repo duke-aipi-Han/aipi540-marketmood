@@ -92,9 +92,9 @@ No hyperparameter choices will be made using test performance.
 | Model | Status | Notes |
 |---|---|---|
 | Technical-analysis baseline | Complete | Deterministic volatility-adjusted range-breakout rule, no training |
-| Classical price-only | Pending | Engineered price features |
-| Classical text-only | Pending | TF-IDF over original post text |
-| Classical text + price | Pending | TF-IDF plus engineered price features |
+| Classical price-only | Complete | Logistic regression over engineered price features |
+| Classical text-only | Complete | TF-IDF over original post text, logistic regression |
+| Classical text + price | Complete | TF-IDF plus engineered price features, logistic regression |
 | Deep text-only transformer | Pending | Transformer classifier |
 | Deep text + price fusion | Pending | Transformer embedding plus price MLP |
 
@@ -104,7 +104,18 @@ Current quantitative results:
 
 | Model | Split | Accuracy | Macro F1 | Weighted F1 |
 |---|---|---:|---:|---:|
+| Classical price-only | Test | 0.497 | 0.464 | 0.511 |
+| Classical text + price | Test | 0.504 | 0.457 | 0.512 |
 | Technical-analysis baseline | Test | 0.476 | 0.412 | 0.475 |
+| Classical text-only | Test | 0.416 | 0.365 | 0.424 |
+
+Validation results used for classical model selection:
+
+| Model | Validation Accuracy | Validation Macro F1 | Validation Weighted F1 |
+|---|---:|---:|---:|
+| Classical price-only | 0.481 | 0.458 | 0.494 |
+| Classical text + price | 0.482 | 0.450 | 0.489 |
+| Classical text-only | 0.389 | 0.349 | 0.393 |
 
 Technical-analysis baseline confusion matrix, ordered as `negative`, `neutral`, `positive`:
 
@@ -116,6 +127,10 @@ Technical-analysis baseline confusion matrix, ordered as `negative`, `neutral`, 
 
 The technical-analysis rule is intentionally simple but now mirrors the target more closely than pure trailing momentum. It predicts a positive setup when the prior close sits in the top 20% of its recent 20-day range and either 5-day momentum or 20-day breakout strength exceeds `0.75` trailing-volatility units. It predicts a negative setup symmetrically near the bottom 20% of the recent range. All other rows are neutral. On the test set, this produces a more neutral-aware baseline than the earlier pure-momentum rule.
 
+The classical logistic-regression models use only deployable features based on text and engineered price features. They do not use `senti_label` or `emo_label` as model inputs as that would be leakage. The current best classical model by validation macro F1 is price-only logistic regression. Text-only TF-IDF performs worse, suggesting that the StockTwits post text alone is not enough for this target, though the text+price model remains close to price-only on weighted F1 and accuracy.
+
+[TODO delete these once complete]
+
 Current completed outputs:
 
 - `notebooks/01_stockemo_eda.ipynb`
@@ -125,6 +140,15 @@ Current completed outputs:
 - `data/processed/modeling_dataset_class_distribution.csv`
 - `outputs/predictions/ta_baseline_test_predictions.csv`
 - `outputs/metrics/ta_baseline_metrics.json`
+- `models/classical/price_only.joblib`
+- `models/classical/text_only.joblib`
+- `models/classical/text_price.joblib`
+- `outputs/predictions/classical_price_only_test_predictions.csv`
+- `outputs/predictions/classical_text_only_test_predictions.csv`
+- `outputs/predictions/classical_text_price_test_predictions.csv`
+- `outputs/metrics/classical_validation_metrics.json`
+- `outputs/metrics/classical_metrics.json`
+- `outputs/metrics/experiment_summary.csv`
 
 ## Error Analysis
 
@@ -141,18 +165,22 @@ Planned comparisons:
 | Condition | Status |
 |---|---|
 | Technical-analysis baseline | Complete |
-| Classical price-only | Pending |
-| Classical text-only | Pending |
-| Classical text + price | Pending |
+| Classical price-only | Complete |
+| Classical text-only | Complete |
+| Classical text + price | Complete |
 | Deep text-only transformer | Pending |
 | Deep text + price fusion transformer | Pending |
 
-Interpretation and recommendations will be added after results are generated.
+Current interpretation: engineered price context explains more of the abnormal-return target than TF-IDF text alone. Text+price fusion improves over text-only but does not yet beat the price-only classical model on macro F1. The next useful comparison is whether a transformer text encoder can extract stronger signal from investor language than TF-IDF.
 
 ## Recommendations
 
+Use the classical price-only logistic model as the current strongest non-deep-learning benchmark. Keep the text-only and text+price variants in the report because they directly answer whether investor text adds signal beyond price context.
+
 
 ## Conclusions
+
+The current non-deep-learning results suggest that the constructed target is driven more by recent price context than by sparse TF-IDF representations of post text. However, the text+price model remains competitive on accuracy and weighted F1, so richer language modeling may still add value.
 
 
 ## Future Work

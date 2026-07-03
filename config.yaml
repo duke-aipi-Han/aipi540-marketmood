@@ -62,6 +62,8 @@ classical:
   max_features: 50000
   ngram_range: [1, 2]
   classifier: logistic_regression
+  max_iter: 2000
+  class_weight: balanced
 
 deep_fusion:
   text_encoder: distilbert-base-uncased
