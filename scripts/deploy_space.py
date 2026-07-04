@@ -34,6 +34,14 @@ SPACE_UPLOADS = [
     PathSync("config.yaml", "config.yaml"),
     PathSync("requirements.txt", "requirements.txt"),
     PathSync("README.md", "README.md"),
+    PathSync(
+        "outputs/predictions/classical_price_only_test_predictions.csv",
+        "outputs/predictions/classical_price_only_test_predictions.csv",
+    ),
+    PathSync(
+        "outputs/predictions/deep_text_price_test_predictions.csv",
+        "outputs/predictions/deep_text_price_test_predictions.csv",
+    ),
 ]
 
 UPLOAD_EXCLUDES = [

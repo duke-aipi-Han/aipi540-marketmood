@@ -7,12 +7,15 @@ import os
 from pathlib import Path
 from typing import Any
 
+import matplotlib
 import matplotlib.dates as mdates
-import matplotlib.pyplot as plt
 import pandas as pd
 import torch
 from matplotlib.figure import Figure
 from matplotlib.patches import Rectangle
+
+matplotlib.use("Agg", force=True)
+import matplotlib.pyplot as plt
 
 from marketmood.config import load_config
 from marketmood.features import PRICE_FEATURE_COLUMNS, compute_price_feature_frame

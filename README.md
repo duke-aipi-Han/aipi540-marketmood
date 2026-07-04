@@ -70,7 +70,7 @@ The Gradio app can run locally from repo-relative artifacts or in Hugging Face S
 /data/marketmood/data/prices
 ```
 
-The deploy helper syncs the required runtime artifacts to `hf://buckets/hw391/AIPI540-MarketMood-storage`, configures the bucket mount and runtime variables, and uploads the app/source files. Spaces rebuild automatically after source uploads.
+The deploy helper syncs the required runtime artifacts to `hf://buckets/hw391/AIPI540-MarketMood-storage`, configures the bucket mount and runtime variables, and uploads the app/source files plus the small prediction CSVs used by the Interesting examples dropdown. Spaces rebuild automatically after source uploads.
 
 Preview the deployment actions:
 

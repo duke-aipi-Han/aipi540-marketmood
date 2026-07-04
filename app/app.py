@@ -4,8 +4,10 @@ from __future__ import annotations
 
 import os
 import sys
+import warnings
 from html import escape
 from pathlib import Path
+from typing import Callable
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 SRC_DIR = PROJECT_ROOT / "src"
@@ -13,14 +15,42 @@ if str(SRC_DIR) not in sys.path:
     sys.path.insert(0, str(SRC_DIR))
 
 os.environ.setdefault("MPLCONFIGDIR", "/tmp/marketmood-matplotlib")
+os.environ.setdefault("MPLBACKEND", "Agg")
 os.environ.setdefault("GRADIO_ANALYTICS_ENABLED", "False")
+
+from starlette.exceptions import StarletteDeprecationWarning
+
+warnings.filterwarnings(
+    "ignore",
+    message="'HTTP_422_UNPROCESSABLE_ENTITY' is deprecated.*",
+    category=StarletteDeprecationWarning,
+    module="gradio.routes",
+)
 
 import gradio as gr
 import pandas as pd
 from matplotlib.figure import Figure
 
 from marketmood.config import load_config
+from marketmood.labels import LABEL_ORDER
 from marketmood.inference.predict import MarketMoodInferenceService, SignalPrediction
+
+ScenarioBuilder = Callable[[str], str]
+ExampleValue = tuple[str, str, str]
+
+
+def _neutral_message(ticker: str) -> str:
+    return f"${ticker.upper()} stock update. Watching price action and volume."
+
+
+SCENARIO_MESSAGES: dict[str, ScenarioBuilder] = {
+    "Bullish": lambda ticker: f"${ticker} breakout setup looks strong. Buyers are stepping in and momentum can keep running.",
+    "Bearish": lambda ticker: f"${ticker} looks weak here. Sellers are in control and I expect more downside pressure.",
+    "Neutral": _neutral_message,
+    "Uncertain": lambda ticker: f"${ticker} is hard to read today. I am watching volume and waiting for confirmation.",
+    "Hype": lambda ticker: f"${ticker} could explode after this news. This feels like a big momentum move brewing.",
+    "Panic": lambda ticker: f"${ticker} is breaking down fast. I am worried this selloff gets worse before it stabilizes.",
+}
 
 
 def _default_selection(service: MarketMoodInferenceService) -> tuple[str, str, str, list[str]]:
@@ -34,7 +64,45 @@ def _default_selection(service: MarketMoodInferenceService) -> tuple[str, str, s
     return ticker, event_date, message, posts
 
 
-def _context_frame(prediction: SignalPrediction) -> pd.DataFrame:
+def _date_language_summary(service: MarketMoodInferenceService, prediction: SignalPrediction) -> list[tuple[str, str]]:
+    rows = service.modeling_dataset.loc[
+        service.modeling_dataset["ticker"].astype(str).str.upper().eq(prediction.ticker)
+        & service.modeling_dataset["event_date"].eq(prediction.event_date)
+    ].copy()
+    summary: list[tuple[str, str]] = []
+    for column, label in [("senti_label", "date_sentiment_mix"), ("emo_label", "date_emotion_mix")]:
+        if column not in rows or rows.empty:
+            continue
+        counts = rows[column].dropna().astype(str).value_counts().head(3)
+        if not counts.empty:
+            summary.append((label, ", ".join(f"{index} ({value})" for index, value in counts.items())))
+    return summary
+
+
+def _message_annotation(
+    service: MarketMoodInferenceService,
+    prediction: SignalPrediction,
+) -> list[tuple[str, str]]:
+    rows = service.modeling_dataset.loc[
+        service.modeling_dataset["ticker"].astype(str).str.upper().eq(prediction.ticker)
+        & service.modeling_dataset["event_date"].eq(prediction.event_date)
+    ].copy()
+    if rows.empty:
+        return []
+    rows["_normalized_original"] = rows["original"].fillna("").astype(str).str.strip()
+    matched = rows.loc[rows["_normalized_original"].eq(prediction.message.strip())]
+    if matched.empty:
+        return []
+    row = matched.iloc[0]
+    annotations = []
+    if "senti_label" in row and pd.notna(row["senti_label"]):
+        annotations.append(("historical_message_sentiment", str(row["senti_label"])))
+    if "emo_label" in row and pd.notna(row["emo_label"]):
+        annotations.append(("historical_message_emotion", str(row["emo_label"])))
+    return annotations
+
+
+def _context_frame(service: MarketMoodInferenceService, prediction: SignalPrediction) -> pd.DataFrame:
     rows = [
         ("ticker", prediction.ticker),
         ("event_date", prediction.event_date.strftime("%Y-%m-%d")),
@@ -54,6 +122,8 @@ def _context_frame(prediction: SignalPrediction) -> pd.DataFrame:
                 ("known_abnormal_score", f"{prediction.known_abnormal_score:.3f}"),
             ]
         )
+    rows.extend(_message_annotation(service, prediction))
+    rows.extend(_date_language_summary(service, prediction))
     return pd.DataFrame(rows, columns=["field", "value"])
 
 
@@ -156,16 +226,267 @@ def _comparison_frame(
     )
 
 
+def _message_impact_frame(
+    current: SignalPrediction,
+    neutral: SignalPrediction,
+    price_only: SignalPrediction | None = None,
+) -> str:
+    current_confidence = max(current.probabilities.values())
+    neutral_confidence = max(neutral.probabilities.values())
+    price_only_confidence = max(price_only.probabilities.values()) if price_only is not None else None
+    changed_label = current.predicted_label != neutral.predicted_label
+    deltas = {
+        label: current.probabilities[label] - neutral.probabilities[label]
+        for label in LABEL_ORDER
+    }
+    strongest_label = max(deltas, key=lambda label: abs(deltas[label]))
+    strongest_delta = deltas[strongest_label]
+    summary = (
+        f"Changed class from {neutral.predicted_label} to {current.predicted_label}"
+        if changed_label
+        else f"Same class, {strongest_label} moved {strongest_delta:+.1%}"
+    )
+    rows = ""
+    for label in LABEL_ORDER:
+        delta = deltas[label]
+        delta_class = "positive-delta" if delta > 0 else "negative-delta" if delta < 0 else ""
+        price_only_cell = (
+            f"<td>{price_only.probabilities[label]:.1%}</td>"
+            if price_only is not None
+            else "<td>unavailable</td>"
+        )
+        rows += (
+            "<tr>"
+            f"<td>{escape(label)}</td>"
+            f"{price_only_cell}"
+            f"<td>{neutral.probabilities[label]:.1%}</td>"
+            f"<td>{current.probabilities[label]:.1%}</td>"
+            f"<td class='{delta_class}'>{delta:+.1%}</td>"
+            "</tr>"
+        )
+    price_only_summary = (
+        f"Classical price-only: {price_only.predicted_label} ({price_only_confidence:.1%}) | "
+        if price_only is not None and price_only_confidence is not None
+        else ""
+    )
+    return (
+        "<style>"
+        ".impact-card{border:1px solid var(--border-color-primary, #d1d5db);border-radius:8px;padding:12px 14px;margin:4px 0 12px 0;}"
+        ".impact-card .headline{font-weight:800;margin-bottom:4px;}"
+        ".impact-card .subline{opacity:0.82;margin-bottom:10px;}"
+        ".impact-table{width:100%;border-collapse:collapse;font-size:0.9rem;}"
+        ".impact-table th,.impact-table td{padding:6px 8px;text-align:left;border-bottom:1px solid var(--border-color-primary, #d1d5db);}"
+        ".impact-table .positive-delta{color:#15803d;font-weight:750;}"
+        ".impact-table .negative-delta{color:#b91c1c;font-weight:750;}"
+        "</style>"
+        "<div class='impact-card'>"
+        f"<div class='headline'>{escape(summary)}</div>"
+        f"<div class='subline'>{price_only_summary}"
+        f"With neutral message: {neutral.predicted_label} ({neutral_confidence:.1%}) | "
+        f"With message: {current.predicted_label} ({current_confidence:.1%})</div>"
+        "<table class='impact-table'>"
+        "<thead><tr><th>Class</th><th>Classical Price-Only</th><th>With Neutral Message</th><th>With Message</th><th>Message Delta</th></tr></thead>"
+        f"<tbody>{rows}</tbody>"
+        "</table>"
+        "</div>"
+    )
+
+
+def _prediction_outputs(
+    service: MarketMoodInferenceService,
+    ticker: str,
+    event_date: str,
+    message: str,
+) -> tuple[dict[str, float], str, str, Figure, pd.DataFrame]:
+    predictions = service.predict_all(ticker, event_date, message)
+    official_prediction = predictions[service.official_model_name]
+    neutral_prediction = service.predict(ticker, event_date, _neutral_message(ticker))
+    price_only_prediction = predictions.get("classical_price_only")
+    plot = service.plot_price_context(official_prediction)
+    return (
+        official_prediction.probabilities,
+        _message_impact_frame(official_prediction, neutral_prediction, price_only_prediction),
+        _comparison_frame(predictions, service.official_model_name),
+        plot,
+        _context_frame(service, official_prediction),
+    )
+
+
+def _top_probability(row: pd.Series) -> float:
+    return float(max(row[f"prob_{label}"] for label in LABEL_ORDER))
+
+
+def _example_label(prefix: str, row: pd.Series) -> str:
+    return (
+        f"{prefix}: {row['ticker']} on {pd.Timestamp(row['event_date']).strftime('%Y-%m-%d')} "
+        f"({row['predicted_label']} vs actual {row['true_label']})"
+    )
+
+
+def _choose_first(frame: pd.DataFrame) -> pd.Series | None:
+    if frame.empty:
+        return None
+    return frame.iloc[0]
+
+
+def _example_value(row: pd.Series) -> ExampleValue:
+    return (
+        str(row["ticker"]),
+        pd.Timestamp(row["event_date"]).strftime("%Y-%m-%d"),
+        str(row["original"]),
+    )
+
+
+def _add_curated_example(
+    examples: dict[str, ExampleValue],
+    label: str,
+    row: pd.Series | None,
+) -> None:
+    if row is not None:
+        examples[label] = _example_value(row)
+
+
+def _add_basic_curated_example(
+    examples: dict[str, ExampleValue],
+    prefix: str,
+    row: pd.Series | None,
+) -> None:
+    if row is not None:
+        examples[_example_label(prefix, row)] = _example_value(row)
+
+
+def _text_price_story_label(prefix: str, row: pd.Series) -> str:
+    event_date = pd.Timestamp(row["event_date"]).strftime("%Y-%m-%d")
+    return (
+        f"{prefix}: {row['ticker']} on {event_date} | "
+        f"price-only {row['price_only_prediction']}, text+price {row['predicted_label']}, "
+        f"actual {row['true_label']}"
+    )
+
+
+def _curated_examples(project_root: Path) -> dict[str, ExampleValue]:
+    deep_path = project_root / "outputs/predictions/deep_text_price_test_predictions.csv"
+    price_path = project_root / "outputs/predictions/classical_price_only_test_predictions.csv"
+    if not deep_path.exists():
+        return {}
+
+    deep = pd.read_csv(deep_path)
+    for column in ["event_date", "ticker", "original", "true_label", "predicted_label"]:
+        if column not in deep:
+            return {}
+    deep["confidence"] = deep.apply(_top_probability, axis=1)
+    examples: dict[str, ExampleValue] = {}
+
+    positive_hit = _choose_first(
+        deep.loc[
+            deep["predicted_label"].eq(deep["true_label"])
+            & deep["true_label"].eq("positive")
+        ].sort_values("confidence", ascending=False)
+    )
+    _add_basic_curated_example(examples, "Strong correct positive", positive_hit)
+
+    negative_hit = _choose_first(
+        deep.loc[
+            deep["predicted_label"].eq(deep["true_label"])
+            & deep["true_label"].eq("negative")
+        ].sort_values("confidence", ascending=False)
+    )
+    _add_basic_curated_example(examples, "Strong correct negative", negative_hit)
+
+    non_neutral_miss = _choose_first(
+        deep.loc[
+            deep["predicted_label"].ne(deep["true_label"])
+            & deep["predicted_label"].ne("neutral")
+            & deep["true_label"].ne("neutral")
+        ].sort_values("confidence", ascending=False)
+    )
+    _add_basic_curated_example(examples, "Non-neutral miss", non_neutral_miss)
+
+    if price_path.exists():
+        price = pd.read_csv(price_path)[["id", "predicted_label"]].rename(
+            columns={"predicted_label": "price_only_prediction"}
+        )
+        merged = deep.merge(price, on="id", how="inner")
+        merged["confidence"] = merged.apply(_top_probability, axis=1)
+
+        text_beats_price_positive = _choose_first(
+            merged.loc[
+                merged["predicted_label"].eq(merged["true_label"])
+                & merged["true_label"].eq("positive")
+                & merged["price_only_prediction"].ne(merged["true_label"])
+            ].sort_values("confidence", ascending=False)
+        )
+        if text_beats_price_positive is not None:
+            _add_curated_example(
+                examples,
+                _text_price_story_label("Text+price beats price-only on a positive move", text_beats_price_positive),
+                text_beats_price_positive,
+            )
+
+        text_beats_price_negative = _choose_first(
+            merged.loc[
+                merged["predicted_label"].eq(merged["true_label"])
+                & merged["true_label"].eq("negative")
+                & merged["price_only_prediction"].ne(merged["true_label"])
+            ].sort_values("confidence", ascending=False)
+        )
+        if text_beats_price_negative is not None:
+            _add_curated_example(
+                examples,
+                _text_price_story_label("Text+price beats price-only on a negative move", text_beats_price_negative),
+                text_beats_price_negative,
+            )
+
+        price_beats_text_positive = _choose_first(
+            merged.loc[
+                merged["price_only_prediction"].eq(merged["true_label"])
+                & merged["true_label"].eq("positive")
+                & merged["predicted_label"].ne(merged["true_label"])
+                & merged["predicted_label"].ne("neutral")
+            ].sort_values("confidence", ascending=False)
+        )
+        if price_beats_text_positive is not None:
+            _add_curated_example(
+                examples,
+                _text_price_story_label("Price-only beats text+price on a positive move", price_beats_text_positive),
+                price_beats_text_positive,
+            )
+
+        price_beats_text_negative = _choose_first(
+            merged.loc[
+                merged["price_only_prediction"].eq(merged["true_label"])
+                & merged["true_label"].eq("negative")
+                & merged["predicted_label"].ne(merged["true_label"])
+                & merged["predicted_label"].ne("neutral")
+            ].sort_values("confidence", ascending=False)
+        )
+        if price_beats_text_negative is not None:
+            _add_curated_example(
+                examples,
+                _text_price_story_label("Price-only beats text+price on a negative move", price_beats_text_negative),
+                price_beats_text_negative,
+            )
+
+    return examples
+
+
 def build_app() -> gr.Blocks:
     """Create the Gradio Blocks application."""
     service = MarketMoodInferenceService.from_config(PROJECT_ROOT / "config.yaml", feature_mode="text_price")
     tickers = service.available_tickers()
+    curated_examples = _curated_examples(PROJECT_ROOT)
     default_ticker, default_date, default_message, default_posts = _default_selection(service)
-    default_predictions = service.predict_all(default_ticker, default_date, default_message)
-    default_prediction = default_predictions[service.official_model_name]
-    default_plot = service.plot_price_context(default_prediction)
+    (
+        default_probabilities,
+        default_impact,
+        default_comparison,
+        default_plot,
+        default_context,
+    ) = _prediction_outputs(service, default_ticker, default_date, default_message)
 
-    def set_ticker(ticker: str) -> tuple[gr.Dropdown, gr.Dropdown, gr.Textbox]:
+    def set_ticker(
+        ticker: str,
+    ) -> tuple[gr.Dropdown, gr.Dropdown, gr.Textbox, gr.Dropdown, dict[str, float], str, str, Figure, pd.DataFrame]:
         dates = service.available_event_dates(ticker)
         event_date = dates[-1]
         posts = service.sample_posts(ticker, event_date)
@@ -174,32 +495,81 @@ def build_app() -> gr.Blocks:
             gr.update(choices=dates, value=event_date),
             gr.update(choices=posts, value=message if posts else None),
             gr.update(value=message),
+            gr.update(value=None),
+            *run_prediction(ticker, event_date, message),
         )
 
-    def set_event_date(ticker: str, event_date: str) -> tuple[gr.Dropdown, gr.Textbox]:
+    def set_event_date(
+        ticker: str,
+        event_date: str,
+    ) -> tuple[gr.Dropdown, gr.Textbox, gr.Dropdown, dict[str, float], str, str, Figure, pd.DataFrame]:
         posts = service.sample_posts(ticker, event_date)
         message = posts[0] if posts else f"${ticker.upper()} "
         return (
             gr.update(choices=posts, value=message if posts else None),
             gr.update(value=message),
+            gr.update(value=None),
+            *run_prediction(ticker, event_date, message),
         )
 
-    def set_sample_post(sample_post: str | None, current_message: str) -> str:
-        return sample_post or current_message
+    def set_sample_post(
+        ticker: str,
+        event_date: str,
+        sample_post: str | None,
+        current_message: str,
+    ) -> tuple[str, gr.Dropdown, dict[str, float], str, str, Figure, pd.DataFrame]:
+        message = sample_post or current_message
+        return (message, gr.update(value=None), *run_prediction(ticker, event_date, message))
 
     def run_prediction(
         ticker: str,
         event_date: str,
         message: str,
-    ) -> tuple[dict[str, float], str, Figure, pd.DataFrame]:
-        predictions = service.predict_all(ticker, event_date, message)
-        official_prediction = predictions[service.official_model_name]
-        plot = service.plot_price_context(official_prediction)
+    ) -> tuple[dict[str, float], str, str, Figure, pd.DataFrame]:
+        return _prediction_outputs(service, ticker, event_date, message)
+
+    def run_message_input(
+        ticker: str,
+        event_date: str,
+        message: str,
+    ) -> tuple[gr.Dropdown, dict[str, float], str, str, Figure, pd.DataFrame]:
+        return (gr.update(value=None), *run_prediction(ticker, event_date, message))
+
+    def run_scenario(
+        ticker: str,
+        event_date: str,
+        scenario: str,
+    ) -> tuple[str, gr.Dropdown, dict[str, float], str, str, Figure, pd.DataFrame]:
+        message = SCENARIO_MESSAGES[scenario](ticker.upper())
+        return (message, gr.update(value=None), *run_prediction(ticker, event_date, message))
+
+    def set_curated_example(
+        selected_example: str | None,
+    ) -> tuple[gr.Dropdown, gr.Dropdown, gr.Dropdown, gr.Textbox, dict[str, float], str, str, Figure, pd.DataFrame]:
+        if not selected_example or selected_example not in curated_examples:
+            return (
+                gr.update(),
+                gr.update(),
+                gr.update(),
+                gr.update(),
+                default_probabilities,
+                default_impact,
+                default_comparison,
+                default_plot,
+                default_context,
+            )
+        ticker, event_date, message = curated_examples[selected_example]
+        dates = service.available_event_dates(ticker)
+        posts = service.sample_posts(ticker, event_date)
+        post_choices = list(posts)
+        if message not in post_choices:
+            post_choices.insert(0, message)
         return (
-            official_prediction.probabilities,
-            _comparison_frame(predictions, service.official_model_name),
-            plot,
-            _context_frame(official_prediction),
+            gr.update(value=ticker),
+            gr.update(choices=dates, value=event_date),
+            gr.update(choices=post_choices, value=None),
+            gr.update(value=message),
+            *run_prediction(ticker, event_date, message),
         )
 
     with gr.Blocks(title="MarketMood Signal Demo") as demo:
@@ -226,6 +596,7 @@ def build_app() -> gr.Blocks:
                     value=default_message if default_posts else None,
                     label="Historical sample post",
                     interactive=True,
+                    allow_custom_value=True,
                 )
                 message_input = gr.Textbox(
                     value=default_message,
@@ -234,43 +605,115 @@ def build_app() -> gr.Blocks:
                     max_lines=10,
                     interactive=True,
                 )
-                predict_button = gr.Button("Predict Signal", variant="primary")
+                with gr.Row():
+                    scenario_buttons = {
+                        label: gr.Button(label, size="sm")
+                        for label in SCENARIO_MESSAGES
+                    }
+                curated_input = gr.Dropdown(
+                    choices=list(curated_examples),
+                    value=None,
+                    label="Interesting examples",
+                    interactive=bool(curated_examples),
+                )
             with gr.Column(scale=2):
                 label_output = gr.Label(
-                    value=default_prediction.probabilities,
+                    value=default_probabilities,
                     label="Class probabilities",
                     num_top_classes=3,
                 )
+                impact_output = gr.HTML(value=default_impact, label="Message impact")
                 comparison_output = gr.HTML(
-                    value=_comparison_frame(default_predictions, service.official_model_name),
+                    value=default_comparison,
                     label="Model predictions vs. historical actual",
                 )
                 price_plot_output = gr.Plot(value=default_plot, label="Price context")
         with gr.Accordion("Market context", open=False):
             context_output = gr.Dataframe(
-                value=_context_frame(default_prediction),
+                value=default_context,
                 interactive=False,
             )
 
-        ticker_input.change(
+        ticker_input.input(
             set_ticker,
             inputs=ticker_input,
-            outputs=[event_date_input, sample_post_input, message_input],
+            outputs=[
+                event_date_input,
+                sample_post_input,
+                message_input,
+                curated_input,
+                label_output,
+                impact_output,
+                comparison_output,
+                price_plot_output,
+                context_output,
+            ],
         )
-        event_date_input.change(
+        event_date_input.input(
             set_event_date,
             inputs=[ticker_input, event_date_input],
-            outputs=[sample_post_input, message_input],
+            outputs=[
+                sample_post_input,
+                message_input,
+                curated_input,
+                label_output,
+                impact_output,
+                comparison_output,
+                price_plot_output,
+                context_output,
+            ],
         )
-        sample_post_input.change(
+        sample_post_input.input(
             set_sample_post,
-            inputs=[sample_post_input, message_input],
-            outputs=message_input,
+            inputs=[ticker_input, event_date_input, sample_post_input, message_input],
+            outputs=[
+                message_input,
+                curated_input,
+                label_output,
+                impact_output,
+                comparison_output,
+                price_plot_output,
+                context_output,
+            ],
         )
-        predict_button.click(
-            run_prediction,
+        message_input.input(
+            run_message_input,
             inputs=[ticker_input, event_date_input, message_input],
-            outputs=[label_output, comparison_output, price_plot_output, context_output],
+            outputs=[curated_input, label_output, impact_output, comparison_output, price_plot_output, context_output],
+        )
+        message_input.submit(
+            run_message_input,
+            inputs=[ticker_input, event_date_input, message_input],
+            outputs=[curated_input, label_output, impact_output, comparison_output, price_plot_output, context_output],
+        )
+        for scenario_label, scenario_button in scenario_buttons.items():
+            scenario_button.click(
+                run_scenario,
+                inputs=[ticker_input, event_date_input, gr.State(scenario_label)],
+                outputs=[
+                    message_input,
+                    curated_input,
+                    label_output,
+                    impact_output,
+                    comparison_output,
+                    price_plot_output,
+                    context_output,
+                ],
+            )
+        curated_input.input(
+            set_curated_example,
+            inputs=curated_input,
+            outputs=[
+                ticker_input,
+                event_date_input,
+                sample_post_input,
+                message_input,
+                label_output,
+                impact_output,
+                comparison_output,
+                price_plot_output,
+                context_output,
+            ],
         )
 
     return demo
