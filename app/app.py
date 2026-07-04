@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import os
 import sys
+from html import escape
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -56,40 +57,102 @@ def _context_frame(prediction: SignalPrediction) -> pd.DataFrame:
     return pd.DataFrame(rows, columns=["field", "value"])
 
 
-def _comparison_frame(prediction: SignalPrediction) -> pd.DataFrame:
-    actual_label = prediction.known_target or "unavailable"
-    match_value = (
-        "yes"
-        if prediction.known_target is not None and prediction.predicted_label == prediction.known_target
-        else "no"
-        if prediction.known_target is not None
-        else "unavailable"
-    )
-    return pd.DataFrame(
-        [
-            {
-                "event_date": prediction.event_date.strftime("%Y-%m-%d"),
-                "model_prediction": prediction.predicted_label,
-                "historical_actual": actual_label,
-                "match": match_value,
-                "feature_cutoff": prediction.feature_cutoff_date.strftime("%Y-%m-%d"),
-                "actual_window_end": (
+def _model_display_name(model_name: str) -> str:
+    labels = {
+        "deep_text_price": "Deep text + price",
+        "deep_text_only": "Deep text-only",
+        "classical_text_price": "Classical text + price",
+        "classical_text_only": "Classical text-only",
+        "classical_price_only": "Classical price-only",
+    }
+    return labels.get(model_name, model_name.replace("_", " ").title())
+
+
+def _ordered_model_names(predictions: dict[str, SignalPrediction], official_model_name: str) -> list[str]:
+    preferred_order = [
+        official_model_name,
+        "deep_text_only",
+        "classical_text_price",
+        "classical_text_only",
+        "classical_price_only",
+    ]
+    ordered = [name for name in preferred_order if name in predictions]
+    ordered.extend(name for name in predictions if name not in ordered)
+    return ordered
+
+
+def _comparison_frame(
+    predictions: dict[str, SignalPrediction],
+    official_model_name: str,
+) -> str:
+    headers = [
+        "Model",
+        "Prediction",
+        "Confidence",
+        "Historical actual",
+        "Match",
+        "Event date",
+        "Actual window end",
+        "Next-day return",
+        "Abnormal score",
+    ]
+    rows = []
+    for model_name in _ordered_model_names(predictions, official_model_name):
+        prediction = predictions[model_name]
+        actual_label = prediction.known_target or "unavailable"
+        match_value = (
+            "yes"
+            if prediction.known_target is not None and prediction.predicted_label == prediction.known_target
+            else "no"
+            if prediction.known_target is not None
+            else "unavailable"
+        )
+        rows.append(
+            [
+                _model_display_name(model_name),
+                prediction.predicted_label,
+                f"{max(prediction.probabilities.values()):.1%}",
+                actual_label,
+                match_value,
+                prediction.event_date.strftime("%Y-%m-%d"),
+                (
                     prediction.target_end_date.strftime("%Y-%m-%d")
                     if prediction.target_end_date is not None
                     else "unavailable"
                 ),
-                "next_day_return": (
+                (
                     f"{prediction.known_future_return_1d:.2%}"
                     if prediction.known_future_return_1d is not None
                     else "unavailable"
                 ),
-                "abnormal_score": (
+                (
                     f"{prediction.known_abnormal_score:.3f}"
                     if prediction.known_abnormal_score is not None
                     else "unavailable"
                 ),
-            }
-        ]
+                model_name == official_model_name,
+            ]
+        )
+
+    header_html = "".join(f"<th>{escape(header)}</th>" for header in headers)
+    body_html = ""
+    for row in rows:
+        is_official = row[-1]
+        class_name = "official-row" if is_official else ""
+        cells = "".join(f"<td>{escape(str(value))}</td>" for value in row[:-1])
+        body_html += f"<tr class='{class_name}'>{cells}</tr>"
+    return (
+        "<style>"
+        ".comparison-table{width:100%;border-collapse:collapse;font-size:0.92rem;color:inherit;background:transparent;}"
+        ".comparison-table th,.comparison-table td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--border-color-primary, currentColor);}"
+        ".comparison-table th{font-weight:650;}"
+        ".comparison-table .official-row td{font-weight:800;border-top:2px solid #f97316;border-bottom:2px solid #f97316;}"
+        ".comparison-table .official-row td:first-child{border-left:5px solid #f97316;}"
+        "</style>"
+        "<table class='comparison-table'>"
+        f"<thead><tr>{header_html}</tr></thead>"
+        f"<tbody>{body_html}</tbody>"
+        "</table>"
     )
 
 
@@ -98,7 +161,8 @@ def build_app() -> gr.Blocks:
     service = MarketMoodInferenceService.from_config(PROJECT_ROOT / "config.yaml", feature_mode="text_price")
     tickers = service.available_tickers()
     default_ticker, default_date, default_message, default_posts = _default_selection(service)
-    default_prediction = service.predict(default_ticker, default_date, default_message)
+    default_predictions = service.predict_all(default_ticker, default_date, default_message)
+    default_prediction = default_predictions[service.official_model_name]
     default_plot = service.plot_price_context(default_prediction)
 
     def set_ticker(ticker: str) -> tuple[gr.Dropdown, gr.Dropdown, gr.Textbox]:
@@ -127,14 +191,15 @@ def build_app() -> gr.Blocks:
         ticker: str,
         event_date: str,
         message: str,
-    ) -> tuple[dict[str, float], pd.DataFrame, Figure, pd.DataFrame]:
-        prediction = service.predict(ticker, event_date, message)
-        plot = service.plot_price_context(prediction)
+    ) -> tuple[dict[str, float], str, Figure, pd.DataFrame]:
+        predictions = service.predict_all(ticker, event_date, message)
+        official_prediction = predictions[service.official_model_name]
+        plot = service.plot_price_context(official_prediction)
         return (
-            prediction.probabilities,
-            _comparison_frame(prediction),
+            official_prediction.probabilities,
+            _comparison_frame(predictions, service.official_model_name),
             plot,
-            _context_frame(prediction),
+            _context_frame(official_prediction),
         )
 
     with gr.Blocks(title="MarketMood Signal Demo") as demo:
@@ -176,10 +241,9 @@ def build_app() -> gr.Blocks:
                     label="Class probabilities",
                     num_top_classes=3,
                 )
-                comparison_output = gr.Dataframe(
-                    value=_comparison_frame(default_prediction),
-                    label="Prediction vs. historical actual",
-                    interactive=False,
+                comparison_output = gr.HTML(
+                    value=_comparison_frame(default_predictions, service.official_model_name),
+                    label="Model predictions vs. historical actual",
                 )
                 price_plot_output = gr.Plot(value=default_plot, label="Price context")
         with gr.Accordion("Market context", open=False):

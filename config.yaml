@@ -68,15 +68,17 @@ classical:
 deep_fusion:
   text_encoder: distilbert-base-uncased
   max_length: 128
-  batch_size: 16
+  batch_size: 32
   learning_rate: 0.00002
-  epochs: 3
+  head_learning_rate: 0.001
+  epochs: 8
   dropout: 0.2
   price_hidden_dim: 64
+  freeze_text_encoder: true
   use_class_weights: true
 
 app:
   title: MarketMood Investor Signal Dashboard
   default_ticker: AAPL
-  model_selector_default: text_price
+  model_selector_default: deep_text_price
   server_port: 8760

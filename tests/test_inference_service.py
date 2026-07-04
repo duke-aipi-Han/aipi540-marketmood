@@ -16,6 +16,7 @@ def test_inference_service_predicts_from_message_and_prior_price_context() -> No
     message = service.default_message(ticker, event_date)
 
     prediction = service.predict(ticker, event_date, message)
+    predictions = service.predict_all(ticker, event_date, message)
 
     assert prediction.predicted_label in LABEL_ORDER
     assert list(prediction.probabilities) == LABEL_ORDER
@@ -23,3 +24,8 @@ def test_inference_service_predicts_from_message_and_prior_price_context() -> No
     assert prediction.feature_cutoff_date < prediction.event_date
     assert "emo_label" not in prediction.price_features
     assert "senti_label" not in prediction.price_features
+    assert service.official_model_name in predictions
+    assert prediction == predictions[service.official_model_name]
+    if Path("models/deep_fusion/text_price/model.pt").exists():
+        assert service.official_model_name == "deep_text_price"
+        assert "deep_text_price" in predictions

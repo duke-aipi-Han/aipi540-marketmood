@@ -45,7 +45,7 @@ python app/app.py
 
 ## App Demo
 
-The Gradio demo uses the saved classical `text_price` model. Select a ticker and event date from the cached historical data, edit or choose a sample investor post, and run the model against the message plus prior price context.
+The Gradio demo uses the saved deep `text_price` model as the official prediction and shows comparison rows for the other saved models. Select a ticker and event date from the cached historical data, edit or choose a sample investor post, and run the models against the message plus prior price context.
 
 ```bash
 python app/app.py
