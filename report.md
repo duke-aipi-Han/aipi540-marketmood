@@ -79,7 +79,7 @@ The project will compare three required modeling families:
 2. Classical ML: TF-IDF text features, engineered price features, and logistic regression variants.
 3. Deep learning: transformer text encoder with optional price-feature MLP fusion.
 
-The focused experiment will be an ablation study asking whether investor text adds signal beyond price-only baselines, and whether price context improves text-only models.
+The focused experiment is an ablation study asking whether investor text adds signal beyond price-only baselines, and whether price context improves text-only models.
 
 ## Hyperparameter Tuning Strategy
 
@@ -95,8 +95,8 @@ No hyperparameter choices will be made using test performance.
 | Classical price-only | Complete | Logistic regression over engineered price features |
 | Classical text-only | Complete | TF-IDF over original post text, logistic regression |
 | Classical text + price | Complete | TF-IDF plus engineered price features, logistic regression |
-| Deep text-only transformer | Pending | Transformer classifier |
-| Deep text + price fusion | Pending | Transformer embedding plus price MLP |
+| Deep text-only transformer | Complete | Frozen DistilBERT embeddings plus classifier head |
+| Deep text + price fusion | Complete | Frozen DistilBERT embeddings plus engineered-price MLP fusion |
 
 ## Results
 
@@ -104,18 +104,30 @@ Current quantitative results:
 
 | Model | Split | Accuracy | Macro F1 | Weighted F1 |
 |---|---|---:|---:|---:|
+| Deep text + price | Test | 0.652 | 0.624 | 0.653 |
 | Classical price-only | Test | 0.497 | 0.464 | 0.511 |
 | Classical text + price | Test | 0.504 | 0.457 | 0.512 |
 | Technical-analysis baseline | Test | 0.476 | 0.412 | 0.475 |
 | Classical text-only | Test | 0.416 | 0.365 | 0.424 |
+| Deep text-only | Test | 0.385 | 0.328 | 0.386 |
 
-Validation results used for classical model selection:
+Validation results used for model selection:
 
 | Model | Validation Accuracy | Validation Macro F1 | Validation Weighted F1 |
 |---|---:|---:|---:|
 | Classical price-only | 0.481 | 0.458 | 0.494 |
 | Classical text + price | 0.482 | 0.450 | 0.489 |
 | Classical text-only | 0.389 | 0.349 | 0.393 |
+| Deep text + price | 0.663 | 0.644 | 0.664 |
+| Deep text-only | 0.363 | 0.316 | 0.357 |
+
+Deep text-plus-price confusion matrix on the test split, ordered as `negative`, `neutral`, `positive`:
+
+| True \ Predicted | Negative | Neutral | Positive |
+|---|---:|---:|---:|
+| Negative | 125 | 47 | 26 |
+| Neutral | 55 | 385 | 99 |
+| Positive | 28 | 91 | 138 |
 
 Technical-analysis baseline confusion matrix, ordered as `negative`, `neutral`, `positive`:
 
@@ -129,7 +141,7 @@ The technical-analysis rule is intentionally simple but now mirrors the target m
 
 The classical logistic-regression models use only deployable features based on text and engineered price features. They do not use `senti_label` or `emo_label` as model inputs as that would be leakage. The current best classical model by validation macro F1 is price-only logistic regression. Text-only TF-IDF performs worse, suggesting that the StockTwits post text alone is not enough for this target, though the text+price model remains close to price-only on weighted F1 and accuracy.
 
-[TODO delete these once complete]
+The deep-learning models use DistilBERT text embeddings with a classifier head. To keep training practical on the local environment, the text encoder is frozen by default and only the classification/fusion layers are trained; this can be changed in `config.yaml` by setting `freeze_text_encoder: false`. The latest 8-epoch run used Apple MPS and selected epoch 7 by validation macro F1. The deep text-only model remains weak, while the deep text-plus-price fusion model performs best overall, improving test macro F1 to 0.624 and showing that transformer text representations become useful when combined with leakage-safe market context.
 
 Current completed outputs:
 
@@ -143,24 +155,30 @@ Current completed outputs:
 - `models/classical/price_only.joblib`
 - `models/classical/text_only.joblib`
 - `models/classical/text_price.joblib`
+- `models/deep_fusion/text_only/model.pt`
+- `models/deep_fusion/text_price/model.pt`
 - `outputs/predictions/classical_price_only_test_predictions.csv`
 - `outputs/predictions/classical_text_only_test_predictions.csv`
 - `outputs/predictions/classical_text_price_test_predictions.csv`
+- `outputs/predictions/deep_text_only_test_predictions.csv`
+- `outputs/predictions/deep_text_price_test_predictions.csv`
 - `outputs/metrics/classical_validation_metrics.json`
 - `outputs/metrics/classical_metrics.json`
+- `outputs/metrics/deep_fusion_validation_metrics.json`
+- `outputs/metrics/deep_fusion_metrics.json`
 - `outputs/metrics/experiment_summary.csv`
 
 ## Error Analysis
 
-Error analysis is pending model predictions. The final report will identify at least five specific mispredictions, discuss likely root causes, and propose concrete mitigations. Planned categories include ambiguous investor language, ticker-specific news events, high-volatility regimes, posts with sarcasm or emojis, and cases where text sentiment conflicts with subsequent price movement.
+Error analysis notebooks now include representative misclassification examples for the technical-analysis baseline and classical models. The final report will identify at least five specific mispredictions, discuss likely root causes, and propose concrete mitigations. Planned categories include ambiguous investor language, ticker-specific news events, high-volatility regimes, posts with sarcasm or emojis, and cases where text sentiment conflicts with subsequent price movement.
 
 ## Experiment Write-Up
 
-Planned experiment: ablation study of price-only, text-only, and text-plus-price modeling.
+Experiment: ablation study of price-only, text-only, and text-plus-price modeling.
 
 Research question: Does investor text add predictive signal beyond recent technical price context, and does price context improve transformer-based prediction?
 
-Planned comparisons:
+Completed comparisons:
 
 | Condition | Status |
 |---|---|
@@ -168,19 +186,19 @@ Planned comparisons:
 | Classical price-only | Complete |
 | Classical text-only | Complete |
 | Classical text + price | Complete |
-| Deep text-only transformer | Pending |
-| Deep text + price fusion transformer | Pending |
+| Deep text-only transformer | Complete |
+| Deep text + price fusion transformer | Complete |
 
-Current interpretation: engineered price context explains more of the abnormal-return target than TF-IDF text alone. Text+price fusion improves over text-only but does not yet beat the price-only classical model on macro F1. The next useful comparison is whether a transformer text encoder can extract stronger signal from investor language than TF-IDF.
+Current interpretation: engineered price context explains more of the abnormal-return target than sparse text alone. Classical TF-IDF text-only and deep text-only both underperform on macro F1, but deep text-plus-price fusion now beats the deterministic baseline and all classical variants. This supports the main hypothesis that investor text is most useful when interpreted alongside recent market context.
 
 ## Recommendations
 
-Use the classical price-only logistic model as the current strongest non-deep-learning benchmark. Keep the text-only and text+price variants in the report because they directly answer whether investor text adds signal beyond price context.
+Use the deep text-plus-price model as the strongest current research model. Keep the technical-analysis baseline, classical price-only model, and classical text-plus-price model as benchmarks because they clarify how much value comes from price context, sparse text features, and transformer-based fusion.
 
 
 ## Conclusions
 
-The current non-deep-learning results suggest that the constructed target is driven more by recent price context than by sparse TF-IDF representations of post text. However, the text+price model remains competitive on accuracy and weighted F1, so richer language modeling may still add value.
+The current results suggest that the abnormal-move target is difficult to predict from post text alone, but recent price context and transformer-based text representations together improve performance. The best current model is deep text-plus-price fusion with test macro F1 of 0.624.
 
 
 ## Future Work
@@ -210,10 +228,10 @@ The predictions are educational and not financial advice.
 | Rubric requirement | Current status |
 |---|---|
 | Naive baseline | Complete: technical-analysis baseline implemented and evaluated |
-| Classical non-deep-learning model | Pending |
-| Neural-network deep-learning model | Pending |
-| Focused experiment | Planned as a price-only, text-only, and text-plus-price ablation |
-| Interactive inference app | Placeholder exists; model-loading app still pending |
-| Written report | Draft started and updated with current data pipeline and baseline results |
-| Error analysis | Pending model predictions beyond baseline |
+| Classical non-deep-learning model | Complete: price-only, text-only, and text-plus-price logistic regression |
+| Neural-network deep-learning model | Complete: DistilBERT text-only and text-plus-price fusion models |
+| Focused experiment | Complete: price-only, text-only, and text-plus-price ablation across baseline, classical, and deep models |
+| Interactive inference app | Complete: Gradio inference demo uses the saved deep text-plus-price model as official prediction and compares saved model outputs |
+| Written report | Draft started and updated with current data pipeline, model results, and interpretation |
+| Error analysis | Partially complete in analysis notebooks; final narrative examples still pending |
 | Deployment link | Pending |

@@ -3,20 +3,32 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+import os
 from pathlib import Path
+from typing import Any
 
+import matplotlib
 import matplotlib.dates as mdates
-import matplotlib.pyplot as plt
 import pandas as pd
+import torch
 from matplotlib.figure import Figure
 from matplotlib.patches import Rectangle
+
+matplotlib.use("Agg", force=True)
+import matplotlib.pyplot as plt
 
 from marketmood.config import load_config
 from marketmood.features import PRICE_FEATURE_COLUMNS, compute_price_feature_frame
 from marketmood.labels import LABEL_ORDER
 from marketmood.models.classical import ClassicalFeatureMode, ClassicalLogisticModel
+from marketmood.models.deep_fusion import DeepModelConfig, PriceFeatureScaler, TransformerFusionClassifier
 from marketmood.prices import load_cached_prices
 from marketmood.text_processing import build_text_input
+from marketmood.training.train_deep_fusion import (
+    build_deep_prediction_frame,
+    load_deep_artifact,
+    select_torch_device,
+)
 
 
 @dataclass(frozen=True)
@@ -38,11 +50,33 @@ class SignalPrediction:
     known_abnormal_score: float | None
 
 
+@dataclass(frozen=True)
+class LoadedDeepModel:
+    """Loaded deep model components for single-row inference."""
+
+    model: TransformerFusionClassifier
+    tokenizer: Any
+    price_scaler: PriceFeatureScaler | None
+    config: DeepModelConfig
+    device: torch.device
+
+
 def _resolve_project_path(config_path: Path, configured_path: str | Path) -> Path:
     path = Path(configured_path)
     if path.is_absolute():
         return path
     return (config_path.parent / path).resolve()
+
+
+def _resolve_runtime_path(config_path: Path, configured_path: str | Path) -> Path:
+    """Resolve a path locally or under the mounted deployment artifact root."""
+    path = Path(configured_path)
+    if path.is_absolute():
+        return path
+    artifact_root = os.getenv("MARKETMOOD_ARTIFACT_ROOT")
+    if artifact_root:
+        return (Path(artifact_root) / path).resolve()
+    return _resolve_project_path(config_path, path)
 
 
 class MarketMoodInferenceService:
@@ -55,8 +89,14 @@ class MarketMoodInferenceService:
         price_cache_dir: str | Path,
         abnormal_threshold: float,
         text_format: str = "raw",
+        classical_models: dict[str, ClassicalLogisticModel] | None = None,
+        deep_models: dict[str, LoadedDeepModel] | None = None,
+        official_model_name: str = "deep_text_price",
     ) -> None:
         self.model = model
+        self.classical_models = classical_models or {"classical_text_price": model}
+        self.deep_models = deep_models or {}
+        self.official_model_name = official_model_name
         self.modeling_dataset = modeling_dataset.copy()
         self.modeling_dataset["event_date"] = pd.to_datetime(
             self.modeling_dataset["event_date"], errors="coerce"
@@ -73,14 +113,36 @@ class MarketMoodInferenceService:
     ) -> "MarketMoodInferenceService":
         """Create the app inference service from project defaults."""
         config = load_config(config_path)
-        model_dir = _resolve_project_path(config.source_path, config.values["paths"]["classical_model_dir"])
+        model_dir = _resolve_runtime_path(config.source_path, config.values["paths"]["classical_model_dir"])
         model_path = model_dir / f"{feature_mode}.joblib"
         if not model_path.exists():
             raise FileNotFoundError(f"Missing model artifact: {model_path}")
 
-        dataset_path = _resolve_project_path(config.source_path, config.values["paths"]["modeling_dataset"])
-        price_cache_dir = _resolve_project_path(config.source_path, config.values["paths"]["price_cache_dir"])
+        classical_models = {
+            f"classical_{artifact_path.stem}": ClassicalLogisticModel.load(artifact_path)
+            for artifact_path in sorted(model_dir.glob("*.joblib"))
+        }
+
+        deep_models: dict[str, LoadedDeepModel] = {}
+        deep_model_dir = _resolve_runtime_path(config.source_path, config.values["paths"]["deep_fusion_model_dir"])
+        device = select_torch_device(str(config.values["project"].get("device_preference", "mps")))
+        if deep_model_dir.exists():
+            for artifact_dir in sorted(deep_model_dir.iterdir()):
+                if not artifact_dir.is_dir() or not (artifact_dir / "model.pt").exists():
+                    continue
+                model, tokenizer, price_scaler, model_config = load_deep_artifact(artifact_dir, device)
+                deep_models[f"deep_{model_config.feature_mode}"] = LoadedDeepModel(
+                    model=model,
+                    tokenizer=tokenizer,
+                    price_scaler=price_scaler,
+                    config=model_config,
+                    device=device,
+                )
+
+        dataset_path = _resolve_runtime_path(config.source_path, config.values["paths"]["modeling_dataset"])
+        price_cache_dir = _resolve_runtime_path(config.source_path, config.values["paths"]["price_cache_dir"])
         modeling_dataset = pd.read_csv(dataset_path)
+        official_model_name = "deep_text_price" if "deep_text_price" in deep_models else f"classical_{feature_mode}"
 
         return cls(
             model=ClassicalLogisticModel.load(model_path),
@@ -88,6 +150,9 @@ class MarketMoodInferenceService:
             price_cache_dir=price_cache_dir,
             abnormal_threshold=float(config.values["labels"]["abnormal_threshold"]),
             text_format=str(config.values.get("features", {}).get("text_format", "raw")),
+            classical_models=classical_models,
+            deep_models=deep_models,
+            official_model_name=official_model_name,
         )
 
     def available_tickers(self) -> list[str]:
@@ -122,13 +187,70 @@ class MarketMoodInferenceService:
         return f"${ticker.upper()} "
 
     def predict(self, ticker: str, event_date: str | pd.Timestamp, message: str) -> SignalPrediction:
-        """Predict the abnormal-move class for one ticker/date/message request."""
+        """Predict with the official model for one ticker/date/message request."""
+        predictions = self.predict_all(ticker, event_date, message)
+        return predictions[self.official_model_name]
+
+    def predict_all(
+        self,
+        ticker: str,
+        event_date: str | pd.Timestamp,
+        message: str,
+    ) -> dict[str, SignalPrediction]:
+        """Predict with all loaded app models for one ticker/date/message request."""
         event_timestamp = pd.Timestamp(event_date).normalize()
         feature_row = self._price_feature_row(ticker, event_timestamp)
         input_frame = self._build_input_frame(ticker, event_timestamp, message, feature_row)
+        predictions: dict[str, SignalPrediction] = {}
 
-        predicted_label = self.model.predict(input_frame)[0]
-        probabilities = self.model.predict_proba(input_frame).iloc[0].to_dict()
+        for model_name, model in self.classical_models.items():
+            predicted_label = model.predict(input_frame)[0]
+            probabilities = model.predict_proba(input_frame).iloc[0].to_dict()
+            predictions[model_name] = self._signal_prediction_from_outputs(
+                ticker=ticker,
+                event_timestamp=event_timestamp,
+                message=message,
+                feature_row=feature_row,
+                predicted_label=predicted_label,
+                probabilities=probabilities,
+            )
+
+        for model_name, loaded_model in self.deep_models.items():
+            prediction_frame = build_deep_prediction_frame(
+                input_frame,
+                model=loaded_model.model,
+                tokenizer=loaded_model.tokenizer,
+                model_config=loaded_model.config,
+                price_scaler=loaded_model.price_scaler,
+                device=loaded_model.device,
+                batch_size=1,
+            )
+            prediction_row = prediction_frame.iloc[0]
+            probabilities = {
+                label: float(prediction_row[f"prob_{label}"])
+                for label in LABEL_ORDER
+            }
+            predictions[model_name] = self._signal_prediction_from_outputs(
+                ticker=ticker,
+                event_timestamp=event_timestamp,
+                message=message,
+                feature_row=feature_row,
+                predicted_label=str(prediction_row["predicted_label"]),
+                probabilities=probabilities,
+            )
+
+        return predictions
+
+    def _signal_prediction_from_outputs(
+        self,
+        ticker: str,
+        event_timestamp: pd.Timestamp,
+        message: str,
+        feature_row: pd.Series,
+        predicted_label: str,
+        probabilities: dict[str, float],
+    ) -> SignalPrediction:
+        """Build a common prediction object from model outputs."""
         feature_cutoff_date = pd.Timestamp(feature_row["feature_cutoff_date"]).normalize()
 
         return SignalPrediction(
@@ -211,47 +333,65 @@ class MarketMoodInferenceService:
             "neutral": "#64748b",
             "positive": "#2f7d5c",
         }
+        prediction_markers = {
+            "positive": "^",
+            "negative": "v",
+            "neutral": "o",
+        }
+        prediction_words = {
+            "positive": "UP",
+            "negative": "DOWN",
+            "neutral": "NEUTRAL",
+        }
         if prediction.close_t is not None:
             prediction_color = label_colors.get(prediction.predicted_label, "#334155")
             axis.scatter(
                 [mdates.date2num(event_timestamp)],
                 [prediction.close_t],
-                marker="*",
-                s=190,
+                marker=prediction_markers.get(prediction.predicted_label, "o"),
+                s=260,
                 color=prediction_color,
                 edgecolor="#111827",
-                linewidth=0.8,
+                linewidth=1.2,
                 zorder=5,
-                label=f"prediction: {prediction.predicted_label}",
+                label=f"prediction: {prediction_words.get(prediction.predicted_label, prediction.predicted_label)}",
             )
             axis.annotate(
-                f"predicted {prediction.predicted_label}",
+                f"Prediction: {prediction_words.get(prediction.predicted_label, prediction.predicted_label)}",
                 xy=(mdates.date2num(event_timestamp), prediction.close_t),
-                xytext=(8, 14),
+                xytext=(10, 18),
                 textcoords="offset points",
-                fontsize=9,
-                color=prediction_color,
+                fontsize=10,
+                fontweight="bold",
+                color="#111827",
+                bbox={"boxstyle": "round,pad=0.25", "fc": "#ffffff", "ec": prediction_color, "alpha": 0.92},
             )
         if prediction.close_t_plus_1 is not None and prediction.known_target is not None:
             actual_color = label_colors.get(prediction.known_target, "#334155")
+            actual_matched = prediction.predicted_label == prediction.known_target
+            actual_marker = "$✓$" if actual_matched else "$X$"
+            actual_text = "Actual: match" if actual_matched else "Actual: miss"
+            actual_box_color = "#dcfce7" if actual_matched else "#fee2e2"
             axis.scatter(
                 [mdates.date2num(target_end_date)],
                 [prediction.close_t_plus_1],
-                marker="X",
-                s=110,
+                marker=actual_marker,
+                s=300,
                 color=actual_color,
                 edgecolor="#111827",
                 linewidth=0.8,
-                zorder=5,
-                label=f"actual: {prediction.known_target}",
+                zorder=6,
+                label=actual_text,
             )
             axis.annotate(
-                f"actual {prediction.known_target}",
+                f"{actual_text}: {prediction.known_target}",
                 xy=(mdates.date2num(target_end_date), prediction.close_t_plus_1),
-                xytext=(8, -20),
+                xytext=(10, -24),
                 textcoords="offset points",
-                fontsize=9,
-                color=actual_color,
+                fontsize=10,
+                fontweight="bold",
+                color="#111827",
+                bbox={"boxstyle": "round,pad=0.25", "fc": actual_box_color, "ec": actual_color, "alpha": 0.92},
             )
         axis.set_title(
             f"{ticker.upper()} prior context through {cutoff_date:%Y-%m-%d}; "
