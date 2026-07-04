@@ -14,10 +14,10 @@ This is a research demo only and is not financial advice.
 
 Use Python 3.13
 ```bash
-python -m venv .venv
+uv venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
-pip install -e .
+uv pip install -r requirements.txt
+uv pip install -e .
 ```
 
 ## Data
@@ -42,3 +42,11 @@ python app/app.py
 `prepare_data.py` caches prices and builds `data/processed/modeling_dataset.csv`.
 `train_models.py` trains all implemented trainable models. The current technical-analysis baseline has no training step.
 `evaluate_models.py` evaluates all implemented models and writes metrics/predictions under `outputs/`.
+
+## App Demo
+
+The Gradio demo uses the saved classical `text_price` model. Select a ticker and event date from the cached historical data, edit or choose a sample investor post, and run the model against the message plus prior price context.
+
+```bash
+python app/app.py
+```
