@@ -24,5 +24,6 @@ models/*
 
 *.log
 
+.agents/
 AGENTS.md
 planner.md

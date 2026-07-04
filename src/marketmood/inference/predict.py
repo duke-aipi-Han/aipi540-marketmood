@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+import os
 from pathlib import Path
 from typing import Any
 
@@ -64,6 +65,17 @@ def _resolve_project_path(config_path: Path, configured_path: str | Path) -> Pat
     return (config_path.parent / path).resolve()
 
 
+def _resolve_runtime_path(config_path: Path, configured_path: str | Path) -> Path:
+    """Resolve a path locally or under the mounted deployment artifact root."""
+    path = Path(configured_path)
+    if path.is_absolute():
+        return path
+    artifact_root = os.getenv("MARKETMOOD_ARTIFACT_ROOT")
+    if artifact_root:
+        return (Path(artifact_root) / path).resolve()
+    return _resolve_project_path(config_path, path)
+
+
 class MarketMoodInferenceService:
     """Build leakage-safe prediction rows from cached prices and user text."""
 
@@ -98,7 +110,7 @@ class MarketMoodInferenceService:
     ) -> "MarketMoodInferenceService":
         """Create the app inference service from project defaults."""
         config = load_config(config_path)
-        model_dir = _resolve_project_path(config.source_path, config.values["paths"]["classical_model_dir"])
+        model_dir = _resolve_runtime_path(config.source_path, config.values["paths"]["classical_model_dir"])
         model_path = model_dir / f"{feature_mode}.joblib"
         if not model_path.exists():
             raise FileNotFoundError(f"Missing model artifact: {model_path}")
@@ -109,7 +121,7 @@ class MarketMoodInferenceService:
         }
 
         deep_models: dict[str, LoadedDeepModel] = {}
-        deep_model_dir = _resolve_project_path(config.source_path, config.values["paths"]["deep_fusion_model_dir"])
+        deep_model_dir = _resolve_runtime_path(config.source_path, config.values["paths"]["deep_fusion_model_dir"])
         device = select_torch_device(str(config.values["project"].get("device_preference", "mps")))
         if deep_model_dir.exists():
             for artifact_dir in sorted(deep_model_dir.iterdir()):
@@ -124,8 +136,8 @@ class MarketMoodInferenceService:
                     device=device,
                 )
 
-        dataset_path = _resolve_project_path(config.source_path, config.values["paths"]["modeling_dataset"])
-        price_cache_dir = _resolve_project_path(config.source_path, config.values["paths"]["price_cache_dir"])
+        dataset_path = _resolve_runtime_path(config.source_path, config.values["paths"]["modeling_dataset"])
+        price_cache_dir = _resolve_runtime_path(config.source_path, config.values["paths"]["price_cache_dir"])
         modeling_dataset = pd.read_csv(dataset_path)
         official_model_name = "deep_text_price" if "deep_text_price" in deep_models else f"classical_{feature_mode}"
 

@@ -1,3 +1,12 @@
+---
+title: AIPI540 MarketMood
+sdk: gradio
+app_file: app/app.py
+python_version: 3.11
+suggested_hardware: cpu-basic
+startup_duration_timeout: 1h
+---
+
 # MarketMood
 
 MarketMood is an educational NLP and machine learning project for detecting short-term abnormal stock moves from StockTwits-style investor posts and recent market price context.
@@ -49,4 +58,40 @@ The Gradio demo uses the saved deep `text_price` model as the official predictio
 
 ```bash
 python app/app.py
+```
+
+## Hugging Face Spaces Deployment
+
+The Gradio app can run locally from repo-relative artifacts or in Hugging Face Spaces from a mounted storage bucket. For Spaces, runtime artifacts are expected under:
+
+```text
+/data/marketmood/models
+/data/marketmood/data/processed
+/data/marketmood/data/prices
+```
+
+The deploy helper syncs the required runtime artifacts to `hf://buckets/hw391/AIPI540-MarketMood-storage`, configures the bucket mount and runtime variables, and uploads the app/source files. Spaces rebuild automatically after source uploads.
+
+Preview the deployment actions:
+
+```bash
+python scripts/deploy_space.py --dry-run
+```
+
+Deploy or redeploy:
+
+```bash
+python scripts/deploy_space.py
+```
+
+For source-only redeploys after UI/code changes:
+
+```bash
+python scripts/deploy_space.py --skip-artifacts --skip-volume --skip-variables
+```
+
+If the Space needs a manual restart and the CLI can resolve it:
+
+```bash
+python scripts/deploy_space.py --skip-artifacts --skip-volume --skip-variables --skip-source --restart --wait
 ```

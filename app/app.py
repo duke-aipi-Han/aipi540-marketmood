@@ -280,7 +280,10 @@ def main() -> None:
     """Start the local Gradio app."""
     config = load_config(PROJECT_ROOT / "config.yaml")
     port = int(config.values.get("app", {}).get("server_port", 8760))
-    build_app().launch(server_name="127.0.0.1", server_port=port)
+    is_space = bool(os.getenv("SPACE_ID"))
+    server_name = "0.0.0.0" if is_space else "127.0.0.1"
+    server_port = int(os.getenv("PORT", 7860 if is_space else port))
+    build_app().launch(server_name=server_name, server_port=server_port)
 
 
 if __name__ == "__main__":
