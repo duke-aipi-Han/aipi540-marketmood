@@ -78,4 +78,5 @@ deep_fusion:
 app:
   title: MarketMood Investor Signal Dashboard
   default_ticker: AAPL
-  model_selector_default: technical_baseline
+  model_selector_default: text_price
+  server_port: 8760
