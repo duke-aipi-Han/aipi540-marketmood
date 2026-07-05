@@ -1,0 +1,66 @@
+{
+  "accuracy": 0.47585513078470826,
+  "macro_f1": 0.41173684695029483,
+  "weighted_f1": 0.4749124765014745,
+  "labels": [
+    "negative",
+    "neutral",
+    "positive"
+  ],
+  "confusion_matrix": [
+    [
+      45,
+      89,
+      64
+    ],
+    [
+      42,
+      323,
+      174
+    ],
+    [
+      38,
+      114,
+      105
+    ]
+  ],
+  "classification_report": {
+    "negative": {
+      "precision": 0.36,
+      "recall": 0.22727272727272727,
+      "f1-score": 0.2786377708978328,
+      "support": 198.0
+    },
+    "neutral": {
+      "precision": 0.6140684410646388,
+      "recall": 0.5992578849721707,
+      "f1-score": 0.6065727699530516,
+      "support": 539.0
+    },
+    "positive": {
+      "precision": 0.30612244897959184,
+      "recall": 0.4085603112840467,
+      "f1-score": 0.35,
+      "support": 257.0
+    },
+    "accuracy": 0.47585513078470826,
+    "macro avg": {
+      "precision": 0.42673029668141016,
+      "recall": 0.4116969745096482,
+      "f1-score": 0.41173684695029483,
+      "support": 994.0
+    },
+    "weighted avg": {
+      "precision": 0.48383939549456284,
+      "recall": 0.47585513078470826,
+      "f1-score": 0.4749124765014745,
+      "support": 994.0
+    }
+  },
+  "model_name": "technical_analysis_baseline",
+  "split": "test",
+  "threshold": 0.75,
+  "upper_range": 0.8,
+  "lower_range": 0.2,
+  "n_rows": 994
+}

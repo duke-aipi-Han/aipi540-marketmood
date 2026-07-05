@@ -1,0 +1,1177 @@
+id,split,ticker,post_date,event_date,original,true_label,predicted_label,prob_negative,prob_neutral,prob_positive
+109001,test,DIS,2020-01-02,2020-01-02,$DIS when is the shorts squeeze is what I wanna know 🚂🚂🚂🚂🚂 💰,negative,positive,0.26156661784699964,0.31112413435229364,0.4273092478007067
+109002,test,AAPL,2020-01-03,2020-01-03,"$AAPL I’m out for now!! I don’t think it’ll dip big, but if it does it’ll be nice🍎💰✨",positive,negative,0.34678580173495493,0.3142336815230993,0.3389805167419457
+109003,test,PYPL,2020-01-07,2020-01-07,$PYPL Back Over $120+ where this belongs 💰,positive,neutral,0.24957754633180104,0.44273298608477646,0.30768946758342247
+100067,test,AAPL,2020-01-08,2020-01-08,$AAPL with all time highs again the market seems to enjoy war very much🤔,positive,positive,0.3571664345959186,0.27850434910443184,0.36432921629964954
+109005,test,BA,2020-01-08,2020-01-08,"$BA Of course there were technical problems behind this crash, just like the other two! How many more planes have to crash before this company gets banned for good? 😠",positive,neutral,0.13976823120251883,0.5029797937403033,0.35725197505717793
+109004,test,TSLA,2020-01-08,2020-01-08,$TSLA I think we ready for that $510 ride Tesla. Yes we are ready. We got our seatbelts on 😂😂🔥🔥 🚀 🚀 🚀 🚀,negative,neutral,0.2318872952183392,0.4617530765197506,0.3063596282619101
+109007,test,DIS,2020-01-09,2020-01-09,$DIS  Can anyone here name me a potential 1B or more movie that they have on their slate  for release this year?!? 🤔,neutral,positive,0.21049654023553502,0.38426546746363927,0.40523799230082574
+109006,test,TSLA,2020-01-09,2020-01-09,$TSLA the market is giving away money rn and bears refuse it. They prefer the path of greatest resistance. 🤷🏽‍♂️,neutral,neutral,0.11580504852034222,0.5691388615420324,0.3150560899376254
+109011,test,AAPL,2020-01-10,2020-01-10,"$AAPL Gene Munster Once a Top Professional Analyst, now a Venture Capitalist. Must be doing something right 😉 👍",positive,negative,0.4350158706674269,0.38673204739752715,0.17825208193504594
+109009,test,AMZN,2020-01-10,2020-01-10,$AMZN I want to buy CALLS for next week but this Iran issued are not over ...🤠🍺😱,neutral,positive,0.2389532383708863,0.3124652157582093,0.44858154587090443
+100115,test,BA,2020-01-10,2020-01-10,"$BA about to explode 🚨
+Keep shorting please",neutral,positive,0.29996883905355987,0.31111300291474353,0.3889181580316965
+109008,test,BABA,2020-01-10,2020-01-10,$BABA Trading at 75 dollars discount at least 💵 💵 💵,positive,negative,0.44321311802144775,0.34759713489674476,0.20918974708180754
+109010,test,BABA,2020-01-10,2020-01-10,$BABA hold your shares ! Next week Chinese delegation in US for treaty signing 🚀💸💸💸💸💸💸💸💸🚀🚀🚀🚀,positive,neutral,0.30461578831981173,0.4302033165588896,0.26518089512129855
+109012,test,TSLA,2020-01-13,2020-01-13,$TSLA when do i buy?? Waaaaaa 😭😭,positive,neutral,0.15965082614552759,0.43715656979375894,0.40319260406071344
+109014,test,AAPL,2020-01-14,2020-01-14,$AAPL who bought the dip today 🙋‍♂️,neutral,positive,0.2926757870916012,0.2948717389467861,0.41245247396161266
+109013,test,TSLA,2020-01-14,2020-01-14,"$TSLA Realistically I think ER COULD go either way.. I’m thinking of a straddle mostly bearish though because revenue could be abit low.. however straddles will print. 
+
+Looking forward to our 570 victory tomorrow! See you at the top bulls!📈🚀👀",negative,negative,0.5691112615657269,0.2954717047168451,0.13541703371742805
+109015,test,AAPL,2020-01-15,2020-01-15,$AAPL someone’s either selling the pops and unloading a huge position last couple days or a whale short is hammering the price action 🤔,positive,neutral,0.2461692461926525,0.48840945406199543,0.265421299745352
+109016,test,AAPL,2020-01-15,2020-01-15,$AAPL Liu clearly stated a lot of IFS in his speech. China will buy 50 billion in ag IF China will buy this and that only IF 😆😄🤣,positive,positive,0.16266920595565393,0.39649456618821105,0.4408362278561351
+100175,test,SBUX,2020-01-15,2020-01-15,"$SBUX TPO alot of volume at 91.74, thats after a strong run up...🤔",positive,positive,0.11952929277968656,0.3444634589200812,0.5360072483002323
+109017,test,MSFT,2020-01-16,2020-01-16,$MSFT  load up and hold give it 2 months 180$ is your target 🎯,neutral,neutral,0.25435523868151333,0.38245313916686796,0.36319162215161876
+109018,test,TSLA,2020-01-16,2020-01-16,$TSLA you may have a gambling problem if you’re buying here. 🤷‍♂️ do as you wish,neutral,neutral,0.29775204995339877,0.3559949981526323,0.3462529518939689
+109019,test,TSLA,2020-01-16,2020-01-16,"$TSLA who called the top here ? When everybody thought was crazy. Me moFos, me ! 🧙‍♂️",neutral,negative,0.5040239242319966,0.2354782412175752,0.2604978345504281
+109022,test,BA,2020-01-17,2020-01-17,"$BA alright, here comes the real grand finale! 🔪 #ThereWillBeBlood",negative,neutral,0.280741963840779,0.4411000487566909,0.27815798740253006
+109020,test,TSLA,2020-01-17,2020-01-17,$TSLA anyone believes it’ll hit 496$ today ??🤚🏼,positive,positive,0.18270052499680478,0.3316804393946047,0.4856190356085905
+109021,test,TSLA,2020-01-17,2020-01-17,$TSLA get ready to make an appointment to get in line for your appointment to fix issues Tesla owners 😳,positive,negative,0.43088614039343454,0.27177359069574886,0.29734026891081655
+100234,test,TSLA,2020-01-18,2020-01-21,$TSLA down 6$ afterhours right now 🤔,positive,neutral,0.2816019485141602,0.42814817175457626,0.29024987973126354
+100268,test,BA,2020-01-22,2020-01-22,$BA can someone tell me why they haven’t downgraded this garbage 🗑 yet $265,positive,neutral,0.12483002161605235,0.48229675696532515,0.39287322141862235
+109027,test,MSFT,2020-01-22,2020-01-22,$MSFT Was about to jump in earlier at 166.66 for a quick day trade but was occupied by a meeting at work.  (first time I’m thankful for a meeting being in the way of my day trading) 👍🏽,neutral,negative,0.4805484176564068,0.1474973683840941,0.3719542139594991
+109024,test,NFLX,2020-01-22,2020-01-22,$NFLX good morning 🌞 everyone. Happy trading,positive,negative,0.5462200155053947,0.28164477276208855,0.17213521173251684
+109023,test,TSLA,2020-01-22,2020-01-22,$TSLA tweet from Ross Gerber. Cool 😎 one🍷🍀🚀🤗,neutral,neutral,0.18180434798567957,0.48750826953814425,0.3306873824761761
+109025,test,TSLA,2020-01-22,2020-01-22,"$TSLA Yup, she’s flying straight up... no more warnings of production hell, no more pedo guy distractions, no more blunts...  obvious short...  🤪",neutral,neutral,0.29882583842514765,0.449359714990597,0.25181444658425545
+109026,test,TSLA,2020-01-22,2020-01-22,$TSLA thank you shorts for every single penny 🙏♥️💋,neutral,neutral,0.2373803145089553,0.5391688278370116,0.22345085765403305
+109028,test,BABA,2020-01-23,2020-01-23,$BABA maybe this week down next week up? 🤔,negative,positive,0.2570046321302474,0.36258907859627465,0.38040628927347797
+109029,test,TSLA,2020-01-23,2020-01-23,$TSLA After ER then battery date in Mar/Apr will send this to 700💪❤️,neutral,neutral,0.26278821099106076,0.42513938889210007,0.3120724001168391
+109030,test,TSLA,2020-01-24,2020-01-24,$TSLA looks like a good day 😏,neutral,neutral,0.3207014313934637,0.5266075688761629,0.15269099973037348
+100317,test,AAPL,2020-01-27,2020-01-27,$AAPL 🤡👉 we are in a 👉GLOBAL RECESSION👈,positive,neutral,0.3272883499497078,0.43343267252482187,0.23927897752547025
+109031,test,AAPL,2020-01-27,2020-01-27,$AAPL wonder where my march 20 puts will be trading tomorrow🎁,positive,neutral,0.21286148969813545,0.4312114480579219,0.3559270622439427
+100321,test,FB,2020-01-27,2020-01-27,$FB fb 🚑 may be in trouble get out while you can 📸,positive,neutral,0.15313489052151827,0.6415055091007249,0.20535960037775675
+109033,test,AAPL,2020-01-28,2020-01-28,$AAPL I’m so happy I stuck with my calls 😁 huge beat!!,positive,negative,0.3917141069339204,0.3431784169398614,0.2651074761262182
+109034,test,AAPL,2020-01-28,2020-01-28,$AAPL don’t trade apple own apple. U will win long term. ✌🏽,positive,neutral,0.265936758055571,0.5463591112061145,0.1877041307383146
+109035,test,BA,2020-01-28,2020-01-28,$BA I appreciated the cheap puts td for earnings 🙏🏻,positive,negative,0.5378495364622292,0.1548350540343628,0.3073154095034079
+109032,test,SBUX,2020-01-28,2020-01-28,$SBUX Full year guidance unchanged but China will materially impact earnings next quarter and for the year 🤔,negative,positive,0.13718588911220514,0.39414188092098057,0.46867222996681424
+109036,test,AAPL,2020-01-29,2020-01-29,$AAPL only question is do we dip and rip or gap up and fade 🤔,neutral,neutral,0.24734369100279954,0.5294524805139975,0.22320382848320286
+109039,test,AAPL,2020-01-29,2020-01-29,$AAPL awaiting patiently for new hod at $327.26 😂,neutral,neutral,0.36720596315111925,0.4020608002369317,0.23073323661194903
+109037,test,BA,2020-01-29,2020-01-29,"$BA looks like lots of upgrade after worst ER, PT might increase to $5000 and BA will rise 50% today.
+😂😂😂😂😂",neutral,neutral,0.23776814668219415,0.48469248649522145,0.27753936682258445
+109038,test,BA,2020-01-29,2020-01-29,$BA next few days I expect a drop... but who tf knows these days 😂,neutral,positive,0.3350770820184435,0.289635920428925,0.37528699755263156
+109042,test,FB,2020-01-29,2020-01-29,$FB more expenses for more profit later on 💰💰💰,negative,positive,0.3292701269290298,0.2143198329682796,0.4564100401026907
+109040,test,TSLA,2020-01-29,2020-01-29,$TSLA not even excited....dont know why🥱 Bring me ER results,positive,negative,0.4117390520511623,0.2884320078754201,0.2998289400734176
+109041,test,TSLA,2020-01-29,2020-01-29,$TSLA Imagine Elon says something magical? 🥺🥺🥺🥺,positive,negative,0.617787360588377,0.1720481466602563,0.21016449275136678
+100412,test,AMZN,2020-01-30,2020-01-30,$AMZN $2500 To Da Moon SOON! WOW! 🤙💥🚀🚀🚀,positive,neutral,0.1891392195420971,0.40621858615857237,0.40464219429933057
+109049,test,AMZN,2020-01-30,2020-01-30,$AMZN  sold all my shares at 2052. Maybe too early but I wanted to lock profit 😈,positive,negative,0.44328367934032314,0.31031696580156726,0.2463993548581096
+109050,test,AMZN,2020-01-30,2020-01-30,$AMZN Our members celebrating from our 2/21 $2000C alert 🥳🥳,positive,negative,0.43425340989788974,0.24919373422721275,0.31655285587489757
+109043,test,MSFT,2020-01-30,2020-01-30,$MSFT Best day in at least 2 years for Microsoft🍾🎈🎊!,negative,negative,0.5964163773197206,0.18765642327528884,0.21592719940499053
+109044,test,TSLA,2020-01-30,2020-01-30,"$TSLA  Bears, honestly, does this stock price make me look fat???  😂",neutral,positive,0.1417725798746506,0.3565395293419398,0.5016878907834096
+109045,test,TSLA,2020-01-30,2020-01-30,$TSLA Chupan mis huevos osos inútiles ahaha🤠,neutral,neutral,0.3043315100790498,0.4298946924008391,0.26577379752011104
+109047,test,TSLA,2020-01-30,2020-01-30,$TSLA we blowing up boys! Let’s get this BAG 💰💰,neutral,negative,0.4031402414232412,0.30183060100892417,0.29502915756783477
+109046,test,V,2020-01-30,2020-01-30,$V Quick! Too much good news! Mention the corona virus! 🤢🐻,negative,negative,0.4541472013075901,0.221588469101236,0.3242643295911738
+109052,test,AAPL,2020-01-31,2020-01-31,$AAPL Good morning Bulls. How ya feeling this morning knowing y’all got trapped?!?!? 😂🐻,neutral,neutral,0.21039889822882668,0.49442096792184437,0.29518013384932895
+109057,test,AAPL,2020-01-31,2020-01-31,$AAPL absolutely beautiful sell day. Bull tears are sweet ❤️,neutral,positive,0.22389094979433388,0.3844180942363742,0.39169095596929193
+109053,test,AMZN,2020-01-31,2020-01-31,$AMZN many analysts raised the target price to at least $2400!!!🚀🚀✈️✈️,neutral,positive,0.2739937243587977,0.2521818630846681,0.4738244125565341
+109055,test,MCD,2020-01-31,2020-01-31,$MCD Are they not going to update the market on their China store closure situation? 🤐🤐🤐😷😷😷 #mcdonalds #coronavirus,neutral,neutral,0.27827170922044836,0.37686836387527367,0.344859926904278
+109054,test,MSFT,2020-01-31,2020-01-31,$MSFT this drops less than 2% about 2.5$ and literally ALL of the option calls are keeping their price ranges. What does that tell you.? 😏😏👆🏼👆🏼👆🏼,positive,positive,0.27248362142597693,0.3567058131074027,0.37081056546662033
+109051,test,TSLA,2020-01-31,2020-01-31,"$TSLA hi bears, how many of u got margin call? Don't lie and don't be shy 😂",positive,neutral,0.18863653852026632,0.5304755395599524,0.28088792191978124
+109056,test,TSLA,2020-01-31,2020-01-31,$TSLA must be that song from Elon🙄,positive,positive,0.1764850250970805,0.3108462082536918,0.5126687666492277
+109058,test,AAPL,2020-02-01,2020-02-03,$AAPL  guys btfd on monday!!! So i can load up puts 🤣🤣🤣🤣🤣,positive,positive,0.18539627746789308,0.3566345511389198,0.45796917139318705
+109059,test,AMZN,2020-02-01,2020-02-03,$AMZN currently in the green with calls but im holding cause I got too much time left 🤷🏽‍♂️🤩 This week should be interesting 🧐,positive,positive,0.26580024554464676,0.312570894849046,0.4216288596063073
+109061,test,DIS,2020-02-04,2020-02-04,$DIS she’s been on track for a few days now! This is exciting af to be frank 🤑,negative,negative,0.43433821093878705,0.23072566017657256,0.3349361288846405
+109060,test,TSLA,2020-02-04,2020-02-04,"$TSLA 😂😂😂 premarket 812$ lmfaooooo why couldn’t you hold, yea buy puts why not Ill buy puts once it reaches 1000+",negative,positive,0.3181520290997651,0.3300611750362184,0.3517867958640166
+109068,test,DIS,2020-02-05,2020-02-05,$DIS - remember last ER? this didn’t run but a day after... so hold and/or buy the dips. 💆🏻‍♂️,neutral,neutral,0.30356071543288604,0.4195850612580651,0.2768542233090489
+109062,test,TSLA,2020-02-05,2020-02-05,$TSLA behaving like a slow-rising penny stock with the exception that all options are printing like the U.S. Mint 🍬 🖨️💸💸💸💸🍗,neutral,negative,0.4394262065010443,0.20822619539628576,0.3523475981026699
+109063,test,TSLA,2020-02-05,2020-02-05,"$TSLA 🤣low volumes it is already recovering, was also a red day on Monday in Frankfurt hahaha",neutral,negative,0.4524098715039805,0.2473491157361234,0.30024101275989623
+109064,test,TSLA,2020-02-05,2020-02-05,$TSLA Shorts get a reaming again today. 😂🖕🏼,neutral,positive,0.24882148443614505,0.3500778361842897,0.40110067937956523
+109065,test,TSLA,2020-02-05,2020-02-05,$TSLA Elon + arc investment looking at shorts futile efforts 😂,neutral,negative,0.4510395179402784,0.14029599072725485,0.40866449133246685
+109066,test,TSLA,2020-02-05,2020-02-05,$TSLA shorts are not having much luck 🤣😂,neutral,positive,0.2779685922985312,0.24685654369481563,0.4751748640066532
+109067,test,TSLA,2020-02-05,2020-02-05,$TSLA if you can't handle the fire 🔥🔥🔥 get out of the kitchen! Buying opportunity coming,neutral,neutral,0.12724782823123934,0.6299465191058646,0.24280565266289592
+109069,test,TSLA,2020-02-05,2020-02-05,$TSLA imagine being the bull over 780 looking at it now and still not selling after tomorrow opens down another $130 ...😷,neutral,negative,0.6152707249486336,0.17479426029008152,0.2099350147612849
+109070,test,TSLA,2020-02-05,2020-02-05,$TSLA all the way down to 145👻👻👻,neutral,neutral,0.2664504106495015,0.43209926828465395,0.3014503210658446
+109071,test,TSLA,2020-02-05,2020-02-05,"$TSLA another gap down tomorrow $600 , let it drop 😁👎",neutral,neutral,0.3446664222529321,0.37126551629367466,0.2840680614533931
+109072,test,TSLA,2020-02-05,2020-02-05,Limit order kicked in and I shorted another small odd lot of $TSLA stock. Nice to have some cash again — we'll see how long *that* lasts. ☺,neutral,neutral,0.3056302865891787,0.42478082067918105,0.2695888927316402
+109077,test,BA,2020-02-06,2020-02-06,$BA BEST stock of the year so far! 🚀🚀🚀,negative,positive,0.21536875593204,0.3397046361947929,0.44492660787316696
+109074,test,TSLA,2020-02-06,2020-02-06,$TSLA would love to see another 20% down day🤯,neutral,neutral,0.3536551931836865,0.37553746839092395,0.27080733842538957
+109075,test,TSLA,2020-02-06,2020-02-06,$TSLA  Even when factory reopens who will be buying Lyxury EV with 40K in the middle of health crisis. 🙂,neutral,negative,0.5653311807637358,0.2147668099949551,0.21990200924130907
+109076,test,TSLA,2020-02-06,2020-02-06,$TSLA pump and dump - the electro version 😜 huge sell off coming....,neutral,neutral,0.24108053008492197,0.40054215672348803,0.35837731319159005
+109078,test,TSLA,2020-02-06,2020-02-06,$TSLA get that money out before it’s too late 🤕,neutral,positive,0.34624808401526486,0.2007735255272572,0.45297839045747795
+109079,test,TSLA,2020-02-07,2020-02-07,$TSLA I’m thinking high $500s- low $600s and then back to the moon 🌝 again 💎💰💰💰,neutral,neutral,0.1384039011773518,0.622244464768827,0.23935163405382104
+109080,test,TSLA,2020-02-07,2020-02-07,"$TSLA wake up monday , another huge drop when they hear shanghai factory closed for another month , why risk doubling down on infection . 740 for a single factory lol . Thats what people were paying at 200 -300 for in q 3 🤡☠️🤷‍♂️👎😂",neutral,positive,0.1958087397535465,0.23762810196135872,0.5665631582850947
+109081,test,AAPL,2020-02-08,2020-02-10,$AAPL Getting closer and closer to where the Gap Down will continue to Gap Down on top of that Gap Down!! 🐻🍎,neutral,neutral,0.34575617194469666,0.38677036170540713,0.26747346634989616
+109082,test,AAPL,2020-02-10,2020-02-10,$AAPL to the 🌙 we ganna steal some bear money,neutral,negative,0.43593103699323743,0.32761211711081833,0.23645684589594423
+109083,test,AAPL,2020-02-10,2020-02-10,$AAPL Bears think every company will crash and burn. 😂😂😂,neutral,neutral,0.3242757956985718,0.5048767856467591,0.17084741865466901
+109084,test,MSFT,2020-02-10,2020-02-10,$MSFT I finally doubled down two weeks ago when I realized having this stock no longer feels like watching paint dry!😂😂😂😂😂,negative,negative,0.5637559506035884,0.16206409498283902,0.2741799544135726
+109086,test,AMZN,2020-02-11,2020-02-11,$AMZN hope y’all bought the dip😎,neutral,positive,0.29862314480585206,0.28635162972378214,0.41502522547036574
+109085,test,TSLA,2020-02-11,2020-02-11,$TSLA nothing like the smell of Musk in the morning. 😎👍,neutral,negative,0.6521430809702805,0.14482502462590296,0.2030318944038166
+109087,test,DIS,2020-02-12,2020-02-12,$DIS a green to red move here is bad news. Also expected 📉,neutral,negative,0.41689773307974487,0.39381728630785057,0.18928498061240454
+109088,test,TSLA,2020-02-12,2020-02-12,"$TSLA  breaking 750 is the gate to 650 by Friday. Let’s go short term bears 💪. 
+Don’t really care long term what happens.",neutral,positive,0.22045977282780108,0.37037189604385184,0.4091683311283471
+100725,test,TSLA,2020-02-13,2020-02-13,"$TSLA  Asia stocks going down, down, down. 🩸 🩸 🩸 🛀",neutral,neutral,0.2495119707543336,0.42589368570544567,0.32459434354022065
+100744,test,TSLA,2020-02-13,2020-02-13,$TSLA propped for offering to get in place and set 🤔  going to check into some puts from here this shouldnt be green  👀,neutral,neutral,0.30452250802965386,0.4070756433284271,0.288401848641919
+109089,test,TSLA,2020-02-13,2020-02-13,$TSLA purchased 3 tsla puts $720 FEB. 28th today around $770 🍾💵💰💵💰💵💰💵🍻🍻🍻🥃🥃🥃,neutral,neutral,0.23420320527552785,0.43293087929665947,0.33286591542781274
+109090,test,TSLA,2020-02-13,2020-02-13,$TSLA New recall for Crapshoot X. Steering wheel malfunctioning. Death 💀 Trap.,neutral,neutral,0.3165560886245066,0.34753368767802756,0.33591022369746587
+109091,test,TSLA,2020-02-13,2020-02-13,"$TSLA you will never walk alone - TSLA, stocktweets...no wait, that’s liverpool isnt it? We all live in a TSLA submarine 🤣🤣👎",neutral,neutral,0.32814545775125825,0.42501547550760005,0.24683906674114167
+109092,test,TSLA,2020-02-13,2020-02-13,$TSLA what else do you expect from a company heavy debt with barely any profits 🤷🏻‍♂️,neutral,neutral,0.1667264748481812,0.5470021254422934,0.2862713997095253
+109094,test,TSLA,2020-02-13,2020-02-13,"$TSLA please push it back down 775 ,👏😁",neutral,positive,0.331838788393445,0.2935597222481973,0.37460148935835763
+109095,test,TSLA,2020-02-13,2020-02-13,$TSLA Get ready for... Short Squeeeeze. 🙂,neutral,positive,0.12239267801256463,0.37910889750601867,0.49849842448141674
+109096,test,CCL,2020-02-14,2020-02-14,$CCL just waiting for some real bad news that will make this drop 5-10% so I can cash in 🤓,neutral,neutral,0.3540270066270812,0.40984703478467505,0.2361259585882438
+109097,test,AAPL,2020-02-17,2020-02-18,$AAPL I'm a full-blown Bull👍. But anyone who thinks this will not affect APPL is crazy.,positive,neutral,0.32271790407301565,0.3573094603750658,0.3199726355519186
+109099,test,BABA,2020-02-18,2020-02-18,$BABA still holding my 2/21 calls from pre er😩,neutral,positive,0.16157838785635506,0.24708600772020417,0.5913356044234407
+109098,test,TSLA,2020-02-18,2020-02-18,"$TSLA only think that can stop our momentum, is a credit aissie downgrade that usually comes out of nowhere, if not 900+ tomorrow🤗🤗🤗🤗🤗",positive,neutral,0.27573459582064014,0.42075759206703095,0.30350781211232886
+109102,test,BABA,2020-02-19,2020-02-19,"$BABA lmao, that doji. Upward we go! 🚀🚀🚀",negative,negative,0.40852025758488775,0.23917985883976717,0.3522998835753451
+109101,test,MSFT,2020-02-19,2020-02-19,$MSFT just relax.. its exdiv day. Itll be green soon dont know when 😃 so just chill,negative,negative,0.48829724625499493,0.2870311962030075,0.22467155754199764
+109100,test,TSLA,2020-02-19,2020-02-19,$TSLA Buy and hold. Simple logic. 🤪,neutral,neutral,0.1957380000438455,0.5373976184664302,0.26686438148972436
+109105,test,AAPL,2020-02-20,2020-02-20,$AAPL tomorrow down another 2% easy !! All the bulls have left is ihope lol 🤣😂🤣🤣😅🤣🤣,negative,positive,0.26019418112364395,0.2954282217725405,0.44437759710381547
+109104,test,DIS,2020-02-20,2020-02-20,$DIS I can wait it out for 130.00 it’s coming. Keep those parks closed 😷😷🤧🤧,neutral,negative,0.49369924218280536,0.2257645083152561,0.28053624950193856
+109103,test,XOM,2020-02-20,2020-02-20,"$XOM Added at $59.93 Wearing a trail here!
+Bullish long term from these price levels! 😁",neutral,negative,0.4335172883339126,0.36250626129929875,0.20397645036678863
+100861,test,MSFT,2020-02-21,2020-02-21,$MSFT just like a penny stock 🙈,negative,positive,0.25163464553130954,0.30109568840576334,0.44726966606292723
+109106,test,TSLA,2020-02-21,2020-02-21,"$TSLA knocking down inflated price, pictured tool is called “tesla” in Romanian language 😄",negative,positive,0.2912998363122726,0.27453628484338677,0.4341638788443407
+109108,test,TSLA,2020-02-22,2020-02-24,"$TSLA Again, $930 MONDAY, FOMO all the way over $1000+🙏🏾 ✈️ 🚀 🌕 💵",neutral,negative,0.4464341388757973,0.24430250567636747,0.30926335544783534
+109109,test,TSLA,2020-02-22,2020-02-24,"$TSLA Remember my children. Tesla is ALREADY more than just cars 🚗. They do solar panels, battery storage and their self driving A.I. steers them towards a tech company. All you 🐻 say 10 Hail Marys and buy the dip. You are forgiven my son 🙏",neutral,neutral,0.35052617190693086,0.48947841607069537,0.15999541202237372
+109110,test,TSLA,2020-02-24,2020-02-24,$TSLA after days and days of pain we are back with a little kick 👍🏻 more to come this week 💪🏻,neutral,neutral,0.33147570903610035,0.40392447789399244,0.26459981306990726
+109116,test,AAPL,2020-02-25,2020-02-25,"$AAPL tide has turned, bulls morphed into bears 🐻.. hence begetting mores bears BTFD season is ova.. for now",neutral,positive,0.1644581737831293,0.3868017144474955,0.4487401117693752
+109111,test,TSLA,2020-02-25,2020-02-25,$TSLA my reaction when bulls thought they were going to see gains today 😂💀,neutral,positive,0.11974053346139027,0.432184481013246,0.44807498552536357
+109112,test,TSLA,2020-02-25,2020-02-25,$TSLA Last Fri. I stated that this would gap down leaving the last 3 candles as an Island reversal gap....and there you go........🎯👨‍🎓,neutral,neutral,0.3475053216097233,0.44806552103984243,0.20442915735043438
+109113,test,TSLA,2020-02-25,2020-02-25,$TSLA Bulls cheering that this only went down 7% when the s and p dropped 3.5%. What happens when the s and p drops 40%? 😂😂,neutral,positive,0.15968684847137035,0.3866652405387306,0.453647910989899
+109114,test,TSLA,2020-02-25,2020-02-25,$TSLA how many times it has been trying to hit the ceiling  and failed and suddenly gave up 😆,neutral,negative,0.4472685855987906,0.2257412216253227,0.3269901927758868
+109115,test,TSLA,2020-02-25,2020-02-25,"$TSLA This is not the dip you want . Wait till it misses and tanks $150. 
+Surprise surprise sick people aren't ordering Tesla's whilst they are in quarantine. WoW who would of thought .🤷‍♂️🤦‍♂️🤷‍♀️🙉🙈🙉",neutral,negative,0.3480354264252691,0.3086471446365503,0.34331742893818074
+100951,test,AAPL,2020-02-26,2020-02-26,$AAPL - do you see what I see? 🤔,negative,neutral,0.19887318870389037,0.47626139348724006,0.32486541780886946
+100934,test,MSFT,2020-02-26,2020-02-26,"$MSFT guess it doesn’t matter if I think this is just another flu, but the world thinks it’s the devil virus. 🤦🏻‍♂️  guess I’m out till this settles....I’m gonna regret this by morning",negative,positive,0.35150426772535076,0.23551500657457433,0.4129807257000749
+109118,test,MSFT,2020-02-26,2020-02-26,$MSFT it’s going back down again today ..... remember nothing goes straight up or straighten down ..... Sell and stop u losses while u can ⚠️,negative,neutral,0.31918749851154604,0.4086266630038739,0.27218583848458017
+109117,test,TSLA,2020-02-26,2020-02-26,$TSLA Covered at $770.00 looking for re-entry. Perhaps $780.00? 🎯✌👨‍🎓😊,negative,neutral,0.20808167764470653,0.5204066395964315,0.27151168275886195
+109119,test,TSLA,2020-02-26,2020-02-26,$TSLA puts here for friday advance 😂 friday sell of mania,negative,neutral,0.20025515864907814,0.4962213890012416,0.30352345234968026
+109120,test,TSLA,2020-02-26,2020-02-26,$TSLA Going to load my boat in the 600s.  Come to daddy 😁,negative,neutral,0.24345214858326167,0.39845511317308224,0.35809273824365606
+109129,test,BAC,2020-02-27,2020-02-27,$BAC this stock has been killing me 💀,negative,negative,0.46274394274594255,0.20034357864201674,0.33691247861204054
+109130,test,MSFT,2020-02-27,2020-02-27,$MSFT wake me up when it’s over...lonnnng and strong 💪🏻,positive,neutral,0.3220432143346591,0.45980776063551704,0.2181490250298238
+109121,test,TSLA,2020-02-27,2020-02-27,"$TSLA sold 20,000 more cars then expected, an increase of 10 million dollars, yet market cap went up 100 billion lmfao!! Ok 👍🤣 sell this overhyped trash",neutral,positive,0.18411416930767158,0.38105120091171013,0.43483462978061815
+109122,test,TSLA,2020-02-27,2020-02-27,$TSLA bullies where are youuuuuu? Lol 😂 I don’t see any around,neutral,neutral,0.08692596324720914,0.5408477368288208,0.37222629992397016
+109123,test,TSLA,2020-02-27,2020-02-27,$TSLA but but but JPM raised PT to $1200 😂 I think it is gonna hit the ground before going to the moon 😆😆,neutral,positive,0.2908662580657318,0.3132706559099667,0.39586308602430154
+109124,test,TSLA,2020-02-27,2020-02-27,$TSLA this and dpz. My favorite 😍 right now,neutral,positive,0.2309338503333947,0.37522628983107176,0.3938398598355335
+109126,test,TSLA,2020-02-27,2020-02-27,$TSLA 2 lotto Mar 13 715 puts I bought yesterday are up bigly 👍,neutral,neutral,0.3941133421812601,0.43287775191362726,0.17300890590511275
+109127,test,TSLA,2020-02-27,2020-02-27,$TSLA she feisty chill baby chill I got more puts to catch you 😘😘,neutral,neutral,0.3024909690724256,0.4399058033643275,0.25760322756324694
+109128,test,TSLA,2020-02-27,2020-02-27,$TSLA bulls think that investors will keep buying this falling stock 😳 sad really,neutral,neutral,0.2772358374525188,0.36816469054149553,0.3545994720059857
+109131,test,TSLA,2020-02-27,2020-02-27,"$TSLA 📣 ALL ABOARD 🔔
+$1000 tomorrow just to squeeze the bears out 😈🥳 🚀🚀🚀",neutral,neutral,0.2773057811471609,0.4109317299160307,0.3117624889368084
+109134,test,DIS,2020-02-28,2020-02-28,$DIS these price level can Appl come in and scoop up DIS🙏🏼,positive,neutral,0.34426627498221896,0.392400004801854,0.263333720215927
+109133,test,JNJ,2020-02-28,2020-02-28,$JNJ you should invest in companies who sell hygiene products now... like disinfectant and stuff like that. 😂,positive,neutral,0.38622693043095296,0.39809069974733796,0.21568236982170907
+101012,test,NVDA,2020-02-28,2020-02-28,$NVDA warning ⚠️ you again. We could see Dow $20000 or lower,neutral,neutral,0.22944559118720118,0.6234443309029082,0.14711007790989056
+109136,test,NVDA,2020-02-28,2020-02-28,$NVDA  all these fking clowns buying lol 🤡 🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡 this is 200,neutral,neutral,0.33398819641199523,0.40046454726689534,0.2655472563211094
+109132,test,TSLA,2020-02-28,2020-02-28,$TSLA Volvo got electric trucks coming out this year 😳😳😳,positive,positive,0.1955290086602018,0.3602920749194912,0.444178916420307
+109135,test,TSLA,2020-02-28,2020-02-28,"$TSLA Fridayy EOM: bull run on open ➡️ trades closing for the month! Puts ready on highs, calls ready down below",positive,positive,0.16731642584637052,0.3095426276762103,0.5231409464774192
+109137,test,TSLA,2020-02-28,2020-02-28,$TSLA shorts profit taking on Friday before next leg down and see how all bull roaches came out to celebrate $1000 run again 😂😂😂,positive,neutral,0.17688167570364888,0.44100240263744295,0.3821159216589082
+109140,test,AAPL,2020-03-02,2020-03-02,$AAPL 🎶this is how we do it🎶🧗🏻‍♀️🤑🍏,negative,positive,0.2886179784914146,0.33557717999047293,0.37580484151811244
+109141,test,AAPL,2020-03-02,2020-03-02,$AAPL Woooooohooo! Sexy swing from 263.. easy to makey money in this market.. 😃😉,negative,positive,0.2989609469305886,0.3280553637239395,0.37298368934547177
+109142,test,AAPL,2020-03-02,2020-03-02,$AAPL Bought a call expiring march 6 making 100% on my money but cannot sell because of Robinhood so it has been a great day so far 🙄,negative,positive,0.28656728326464265,0.2197880562064182,0.49364466052893924
+109145,test,AAPL,2020-03-02,2020-03-02,So... $AAPL calls... whose rich today with us? 😊,negative,positive,0.3221375629630644,0.2586098026059877,0.419252634430948
+109138,test,MCD,2020-02-29,2020-03-02,$MCD what happened to all the 220 a share peoples lol 😂,negative,neutral,0.2696273466384801,0.4335131373235642,0.2968595160379557
+109139,test,MSFT,2020-02-29,2020-03-02,$MSFT this is awesome. Literally no one will be talking about the corona virus in a month and the market will be back and I’ll of made so much money from buying low 💰 💴,negative,negative,0.49721764923779693,0.17361538034755417,0.3291669704146488
+101102,test,TSLA,2020-03-02,2020-03-02,$TSLA WOW we are going back to 2000 SP ..let's Go MF 🚀🚀🚀🚀🚘🚘🚘🚘🚘🚘🚘,neutral,negative,0.4240335816491249,0.3453479721145526,0.23061844623632252
+109143,test,TSLA,2020-03-02,2020-03-02,"$TSLA i swear if you dont break 800, my robinhood account will be distroyed... my calls will be destroyed... 😔",neutral,neutral,0.28910673142825505,0.3659390612968207,0.34495420727492426
+109144,test,TSLA,2020-03-02,2020-03-02,"$TSLA 💰💰💰🤑🤑🤑🎯
+
+May see $800s at this rate tomorrow",neutral,positive,0.31626201929368947,0.3052535271148388,0.3784844535914718
+101156,test,AAPL,2020-03-03,2020-03-03,$AAPL also added some 300-310 calls for this week on small account 💎🤫,positive,positive,0.2973616066745301,0.14661461871122347,0.5560237746142465
+109147,test,AAPL,2020-03-03,2020-03-03,"$AAPL 
+
+Great swing from yesterday 
+Mar6 $305 calls
+
+💰💰💰",positive,positive,0.27591126565687263,0.28512402250361324,0.43896471183951413
+101159,test,GOOG,2020-03-03,2020-03-03,"$GOOG Corona virus isn't a joke, save your money before you lose it all, 🔻🚫",positive,negative,0.4895967955415228,0.13219657784976957,0.3782066266087075
+109148,test,TSLA,2020-03-03,2020-03-03,$TSLA I need to stop trading this ticker.... cannot take the excitement 🤣😅,neutral,positive,0.20556912556485205,0.39562389198690834,0.39880698244823953
+109149,test,TSLA,2020-03-03,2020-03-03,$TSLA going to be a good day📈📈📈📈🚨🚨🚨,neutral,positive,0.35560438857825577,0.24142360463386942,0.40297200678787476
+109150,test,TSLA,2020-03-03,2020-03-03,"$TSLA ok all, have to scrounge for a ticker elsewhere today! Remember when it gets like this: little dip then RIP! Lol 👇",neutral,positive,0.30772452115668886,0.30244621915726955,0.38982925968604165
+109151,test,TSLA,2020-03-03,2020-03-03,"$TSLA Market dropping just a smidge, we still got $300 more to go 😂",neutral,negative,0.40255243303184585,0.27102857146192405,0.32641899550623016
+109152,test,TSLA,2020-03-03,2020-03-03,$TSLA was that a Short attack on weak hands? 👀,neutral,neutral,0.34033725962290684,0.374115332506109,0.28554740787098404
+109153,test,TSLA,2020-03-03,2020-03-03,$TSLA Tesla red world is ending 😷,neutral,neutral,0.21468481365116104,0.5180245891399969,0.2672905972088421
+109156,test,BA,2020-03-04,2020-03-04,$BA Red in one biggest market rally in history !!😏😏,negative,neutral,0.20659207012358383,0.5287468843138051,0.264661045562611
+109155,test,TSLA,2020-03-04,2020-03-04,$TSLA all these auto makers promise a lot of good things but fail miserably 🤣🤣,neutral,neutral,0.20580090516707514,0.4714537973357821,0.3227452974971428
+109154,test,UNH,2020-03-04,2020-03-04,$UNH they pumped this in November last year when they thought Elizabeth Warren has the upper hand 😂😂. Buying more shorts,neutral,negative,0.4298406212145406,0.2614857338935051,0.3086736448919543
+109160,test,BA,2020-03-05,2020-03-05,"$BA trapped in fake pump, FAA thinks not confirmed.🔻🔻🔻🔻",neutral,positive,0.22916287045170372,0.330170892310878,0.44066623723741843
+109157,test,TSLA,2020-03-05,2020-03-05,$TSLA Bulls!!!. You're worrying the Bears constantly and making them go defensive heavily with their posts. Be nice to them.😂,neutral,neutral,0.2298722665549182,0.4945640475760171,0.27556368586906477
+109158,test,TSLA,2020-03-05,2020-03-05,$TSLA EOD would be over 740!📈📈🚀✅,neutral,neutral,0.22520773665299484,0.4736179239451927,0.30117433940181243
+101273,test,AMZN,2020-03-06,2020-03-06,"$AMZN Corona virus will hit the revenue so bad,
+Just sell before you lose all your money 🔻🚫",negative,negative,0.49287269176857995,0.11247021212958014,0.39465709610183974
+109164,test,BABA,2020-03-06,2020-03-06,"$BABA if you bought yesterday, you are XXX. if you bought today, you are XXXer!!! Judging from the charts, we are likely to see bigger declines next week and possibly 7 days of bear run. 🐮 = 🍔",negative,neutral,0.19117650961909455,0.497243923160391,0.31157956722051444
+109161,test,DIS,2020-03-06,2020-03-06,$DIS hope it doesn’t drop down too much tomorrow so I can load up on outs easy money🙏🏼,negative,positive,0.18544936011380622,0.194674459441358,0.6198761804448357
+109166,test,DIS,2020-03-06,2020-03-06,$DIS federal travel ban after hours???🤔🤔🤔,negative,negative,0.489907585207448,0.21329592346741352,0.2967964913251385
+109167,test,DIS,2020-03-06,2020-03-06,$DIS Wendy Wu is truly a homecoming warrior 🤷🏻‍♂️,negative,negative,0.5627467381023838,0.14530698718420768,0.2919462747134084
+109168,test,DIS,2020-03-06,2020-03-06,"$DIS Weekly,  next week on high alert, cheap under 120 🚨",negative,negative,0.45806195693771484,0.2196335849516672,0.32230445811061803
+109162,test,TSLA,2020-03-06,2020-03-06,$TSLA  excuse my last post I’m still waking up . We break $680 we go to $660. We break $660 look out below 😁,negative,neutral,0.2334499389154696,0.5534844958234819,0.2130655652610485
+109163,test,TSLA,2020-03-06,2020-03-06,"$TSLA 
+buy the dip  let's say  $100 🤣🤣🤣",negative,neutral,0.3236171104100751,0.4949565278313114,0.1814263617586135
+109165,test,TSLA,2020-03-06,2020-03-06,"$TSLA Corona virus is not a joke guy's
+get out of the market, before you lose all your money 🔻🚫™️",negative,negative,0.5489182646826181,0.1861126510963746,0.26496908422100746
+109170,test,AAPL,2020-03-08,2020-03-09,$AAPL The last minute rally from Friday was just A? You guessed it... just a Dead 💀 CAT 🐈 Bounce.,positive,positive,0.22652460584188336,0.31971011545635813,0.4537652787017585
+109171,test,AAPL,2020-03-09,2020-03-09,$AAPL Bear 🐻 Market! Hello 👋 More pain ahead!,positive,neutral,0.33029638987216164,0.4718276957503656,0.19787591437747287
+109169,test,BA,2020-03-07,2020-03-09,$BA Give me 240 I will sell my house and buy. 😀,neutral,neutral,0.20707265338058103,0.5444067760774564,0.24852057054196264
+109173,test,AAPL,2020-03-10,2020-03-10,$AAPL buy more puts when others are fearful. 👍🏼 put option April 3rd,negative,negative,0.38903125105167036,0.26247694257725734,0.3484918063710723
+109172,test,CCL,2020-03-10,2020-03-10,$CCL get out while you can‼️‼️‼️,negative,neutral,0.17901523847354267,0.6597664749306354,0.16121828659582174
+109174,test,AAPL,2020-03-11,2020-03-11,$AAPL Fun times . No panic ☘️,negative,negative,0.4004583508208562,0.3987843274440448,0.20075732173509903
+109176,test,TSLA,2020-03-11,2020-03-11,"$TSLA Bears are Smokeeeed,
+Currently Running a rate of 550000 something and Expecting another 250000...🚀🚀🚀🚀",negative,negative,0.4209338847231228,0.3885446093204351,0.190521505956442
+109175,test,V,2020-03-11,2020-03-11,$V weinstein sentence to 23 years prison ...   Dow drops 1000 points   😂.      Let’s get back up !,negative,neutral,0.3575866974995413,0.46879759201274845,0.17361571048771016
+101431,test,AAPL,2020-03-12,2020-03-12,$AAPL I gave a fair warning with good reasoning.  seen that coming 🤷‍♂️🙈,positive,positive,0.2586519071217093,0.322669784905696,0.41867830797259475
+101426,test,AMZN,2020-03-12,2020-03-12,$AMZN when does this get back to triple digits where it belongs? 🤔,positive,positive,0.19669546053166037,0.39608219957984697,0.4072223398884926
+109180,test,BA,2020-03-12,2020-03-12,$BA people buying this pos? My 🤣🤣🤣🤣🤣,positive,positive,0.20433030677342487,0.3363936937954253,0.4592759994311498
+109182,test,CCL,2020-03-12,2020-03-12,$CCL i didn’t put puts on the spike😭,positive,negative,0.3941843570660375,0.28558513005985925,0.3202305128741032
+109179,test,DIS,2020-03-12,2020-03-12,"$DIS. When Woody contradicts Coronavirus, you gotta close the parks. 📉  Get well soon, Tom Hanks.",positive,negative,0.4485426880261875,0.1796001999350607,0.3718571120387517
+109181,test,DIS,2020-03-12,2020-03-12,$DIS Bye bye Disney!! See you again at 50 👋🏼,positive,neutral,0.2895000509491231,0.4558715341799519,0.25462841487092497
+109183,test,DIS,2020-03-12,2020-03-12,$DIS are the parks closed yet 🙄,positive,positive,0.3343178916603109,0.13546144426462117,0.5302206640750678
+109185,test,DIS,2020-03-12,2020-03-12,$DIS why does it go up?.. 🤷🏻‍♀️,positive,positive,0.388839774209384,0.16878673732933305,0.44237348846128305
+109178,test,TSLA,2020-03-12,2020-03-12,$TSLA almost time for trump to speak bulls are well done  🤡😂😂,neutral,negative,0.3650593793627175,0.3237437288416289,0.3111968917956537
+109184,test,TSLA,2020-03-12,2020-03-12,$TSLA  I am selling my stocks this thing got corona and is dying fast sad to leave my rock star ⭐️ of the year,neutral,neutral,0.26590468792636246,0.41319363293496847,0.320901679138669
+109186,test,AAPL,2020-03-13,2020-03-13,$AAPL  just bought a IPAD did not need it just for my kids school work.  SMH.  No discount.  👇🏽.🖕!,negative,neutral,0.335655108416653,0.3721465237136124,0.29219836786973463
+109193,test,BABA,2020-03-13,2020-03-13,$BABA short squeeze Monday baby thanks to liquidity injections 😂🤣,negative,negative,0.37013903652850344,0.36329614285493594,0.26656482061656067
+109189,test,CCL,2020-03-13,2020-03-13,"$CCL Opened short position here @16.60, sink this cruise 🚢",negative,neutral,0.23116272454214334,0.5697966397722379,0.19904063568561878
+109190,test,CCL,2020-03-13,2020-03-13,$CCL 💩 can only float for so long ...,negative,neutral,0.3400546696665379,0.4885267370831992,0.17141859325026293
+109191,test,DIS,2020-03-13,2020-03-13,$DIS this is dumping while spy is going higher 🤣 let’s just wait till this is an official national emergency,negative,negative,0.41174994504117784,0.33659409691243175,0.2516559580463905
+109192,test,DIS,2020-03-13,2020-03-13,$DIS to easy for this one. Do people not know that after this Saturday Disneyland will be closed for 2 weeks. 🤔🤔,negative,positive,0.24998666308803152,0.19516861711773548,0.554844719794233
+109187,test,TSLA,2020-03-13,2020-03-13,$TSLA Friday the 13th is tomorrow bulls y’all still breathing after today 🤡😂😂,negative,neutral,0.23771317791502564,0.41898251689528054,0.34330430518969385
+109188,test,TSLA,2020-03-13,2020-03-13,$TSLA who bought long term puts at 600 sp? I did!! 😉🤒,negative,negative,0.34579479729283374,0.3424342299400511,0.3117709727671152
+109195,test,BA,2020-03-16,2020-03-16,$BA Huge Downgrades!!! Future contracts Cancelled! Going Down Big!👇👇👇,neutral,neutral,0.25569205254219923,0.45511024426908936,0.28919770318871135
+109194,test,DIS,2020-03-14,2020-03-16,$DIS it’s gonna pop Monday it’s releasing frozen 2 on Disney plus🚀🚀🚀...,neutral,positive,0.3297318304679754,0.2524021417306578,0.41786602780136683
+109197,test,DIS,2020-03-17,2020-03-17,$DIS nooooo I woke up 30 mins late and missed a better shorting price 😔,negative,neutral,0.40355048911018926,0.43269025445070003,0.1637592564391108
+109196,test,HD,2020-03-17,2020-03-17,"$HD they say this pullback is healthy, so hold on to your hats!🤔",negative,positive,0.24860575342487615,0.29932278477683943,0.4520714617982845
+109200,test,MA,2020-03-17,2020-03-17,$MA the Vote of confidence here is that Insiders bought shares ...yum🚀🚀🚀,neutral,neutral,0.2214761414850176,0.5537055205771524,0.22481833793782993
+101575,test,TSLA,2020-03-17,2020-03-17,$TSLA soooo it is not heading to $500? 😳😳😳😆😆😆,negative,neutral,0.14799137749980565,0.501228934304863,0.3507796881953314
+109198,test,TSLA,2020-03-17,2020-03-17,"$TSLA PSA: If you are still long, I recommend selling and buying in once the dust settles...likely before the weekend. Imo we are in for atleast 2 more down days before the stimulus packages are finally ""real"" and then we MIGHT stabilize 👇👇 until then",negative,negative,0.3640998472171039,0.3040316944815151,0.33186845830138095
+109199,test,TSLA,2020-03-17,2020-03-17,$TSLA see you all sub 100. 😂 Elon just give me part of the billions you took from shareholders.,negative,negative,0.5692956545245456,0.254838174033324,0.17586617144213038
+109201,test,AMZN,2020-03-18,2020-03-18,$AMZN $2000 incoming lol bears you can keep Dow Futures down but not Amazon...It’s performance far better than 30 Dow Jones companies combined 😉🚀☄️,neutral,neutral,0.17402155197372293,0.7010022168825711,0.12497623114370603
+109204,test,BA,2020-03-18,2020-03-18,"$BA you guys are insane if you’re buying this now they haven’t even issued quarantines yet which most likely will happen
+Wait for the price to drop more 🤷🏻‍♂️🤦🏻‍♂️",neutral,negative,0.4166491943108396,0.2797173372410032,0.3036334684481573
+109203,test,GOOGL,2020-03-18,2020-03-18,$GOOGL under 1K ready to buy big... long 😉,neutral,neutral,0.23299654400127096,0.3840378126336321,0.382965643365097
+109202,test,TSLA,2020-03-18,2020-03-18,$TSLA stock is taking and Elon is having Crypto Parties? Did i miss something🧐,positive,negative,0.3826957331279022,0.2771802237229893,0.34012404314910866
+101732,test,AAPL,2020-03-19,2020-03-19,$AAPL Futures will be in that DEEP DEEP tonight 🩸🩸🩸,negative,negative,0.44684440766403505,0.39790287316329137,0.1552527191726736
+109205,test,AAPL,2020-03-19,2020-03-19,I’m going to short $AAPL and get that new iPad Pro with Dual Cameras 📸,negative,negative,0.38090862343936766,0.35230905717083927,0.266782319389793
+109206,test,AMZN,2020-03-19,2020-03-19,$AMZN One of the few real company stocks that are going up.  Safe haven. 🙂,neutral,neutral,0.15552872514266394,0.7196480499031552,0.12482322495418086
+109208,test,DIS,2020-03-19,2020-03-19,"$DIS bulls think coronavirus problem has been solved every time it hits a lower high.
+97 would have been considered a disaster just a week ago 🤷🏻‍♂️",negative,negative,0.5326473994606974,0.1824809068166687,0.28487169372263393
+109207,test,TSLA,2020-03-19,2020-03-19,"$TSLA 
+
+No production anywhere No sales anywhere Running out of cash 💵 
+Shit brand.  Service disasters Dumb RobinHood fucks: “Buy Buy Buy!”",neutral,neutral,0.28907913093150217,0.49995949694029096,0.210961372128207
+109209,test,TSLA,2020-03-19,2020-03-19,$TSLA I feel bad for the bulls😂😂 blood bath soon,neutral,positive,0.33588416276530814,0.2407636848225761,0.4233521524121159
+109213,test,AAPL,2020-03-20,2020-03-20,"$AAPL Prema Bull trap PM
+🙏 LOOK OUT SUCKAS",neutral,positive,0.18006392198260135,0.32298691796785817,0.49694916004954054
+109210,test,NFLX,2020-03-20,2020-03-20,"$NFLX $347 right now, on track for a $352 opens and $370 close 🤔",positive,negative,0.4713987905933428,0.35200367301776714,0.1765975363888901
+109211,test,TSLA,2020-03-20,2020-03-20,"$TSLA $443 now, could we see $500 today 🤔",neutral,neutral,0.27890404622090353,0.5721713432161059,0.1489246105629907
+109212,test,TSLA,2020-03-20,2020-03-20,$TSLA bears got faked out lol. Reminds me of the days when TSLA kept rallying on good news 🤣,neutral,neutral,0.18938125997361877,0.45124464208254556,0.3593740979438355
+109214,test,TSLA,2020-03-20,2020-03-20,"$TSLA but wait,bears said it definitely going under 200 since Tesla closed factory🤣🤣🤣🤣",neutral,negative,0.36033984252508716,0.3504519050790647,0.2892082523958482
+109215,test,TSLA,2020-03-20,2020-03-20,$TSLA next week will be blood 🩸,neutral,neutral,0.2934486805154743,0.4199396025046105,0.2866117169799152
+109216,test,TSLA,2020-03-23,2020-03-23,"$TSLA I'm in for a hopeful pop this week, yes I said hope it's a lotto play let's see what happens 🤑",positive,neutral,0.30492049019404305,0.38695815770611514,0.3081213520998419
+109221,test,AAPL,2020-03-24,2020-03-24,"$AAPL Easy money 💰 
+Amazon next should be much lower. I think people have become way too complacent.
+Good luck to us all.",neutral,negative,0.369833070155822,0.30360443137628024,0.3265624984678977
+109220,test,BA,2020-03-24,2020-03-24,"$BA come on 125 🚀🚀🚀🚀🚀
+
+Feels like Vegas now 😬",positive,neutral,0.30261843901406504,0.39632334987780765,0.3010582111081273
+109217,test,MSFT,2020-03-24,2020-03-24,"$MSFT I wouldn’t recommend being long here, it will hurt much more than a pie in the face ...👹",neutral,negative,0.47363233716126957,0.28415057413690825,0.24221708870182215
+109218,test,TSLA,2020-03-24,2020-03-24,"$TSLA , I'm + $25000 since my entry at $356.49   .. and Decided to keep it these 200 shares for Long time . 😇",positive,negative,0.4787574015447648,0.3450362033694489,0.17620639508578617
+109222,test,TSLA,2020-03-24,2020-03-24,$TSLA beautiful day trade thanks guys 🍾🍾,positive,positive,0.2228337887424886,0.3755621529590268,0.40160405829848467
+109223,test,BA,2020-03-25,2020-03-25,$BA i sold off my 130 call before close had 5 contracts😅,positive,positive,0.3179870672385596,0.1943606256128736,0.4876523071485667
+109229,test,BA,2020-03-25,2020-03-25,"$BA Why did I believe that story that Boeing was going to be a $5 stock after the government took a stake in the company when it was $90 a share last week
+________________ #LineUp 😷🔫",positive,positive,0.31546918073834185,0.23778213521417726,0.4467486840474809
+109231,test,BA,2020-03-25,2020-03-25,"$BA Make money on the wave, I’ve become a day trader sell high buy low you can’t lose 💰💰💰 tomorrow should be another great day for it 💪👍",positive,positive,0.2855183873387992,0.3212623370947316,0.39321927556646913
+109232,test,BA,2020-03-25,2020-03-25,"$BA very good profit today 👍
+I’m ready for tomorrow!
+Let’s break the $200",positive,positive,0.09397832524629249,0.35366806018585645,0.5523536145678511
+109226,test,BAC,2020-03-25,2020-03-25,$BAC I bought you yesterday. $18 was the target now $30 🤞,positive,negative,0.42650762437926765,0.27026630937627216,0.3032260662444602
+109228,test,CCL,2020-03-25,2020-03-25,$CCL Soooo what’s the upside here? Lol 😂,positive,neutral,0.1581155910179407,0.5179272600364483,0.32395714894561106
+109224,test,HD,2020-03-25,2020-03-25,$HD 2 trillion approved... this should be fun 🚀,positive,neutral,0.3511480925330833,0.37118490927363634,0.2776669981932803
+109227,test,PYPL,2020-03-25,2020-03-25,$PYPL Won’t stay under $100 much longer 💰,neutral,neutral,0.2732332126742063,0.3709849863119097,0.35578180101388407
+109225,test,TSLA,2020-03-25,2020-03-25,$TSLA Next  Friday will return to its actual price of $ 805!📈📈📈📈🚀🚀🚀🚀🚀🤷🏻‍♂️,neutral,neutral,0.21498106947028375,0.49673513038503636,0.2882838001446798
+109230,test,TSLA,2020-03-25,2020-03-25,$TSLA here comes the pop 🚀🚀🚀...,neutral,neutral,0.21661966367932978,0.5944888932359774,0.1888914430846928
+102015,test,AAPL,2020-03-26,2020-03-26,$AAPL just a matter of time 📉,neutral,positive,0.19754493728601422,0.25270502537184253,0.5497500373421432
+109233,test,BA,2020-03-26,2020-03-26,$BA adjusting price 🎯 to $250 then $300+ by end of year 2020.,negative,positive,0.21146538921045366,0.15064649117012652,0.6378881196194197
+109234,test,CCL,2020-03-26,2020-03-26,$CCL was a little late and now I’m chasing it. Any chance of a sell off today so a sweet boy like me can catch a dip?! 🙋‍♂️,negative,neutral,0.3538543476353071,0.36451593988518965,0.28162971247950325
+109237,test,CCL,2020-03-26,2020-03-26,"$CCL  
+Man a lot of nervous Shorts.  All I hear is 🤮🤮🤮over and over again . You guys need new material.",negative,neutral,0.29686654226309844,0.4184671578425289,0.2846662998943727
+109236,test,DIS,2020-03-26,2020-03-26,$DIS only one direction from here on 📈💰🚀,negative,neutral,0.2667669298891069,0.4103801683674242,0.32285290174346887
+109238,test,GOOGL,2020-03-26,2020-03-26,$GOOGL jumped 20pts on me ! 😩,negative,positive,0.29156667704981143,0.3070295813570599,0.40140374159312864
+109235,test,TSLA,2020-03-26,2020-03-26,$TSLA let the Cubs buy those puts 😉 big bear has exit strategy set at a moment's notice news in wings eagles,neutral,negative,0.4311956538637037,0.29064404606458344,0.27816030007171283
+109242,test,AMZN,2020-03-27,2020-03-27,$AMZN could we retest the low today and get back to bull market soon after ‼️‼️‼️‼️‼️‼️,positive,neutral,0.24302901925611559,0.5037869507012155,0.25318403004266893
+109244,test,BA,2020-03-27,2020-03-27,$BA $241 to $155 in 1 week now five me $155 to $241 in 1 week 🏄🏻‍♂️🏄🏻‍♂️😊,neutral,positive,0.321976503901967,0.3252951267354943,0.35272836936253876
+109245,test,BA,2020-03-27,2020-03-27,$BA 👆🏻This guy is full of shit!,neutral,neutral,0.18793565226285597,0.5571159617857485,0.2549483859513954
+109247,test,BABA,2020-03-27,2020-03-27,$BABA something great will happen soon 🔓🔜🚀,neutral,neutral,0.37483586000460756,0.39441169848669827,0.23075244150869414
+109243,test,FB,2020-03-27,2020-03-27,$FB 🦠 definitely higher from here (day trade) . 🌲 may even close the day flat 🌲,positive,positive,0.2603815302881246,0.2326948042944187,0.5069236654174567
+109239,test,TSLA,2020-03-27,2020-03-27,$TSLA  I somehow don`t believe in this Bullmarket 😂,neutral,neutral,0.22658596793828983,0.47927232100372585,0.29414171105798437
+109240,test,TSLA,2020-03-27,2020-03-27,"$TSLA And this is why they ran up the price, how are those $600 calls looking? 🤣🤣",neutral,positive,0.2800453340692433,0.22416648260201194,0.49578818332874475
+109241,test,TSLA,2020-03-27,2020-03-27,"$TSLA Boris Johnson 😷 today 
+
+Trump & Musk 😷 next week 
+
+😬😬😬😬🧨🧨🧨🧨🧨
+
+Tsla to $320😷😷😷",neutral,positive,0.157682675824451,0.2081169159439161,0.6342004082316329
+109248,test,TSLA,2020-03-27,2020-03-27,"$TSLA when I walk around seeing Teslas driving past me, I feel so good when I ride my bicycle to the unemployment office. 🏢🚲",neutral,neutral,0.23446674296795622,0.4294073419460661,0.3361259150859778
+109249,test,TSLA,2020-03-27,2020-03-27,"$TSLA Bulls, this was your time to make some money. Up next is the bears’ second wave of 🔥.😳",neutral,neutral,0.19561932483984756,0.47360902617020245,0.33077164898995004
+109250,test,AAPL,2020-03-28,2020-03-30,"$AAPL Let’s all companies bring all their production back home to the US they still can make money and make our US economy stronger and give people jobs here , let’s make it here in America ✅✅ 🇱🇷🇱🇷🇱🇷",neutral,neutral,0.36211126005956024,0.42676414872958507,0.2111245912108548
+109253,test,BABA,2020-03-31,2020-03-31,$BABA Tact. Thou protest to much 🐻,negative,neutral,0.34990707197282805,0.37344324159821546,0.27664968642895643
+109252,test,DIS,2020-03-31,2020-03-31,$DIS disney + is a big deal just imagine. they have all of the talents to create the ultimate netflix for kids with amazing cartoons. I see 300$ in 2022. this is an amazing stock for long term investors💡 🌖,neutral,positive,0.28142203961779494,0.34808493527525475,0.3704930251069503
+102123,test,MSFT,2020-03-31,2020-03-31,$MSFT Soooo this was up $5 and dropped... Why? 🤔,neutral,negative,0.6452020411123371,0.2006565932771649,0.1541413656104979
+109254,test,MSFT,2020-03-31,2020-03-31,$MSFT some shenanigans going today😂😂😂🤷🏼‍♂️. Hurry and buy,neutral,negative,0.4715131837698538,0.18980870874256137,0.3386781074875847
+109251,test,TSLA,2020-03-31,2020-03-31,$TSLA future is green again 🤷‍♂️ still bearish,negative,neutral,0.3653426132083663,0.4386892065463907,0.19596818024524287
+109258,test,AAPL,2020-04-01,2020-04-01,$AAPL that feeling when your in 100% puts and market is selling off 💦💦💦,neutral,positive,0.28878709154218674,0.29472345984087767,0.41648944861693565
+109259,test,DIS,2020-04-01,2020-04-01,"$DIS they're selling rallies. Price is going up, money is coming out. 🤫",neutral,positive,0.21636899168614124,0.39094285553870756,0.39268815277515123
+109260,test,NVDA,2020-04-01,2020-04-01,$NVDA $263 is when you load up the puts 👍,neutral,neutral,0.283245685630349,0.5634355088334572,0.15331880553619384
+109262,test,CCL,2020-04-02,2020-04-02,$CCL only fools will buy worthless equity that pays no dividends when it's junk bond pays a coupon of 11.5% 😂😂,neutral,positive,0.32447236647913097,0.3365449393209178,0.3389826941999513
+109263,test,DIS,2020-04-02,2020-04-02,$DIS FEDS gives us a break!! Can we at least see $80s today!! 😄 Damn!,neutral,negative,0.3911106521572513,0.33834861102193187,0.27054073682081675
+109264,test,TSLA,2020-04-02,2020-04-02,$TSLA Try to buy puts at 479 🛬🔥💸,neutral,positive,0.23472182385152596,0.3253211070790469,0.4399570690694271
+109265,test,TSLA,2020-04-02,2020-04-02,"$TSLA ten minuets to 470-473
+
+🤣🤣🤣🧨🧨🧨🧨🧨🧨🧨⤵️⤵️⤵️⤵️💸💸💸💸🧨🧨👻👻👻👻👻👻👻👻👻👻",neutral,neutral,0.3029886691033199,0.49305256960431304,0.20395876129236692
+109266,test,TSLA,2020-04-02,2020-04-02,$TSLA  Did we get News ?. Why is this still up ?. Should be trading below $460 by now  ☣️〽️👩🏻‍🚀,neutral,negative,0.3967536161629188,0.37239469266851516,0.23085169116856596
+109268,test,TSLA,2020-04-02,2020-04-02,$TSLA fanboys expecting a thousand dollar move in red market. 🤣 Short the pop. These cars don't run on gas. Just electricity and 100 dollar bills,neutral,neutral,0.1663612048422873,0.6112588884917721,0.22237990666594043
+109269,test,TSLA,2020-04-02,2020-04-02,$TSLA So happy there’s more room for shorting yay!!!!! Love it. Thanks bulls for putting more money. Can’t wait to next drop 😂,neutral,neutral,0.36208266419496665,0.39116078786476766,0.24675654794026566
+109270,test,TSLA,2020-04-02,2020-04-02,$TSLA don't laugh until it open tomorrow it just April fool 😎,neutral,positive,0.18599565290860617,0.39675572418929544,0.4172486229020983
+109271,test,TSLA,2020-04-02,2020-04-02,$TSLA I think we just saw a small blowoff top 🤷‍♂️,neutral,neutral,0.19607075583380493,0.44918189551395005,0.35474734865224505
+109261,test,XOM,2020-04-02,2020-04-02,"$XOM 
+To all the Bulls trying to outweigh hope against the facts right now 😂.....",neutral,negative,0.36971411488633243,0.26862090283888723,0.36166498227478033
+109272,test,TSLA,2020-04-03,2020-04-03,"$TSLA happy for the sudden surge, gave me profit and let me get out of my position. Let’s see that 300 next so I can reload 🥰",positive,negative,0.37435192449781807,0.3028653211658567,0.3227827543363252
+109275,test,TSLA,2020-04-03,2020-04-03,$TSLA we’ll that was an easy short rip fanboys 😁🐷🔪🤠🇺🇸,positive,positive,0.3264433386697747,0.2562842107987664,0.4172724505314589
+109276,test,TSLA,2020-04-03,2020-04-03,"$TSLA $1500 tomorrow 💪
+
+ooh wait markets closed.
+
+Well... welll... ITS STILL GONNA BE $1500 💪💪💪💪💪💪💪 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 😂😂😂",positive,neutral,0.325303423002599,0.3998368805366992,0.2748596964607018
+109279,test,BA,2020-04-07,2020-04-07,$BA Wake the F up BOEING!! 🙏🏾 ✈️ 🚀 🌕 💵 GO 👆🏾 😂,neutral,neutral,0.22508552608040172,0.5483513153961275,0.2265631585234708
+109278,test,CCL,2020-04-07,2020-04-07,$CCL falling...classic profit taking from day trader 🤣🤣🤣🤣,neutral,negative,0.40269460343341446,0.3742899846780002,0.22301541188858534
+109277,test,TSLA,2020-04-07,2020-04-07,$TSLA above 550 and 🐻 s are fucked...,neutral,negative,0.4115759594018426,0.3074363050949549,0.2809877355032025
+109283,test,BA,2020-04-08,2020-04-08,"$BA dropping now, will end in the red like yesterday 🐻",neutral,positive,0.28246437632406307,0.2884495792032254,0.42908604447271154
+109280,test,CCL,2020-04-08,2020-04-08,$CCL back to 18+ by Friday. Relief money coming!💰💰🚀🚀🚀🤑🤑,neutral,neutral,0.3761801857307148,0.4014564830909017,0.22236333117838333
+109282,test,CCL,2020-04-08,2020-04-08,$CCL bears got silent all of a sudden. 🚀🚀🚀🌚,neutral,neutral,0.3811001948766506,0.4065309484284019,0.21236885669494768
+109281,test,GOOGL,2020-04-08,2020-04-08,"$GOOGL Run Bulls, because you will be trapped 🤣🤣🤭",neutral,positive,0.23938685124159598,0.2091413033443951,0.551471845414009
+109284,test,CCL,2020-04-09,2020-04-09,"$CCL A couple of months from now, the media will move on to Election Coverage and people will want to take  a cruise. Carnival is too strong to fail. 💪🏼 (Plus we have the Saudis with us. 👍🏻)",neutral,neutral,0.2670266787842082,0.4494910160144694,0.2834823052013224
+109285,test,DIS,2020-04-09,2020-04-09,$DIS who loaded up bigly at open like I said last night? 🤑🤑🤑 What happened to the fake bulls who went fomo and tried to get calls at open? 💩💩💩,neutral,neutral,0.31449622909386216,0.4771331169004094,0.2083706540057284
+109286,test,MSFT,2020-04-09,2020-04-09,$MSFT buy at break above the blue line. TTM sqz alert 🚨 Patience... B/O is coming. PT=$170,neutral,neutral,0.3120529861678138,0.3809510415553428,0.30699597227684333
+109287,test,PFE,2020-04-09,2020-04-09,$PFE opps who has 600 contacts 👍😷💥💉😀! Me me me! Time to explode!,neutral,negative,0.41049129799611683,0.32543626725756725,0.26407243474631586
+109288,test,TSLA,2020-04-13,2020-04-13,$TSLA wow no sellers ? Lol that’s crazy ✅,positive,neutral,0.23844743385874825,0.5411103553419322,0.2204422107993195
+109289,test,TSLA,2020-04-13,2020-04-13,"$TSLA its time to head 1,200$ 🚀  😎",positive,neutral,0.21719688413864544,0.5050683963990552,0.2777347194622994
+109291,test,BA,2020-04-14,2020-04-14,$BA fire sale 🔥 on grounded MAX planes!!!!  airworthiness not guaranteed!!!   But they are cheap!!!   We got plenty!!!,neutral,neutral,0.29244785150634856,0.36978391503520636,0.33776823345844503
+109290,test,TSLA,2020-04-14,2020-04-14,$TSLA Jim Chanos scratching his right now🤣,neutral,positive,0.2260405235856545,0.32110127938773,0.45285819702661567
+109295,test,GOOGL,2020-04-15,2020-04-15,$GOOGL Closed scalp on that initial pop at $5.30 = +$280 gain 📈,neutral,positive,0.17115259343173778,0.35555367776449026,0.4732937288037719
+109296,test,JPM,2020-04-15,2020-04-15,$JPM all banking  🐖s going down,neutral,neutral,0.3951450546339578,0.4680916285214211,0.1367633168446212
+109292,test,TSLA,2020-04-15,2020-04-15,"$TSLA Ran up $80 after hours when they beat delivery reports. If they exceeded deliveries..they’re probably gonna beat earnings next week. 
+
+This stock is 🔥🔥🔥",neutral,positive,0.2528084180545731,0.3526737911155625,0.3945177908298643
+109294,test,TSLA,2020-04-15,2020-04-15,$TSLA and we rise again!! Foolish Bears buying these PUTS will never learn!🚀🌕,neutral,neutral,0.16128603800451385,0.5403111425325096,0.2984028194629767
+109298,test,BA,2020-04-16,2020-04-16,$BA bears trying again?? I’ll take it at this sp 💰💰💰,positive,neutral,0.17133014026781793,0.44487153018132,0.38379832955086207
+109299,test,BAC,2020-04-16,2020-04-16,$BAC come to papa you over inflated pig! The next leg down will be bloody!🔥⛈🔥🌪⚡️⚡️,positive,positive,0.27257669922476513,0.29779235432505824,0.42963094645017663
+109297,test,TSLA,2020-04-16,2020-04-16,$TSLA bulls are confident ...doubling their position size 🤫,neutral,positive,0.20758280772916884,0.38609509530569874,0.4063220969651324
+109300,test,TSLA,2020-04-16,2020-04-16,"$TSLA tempted to take profit, hard with Elon’s baby 👶🏼💰",neutral,positive,0.19567005882343744,0.25252629534132076,0.5518036458352418
+109304,test,AAPL,2020-04-17,2020-04-17,"$AAPL the sqUeeze , yes with big U bear
+
+💰",neutral,neutral,0.3217425596376258,0.49084174604360015,0.187415694318774
+109301,test,BA,2020-04-17,2020-04-17,$BA LOL let’s make built more planes ✈️ that we can’t fiy bc ppl are scared to leave anywhere LOL 😂,neutral,neutral,0.2726472940048356,0.370052959280536,0.3572997467146284
+109302,test,MSFT,2020-04-17,2020-04-17,$MSFT This market drop is stupid. Let's GOOOOOO! $185-$190 open 🙏🏾✈️🚀🌕💵,neutral,negative,0.6024195551053513,0.17416589717894143,0.2234145477157072
+109303,test,NFLX,2020-04-17,2020-04-17,$NFLX adding calls for earning 👀👀 this thing is going up! People still need to stay home for monthsssss,positive,negative,0.5298335590361924,0.3278467540011559,0.14231968696265174
+109307,test,AAPL,2020-04-20,2020-04-20,$AAPL 👳‍♂️⚗️⚗️⚗️⚗️by now and next this headed back to $248 🙈🙈🙈🙈🐻🐻🐻🐻🐻🐻🐻🐻.,neutral,neutral,0.28039260728180854,0.4678510391758694,0.251756353542322
+109305,test,BA,2020-04-18,2020-04-20,"$BA An FAA spokesman said ""work is still ongoing"" on the MAX certification. 👏👏",neutral,positive,0.34356949344527943,0.23517218402526177,0.4212583225294588
+109308,test,TSLA,2020-04-20,2020-04-20,"$TSLA C’mom baby, I miss you at $350 😂",negative,neutral,0.32835516003608994,0.35832237006942536,0.3133224698944847
+109309,test,TSLA,2020-04-21,2020-04-21,$TSLA I short this week. Good luck everyone 👍,positive,positive,0.3179237276763738,0.33438943456089354,0.3476868377627328
+109312,test,TSLA,2020-04-21,2020-04-21,$TSLA Are we there yet ? 😉😏,positive,negative,0.3705096457275564,0.35345905274250067,0.276031301529943
+109314,test,TSLA,2020-04-21,2020-04-21,Every time I see one of these goofy looking $TSLA shitboxes on the road I just laugh at the douchebag driving it wearing a mask 😷,positive,negative,0.39817997089761975,0.38585086104266414,0.2159691680597161
+109313,test,V,2020-04-21,2020-04-21,$V told you guys but didnt listen 🤣😜💰,neutral,neutral,0.3450195339545792,0.38168566004353605,0.2732948060018848
+109311,test,XOM,2020-04-21,2020-04-21,$XOM Bulls are actually going to be surprised when it drops like a brick 🤦‍♀️,neutral,positive,0.20825917783382242,0.3518902107339806,0.439850611432197
+109316,test,DIS,2020-04-22,2020-04-22,"$DIS gambling doesn’t make you a gambler.
+Buying calls when this is at 101.80 already up 1.3% makes you a gambler. 🤷🏻‍♂️",neutral,negative,0.38223437129748333,0.2572339370711453,0.3605316916313714
+109315,test,XOM,2020-04-22,2020-04-22,"$XOM lol, they lay off many workers here in the states, but they’re constructing a $10 billion facility in China, way to go XOM ☠️",neutral,positive,0.23696380487725574,0.3200427860160041,0.44299340910674007
+109318,test,NFLX,2020-04-23,2020-04-23,$NFLX can I have 5 more drops like that pls! 😁😂,neutral,neutral,0.2824921117651272,0.3848750499905308,0.33263283824434203
+109317,test,TSLA,2020-04-23,2020-04-23,$TSLA day 3 of the new economy 🌳🌳🌳,neutral,neutral,0.2598310028562547,0.4511421509909233,0.2890268461528219
+109319,test,TSLA,2020-04-24,2020-04-24,"$TSLA if I get a 300% return on my call next week, I will order one pizza or Venmo $15 to one person. Like this post for a chance at that 🤪. (Foreal)",positive,neutral,0.10865287993212801,0.6303849174221949,0.2609622026456771
+109322,test,BA,2020-04-29,2020-04-29,$BA $180 in two weeks is possible!  💵💵💵🚀,neutral,positive,0.3612862328810198,0.21064808558393472,0.42806568153504554
+109326,test,BA,2020-04-29,2020-04-29,$BA power mf***** haha da bears be like  I lost my mommas money whaaaat? 😭🤣,neutral,positive,0.22725513696720986,0.33750704355035294,0.4352378194824372
+109324,test,DIS,2020-04-29,2020-04-29,$DIS HAHAHA oh Sherry where you go? 🤗,negative,neutral,0.290455593144435,0.4168535932474931,0.29269081360807186
+109323,test,FB,2020-04-29,2020-04-29,$FB So up $12 single day PRE earnings and y’all still expecting a pop? 🥴😂😂🤥,positive,negative,0.4014173824108807,0.3863234922043002,0.21225912538481922
+109321,test,NFLX,2020-04-29,2020-04-29,$NFLX lmao that’s all the juice 🥤,neutral,negative,0.4619633176247902,0.2642610998894867,0.27377558248572303
+109325,test,TSLA,2020-04-29,2020-04-29,$TSLA literally phenomenal!!! I love it! 😊,neutral,neutral,0.3911983496419364,0.4185861844273899,0.19021546593067376
+109327,test,TSLA,2020-04-29,2020-04-29,"$TSLA Children, we’re having 🐻 🥩 for dinner !!!",neutral,neutral,0.3466313276347746,0.38220399090334284,0.2711646814618825
+109335,test,AMZN,2020-04-30,2020-04-30,$AMZN all that online tissue 😒 what more do you want from them!!?,negative,positive,0.25773872516044166,0.30216597266084483,0.44009530217871357
+109329,test,BA,2020-04-30,2020-04-30,"$BA 
+
+115-118 looks juicy if we can reach it , I’ll Lor 🚀🔥",neutral,neutral,0.24136431803789052,0.5296766078056674,0.22895907415644212
+109330,test,FB,2020-04-30,2020-04-30,$FB advises a guy to get 200-215-230 call butterflies and didnt get myself any. 😒,neutral,neutral,0.23971559658473324,0.5055715596248758,0.25471284379039094
+109332,test,MSFT,2020-04-30,2020-04-30,"$MSFT 185 later today around 2, 190 this friday 🚀",negative,positive,0.3025587786886507,0.31673642812168296,0.3807047931896664
+109333,test,PFE,2020-04-30,2020-04-30,$PFE it’s like the pill!!! It takes a while to get up there !!  🚀👏🏼👏🏼,negative,neutral,0.2753216755151913,0.6198828024764897,0.10479552200831892
+109331,test,TSLA,2020-04-30,2020-04-30,$TSLA 1000 before end of week?? 📈🙏🚀🚀,negative,negative,0.48260506788772056,0.3095552520800017,0.20783968003227785
+109334,test,TSLA,2020-04-30,2020-04-30,"$TSLA tesla cooking books? stay tuned to find out, on the next episode of dragon ball z ☄️",negative,neutral,0.20430085453217284,0.4080163811578596,0.38768276430996756
+109340,test,DIS,2020-05-01,2020-05-01,$DIS lost the 50 at 105.16 👀,neutral,positive,0.30610987727726363,0.23901676219550047,0.4548733605272359
+102675,test,TSLA,2020-05-01,2020-05-01,$TSLA HAHAHAHAHAHAAHAHA DO YOU BULLS STILL NOT BELIEVE THIS STOCK IS A COMPLETE FRAUD?!!🤡🤡🤡🤦‍♂️🤦‍♂️,positive,positive,0.17477461370246358,0.34013842978261055,0.4850869565149259
+109336,test,TSLA,2020-05-01,2020-05-01,$TSLA Elon is fcking his own investors now 🤡🤡🤡🤡,positive,negative,0.3738379009161949,0.29346649052211027,0.3326956085616948
+109337,test,TSLA,2020-05-01,2020-05-01,"$TSLA doubled my put money today. Starting my weekend early, watching from the sidelines. Im guessing it’ll trade around 700 til power hour 🤷🏻‍♂️",positive,positive,0.14947723077028,0.3970517244874638,0.45347104474225614
+109338,test,TSLA,2020-05-01,2020-05-01,$TSLA musk is swing trading here 🤣. Suddenly the news will come his account was hacked and this will go up and he will win both ways .. lol manipulation at its best,positive,negative,0.6597504326849942,0.17662491306691114,0.1636246542480946
+109339,test,TSLA,2020-05-01,2020-05-01,"$TSLA hack or not which I think it's real, doesn't matter this goes down until factory opens , 350 might not even hold 🤷‍♂️",positive,neutral,0.22231914430415345,0.40379312269787804,0.37388773299796857
+109341,test,TSLA,2020-05-01,2020-05-01,"$TSLA all you new Tesla bulls realize why veterans are short this stock 
+Thanks for 28k two day paycheck Elon 😘",positive,positive,0.18955717061804353,0.24355532435086893,0.5668875050310875
+109343,test,XOM,2020-05-01,2020-05-01,$XOM even elon says prices are too high 🙂 that means overvalued. WSJ news says “ the market agreed” 😆,positive,positive,0.2626588761797619,0.33959412428005376,0.3977469995401843
+109347,test,BA,2020-05-02,2020-05-04,"$BA 
+
+I guess I’ll be buying at 85 a share in two weeks after reading and looking at that 🤭",neutral,negative,0.43777098122216634,0.22212123033630363,0.34010778844152995
+109349,test,BA,2020-05-04,2020-05-04,$BA what happen ? Anybody exited on time ? 😂😂😂,neutral,neutral,0.23167379809534294,0.5043752460886652,0.2639509558159918
+109345,test,CCL,2020-05-02,2020-05-04,"$CCL sorry guys, I shorted this last night and made money on it this morning 😕 I was long from an $8.50 avg to $16 sell. Bear market for this til it falls to $10",negative,negative,0.5794961534529386,0.2168475358207837,0.20365631072627774
+109350,test,CCL,2020-05-04,2020-05-04,$CCL what could happen in August 1 🤷🏻‍♂️🤣🥂🥂,negative,neutral,0.29598846414183894,0.43123896419576785,0.27277257166239327
+109346,test,TSLA,2020-05-02,2020-05-04,$TSLA elon just tweeted tsla should be no more than 5 bucks and of story 😏 lets short and become rich,neutral,negative,0.4826029325568566,0.282797494383417,0.23459957305972656
+109348,test,TSLA,2020-05-02,2020-05-04,"$TSLA Elon is on Bears side 🤑🤑🤑, Bulls are in shock 🥺😳🥵",neutral,positive,0.20222092484887783,0.3473280334632372,0.45045104168788497
+109353,test,BA,2020-05-05,2020-05-05,$BA As Buffett goes price action follows. This flight is going downnnn! ✈️ 💥🔥,neutral,positive,0.2822883991110858,0.3490820425813571,0.36862955830755706
+109351,test,CCL,2020-05-05,2020-05-05,$CCL the same emotional traders that just sold will change their mind like the wind and get back in after the market opens 🙄😂😩🤦🏽‍♀️,neutral,neutral,0.28996708770136487,0.46009093365397247,0.24994197864466272
+109354,test,DIS,2020-05-05,2020-05-05,$DIS  bad earnings today market opens red tomorrow bears are rich again 🥱,neutral,neutral,0.3258384586589976,0.4528865385166688,0.22127500282433357
+109355,test,DIS,2020-05-05,2020-05-05,$DIS Ohhhh man. These 5/15 $80 Puts are about to be straight money🤭🤑,neutral,negative,0.5356817486725808,0.2051527671752183,0.25916548415220086
+109352,test,FB,2020-05-05,2020-05-05,"$FB Where’s all those “just bought puts, its so easy” guys at 200? Shouldn’t you be buying your puts here? 😎",neutral,negative,0.3533155748961174,0.35056830917698784,0.29611611592689474
+109356,test,DIS,2020-05-06,2020-05-06,$DIS big holders selling off.   You Bulls need to buy these.  🤪,positive,positive,0.25437182814971876,0.2750772047525345,0.47055096709774674
+109358,test,AAPL,2020-05-07,2020-05-07,$AAPL Those $290 calls I bought at $6.40 on April 20th have reached high of $15.15 and currently trading at $13.80 🔥,positive,negative,0.4145130304013669,0.411042643647202,0.17444432595143108
+109357,test,BABA,2020-05-07,2020-05-07,$BABA few wks ago. Bought at $215. What an idiot. Then went to $180 and still struggling 😞,positive,positive,0.3007416928905651,0.21741756783348554,0.48184073927594934
+109359,test,TSLA,2020-05-08,2020-05-08,$TSLA A huge drop after the break... it’s boiling 🥵,neutral,neutral,0.14890814386457416,0.4311683190842454,0.41992353705118046
+102865,test,BA,2020-05-11,2020-05-11,$BA Awful close. Gap down to 120 sounds about right. 🤣🚢⚓📉🐻🐾🐾🐾,neutral,negative,0.463480700715351,0.2790044785593608,0.25751482072528836
+109361,test,DIS,2020-05-12,2020-05-12,$DIS more debt fewer people in parks= up??😂,neutral,negative,0.3936470707661568,0.24685534856800392,0.3594975806658393
+109362,test,JPM,2020-05-12,2020-05-12,$JPM i should have shorted this sh*t! now i’m stuck with a cost basis of 89 🤣👎🏿🔥,negative,neutral,0.4406147796371461,0.4433827754657843,0.11600244489706953
+109363,test,TSLA,2020-05-12,2020-05-12,$TSLA  Collect easy Premiums daily.  Sell OTM with a 96-98% win ratio.  OTM due worthless.  Light work. 💰💡,neutral,positive,0.27603621684569196,0.3388040862343226,0.3851596969199855
+109364,test,TSLA,2020-05-12,2020-05-12,$TSLA I am totally loaded on TSLA puts and no longer holding a short position. Today just bought some $820 puts expiring this week just for fun. Looking good so far. 🙏,neutral,negative,0.3470485980377505,0.3221850458110268,0.33076635615122263
+109365,test,TSLA,2020-05-13,2020-05-13,$TSLA is the new COVID. Know anyone that has it? Lol 😂,neutral,neutral,0.15293663398094479,0.5299790388340615,0.31708432718499374
+109366,test,TSLA,2020-05-13,2020-05-13,$TSLA Put options are so expensive. 😫😩,neutral,positive,0.356536518338313,0.2331919208060148,0.4102715608556723
+109367,test,TSLA,2020-05-13,2020-05-13,$TSLA Final our of a dying horse 🐎 who clearly lost in the race... limping to finish line.,neutral,negative,0.3906942604822551,0.2186511223231183,0.3906546171946266
+109369,test,AAPL,2020-05-14,2020-05-14,$AAPL This going to be fun 🤫🥳,neutral,neutral,0.3137878980874643,0.410727256293556,0.2754848456189797
+102943,test,TSLA,2020-05-14,2020-05-14,$TSLA My Bad ! 🐻! Needs to flush to 500 to get rid of the froth in a global pandemic!,neutral,neutral,0.2509961847759568,0.541955129634458,0.20704868558958517
+109368,test,TSLA,2020-05-14,2020-05-14,$TSLA  Such a model of factory organization and efficiency.  That’s Tesla!   😂,neutral,neutral,0.3542051029734936,0.4476916746088007,0.19810322241770562
+109370,test,TSLA,2020-05-15,2020-05-15,"$TSLA this short position of 1,921 puts  15/5/20 795p deserves an applause ..🤣🤣",neutral,neutral,0.33247378989099613,0.38268254809103674,0.28484366201796707
+109372,test,BA,2020-05-19,2020-05-19,"$BA green day, green day up to 139-141. 🚀🚀🚀🚀🚀🚀🚀",neutral,neutral,0.2710189139790377,0.5007651993458546,0.2282158866751077
+109373,test,BABA,2020-05-19,2020-05-19,$BABA This baby is rising again❤️❤️,neutral,negative,0.5309247536174083,0.18282567787655282,0.28624956850603894
+109371,test,WMT,2020-05-19,2020-05-19,$WMT some one please help me understand how this is falling when it had beat the earnings under this pandemic.... this should be FLYING right now. 😔,neutral,negative,0.4061744572020898,0.22072215603975842,0.3731033867581517
+109374,test,BA,2020-05-20,2020-05-20,$BA I see a cup and handle on the 30 min. 🤔,positive,neutral,0.3727134030236208,0.40859980243103994,0.21868679454533924
+109375,test,BABA,2020-05-21,2020-05-21,$BABA puts on this on every bounce 😌,negative,negative,0.40768888836823997,0.28449553557368257,0.3078155760580774
+109378,test,BA,2020-05-22,2020-05-22,$BA bears told me China Is down 5%🧐😅,positive,neutral,0.14141982392032235,0.6097811462567867,0.24879902982289104
+109379,test,KO,2020-05-22,2020-05-22,"$KO Another wave of the rona, it's a wrap!! 😂🤣🤣",positive,negative,0.47233017273105093,0.23334947051599816,0.2943203567529509
+109377,test,NVDA,2020-05-22,2020-05-22,$NVDA today is one big doji reversal candle😂,negative,neutral,0.2073045318844555,0.6765481328487631,0.11614733526678137
+109376,test,TSLA,2020-05-22,2020-05-22,"$TSLA 
+
+Copy 🐈 Q2 or better $1200",neutral,negative,0.4499633546174176,0.3152886750961656,0.2347479702864167
+109380,test,AMZN,2020-05-27,2020-05-27,$AMZN Short of 2450+ working as charm 😌,neutral,neutral,0.34548919826655655,0.3850500994692867,0.26946070226415686
+109383,test,BA,2020-05-27,2020-05-27,$BA wait til the robinhooders buy in tomorrow. Ka-Ching🤑,neutral,positive,0.3158569778739978,0.2906880125946238,0.39345500953137846
+109382,test,CCL,2020-05-27,2020-05-27,$CCL oh yea! Let's get another 10% day tomorrow 🤑,negative,negative,0.5198967604641623,0.3178551957904281,0.1622480437454095
+109381,test,PYPL,2020-05-27,2020-05-27,$PYPL  90 P/E needs a 180% growth to make sense 🐻,neutral,neutral,0.31945976277423155,0.42803307630293413,0.2525071609228344
+109385,test,BA,2020-05-28,2020-05-28,$BA And squeeze not started yet 🤣😂💯💥🚀,neutral,positive,0.1275695984824065,0.2558438764583463,0.6165865250592473
+109384,test,NVDA,2020-05-28,2020-05-28,$NVDA lmao who is buying this stock in the clouds 😂😂😂,positive,positive,0.1869965697290866,0.21766520649540863,0.5953382237755048
+109387,test,CCL,2020-05-29,2020-05-29,"$CCL poops poops I did it again..
+Was that a song👀",positive,positive,0.35347449217630217,0.2457856869907993,0.4007398208328985
+109386,test,FB,2020-05-29,2020-05-29,$FB  tomorrow. 🐻. All the best 🐻better luck next time bulls.,positive,neutral,0.21914050010037073,0.44450853248953853,0.3363509674100908
+109388,test,TSLA,2020-05-29,2020-05-29,"$TSLA it’s the final bull trap, load up them longs and say bye bye to your moolah 👍",positive,neutral,0.1333885090322621,0.5205919034977401,0.3460195874699978
+109389,test,TSLA,2020-05-29,2020-05-29,"$TSLA Still hate you for that stunt you pulled Elon, my stimulus check is never coming back asshole..🤣",positive,neutral,0.2411251684982321,0.4236550991526352,0.3352197323491326
+109390,test,TSLA,2020-06-01,2020-06-01,$TSLA let do the jump tomorrow 925-940 open with green market 🤩🚀,neutral,neutral,0.17588630546044778,0.6354813669997049,0.1886323275398472
+109391,test,TSLA,2020-06-01,2020-06-01,$TSLA calm down bears wait till the morning😂🤧,neutral,neutral,0.2835138381880024,0.41335245685297706,0.3031337049590206
+109393,test,MSFT,2020-06-03,2020-06-03,$MSFT When is the next earnings date? thanks🙏,negative,neutral,0.17436632607634528,0.432084141456347,0.3935495324673077
+109392,test,TSLA,2020-06-03,2020-06-03,"$TSLA lol, next catalyst the anticipated battery day. Bold prediction -- battery day will disappoint investors and SP drops 15%.🤪🤪",negative,neutral,0.21256925450737177,0.7053170973735139,0.08211364811911447
+109395,test,BA,2020-06-04,2020-06-04,$BA only company that held it up as long as it did today.  Imagine tomorrow.🤷🏽‍♂️,positive,negative,0.3782151771146545,0.27743899030325603,0.3443458325820894
+109397,test,BA,2020-06-05,2020-06-05,$BA best decision of my life (aside from sleeping with MGK) 🚀🚀🚀🚀,positive,neutral,0.16440730407572357,0.41873174795293505,0.41686094797134143
+109398,test,BA,2020-06-05,2020-06-05,$BA I ❤️ U. That is all.,positive,positive,0.18355891797051177,0.15976059164117115,0.656680490388317
+109399,test,BA,2020-06-05,2020-06-05,$BA Almost at 100% profit on my shares!!! 😁😁👍📈,positive,neutral,0.19931350793456745,0.4260139501400617,0.37467254192537086
+109400,test,BA,2020-06-05,2020-06-05,"$BA beaten down $340 stock, will come back up soon ✌🏼",positive,positive,0.2941014242556261,0.30819093059022945,0.3977076451541445
+109396,test,CCL,2020-06-05,2020-06-05,$CCL $25 next week! Mark this post 💪📈,positive,positive,0.2432628445024044,0.3067969603978214,0.4499401950997742
+109401,test,TSLA,2020-06-05,2020-06-05,$TSLA launch pad set for next week.  💃🏻🚀🦑,positive,neutral,0.18986236576327448,0.4762178323832498,0.33391980185347586
+109402,test,BA,2020-06-08,2020-06-08,"$BA We will see 261 pre market, and 279 this week. 
+🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀",negative,neutral,0.2862629077868438,0.5189870984787378,0.19474999373441823
+109403,test,BA,2020-06-09,2020-06-09,"$BA if future green before the bells 🔔 
+We will see Green Day tomorrow 
+$300 call doesn’t sound too bad after all",negative,neutral,0.25815397714489585,0.38193981318136827,0.3599062096737358
+109404,test,BA,2020-06-09,2020-06-09,$BA Hotter than a Fox in a forest Fire❗❗❗🦊,negative,positive,0.1581850785810161,0.33874798159714803,0.5030669398218358
+109406,test,BA,2020-06-11,2020-06-11,$BA yikes! This one can seriously DROP. Bastard!!!😂😂😂,positive,positive,0.16255953114708305,0.2516181452899457,0.5858223235629711
+109409,test,BA,2020-06-11,2020-06-11,$BA robin hooders are propping up the stock price. 😂,positive,neutral,0.23289042254348294,0.4528086424972448,0.3143009349592722
+109411,test,DIS,2020-06-11,2020-06-11,$DIS DIE MICKEY MOUSE DIE YOU MOTHERF*CKER.... HAVE THIS PUT TILL JAN 2021... READY TO BANK!💰💰💰💪💪💪,positive,negative,0.40598158713401,0.3237581554944822,0.27026025737150783
+109408,test,NFLX,2020-06-11,2020-06-11,$NFLX yup she will head to 450 cafe this weekend 🤗,negative,negative,0.47481844193439193,0.2563644227246262,0.26881713534098184
+109410,test,SBUX,2020-06-11,2020-06-11,"$SBUX 
+Puts are still looking beautiful collecting me money 👌🏻 to 70 overnight 📉",positive,positive,0.2936968368490034,0.3192804919348736,0.387022671216123
+109412,test,TSLA,2020-06-11,2020-06-11,$TSLA Imagine the CEO tweeting lol and stonks after your stock crashes and burns😂😂,negative,positive,0.34233148229420773,0.3062097414792055,0.3514587762265868
+109407,test,XOM,2020-06-11,2020-06-11,$XOM very excited to sell my out at open🔥,neutral,neutral,0.31241125408984116,0.457327847583657,0.2302608983265019
+103314,test,BA,2020-06-12,2020-06-12,$BA I don’t think Monday will be green so I’ll hold my put till the 🤷🏻‍♂️,neutral,positive,0.16374408554181638,0.29365894421838745,0.5425969702397961
+109413,test,BA,2020-06-12,2020-06-12,"$BA who is ballsy enough to hold
+Over the weekend?!😂😂",neutral,positive,0.19417294390741918,0.26608608465933725,0.5397409714332435
+103334,test,TSLA,2020-06-12,2020-06-12,$TSLA Elon pump the 💩 out of this‼️,positive,negative,0.45542122593210244,0.2730167427244364,0.27156203134346113
+109414,test,WMT,2020-06-12,2020-06-12,$WMT pos stock 💩 shameful ! Not one Green Day since ER despite the previous markets runs. Dump or short but never long. You’ve been advised!,neutral,neutral,0.3042321536251507,0.45123811532233576,0.24452973105251347
+109416,test,BAC,2020-06-15,2020-06-15,$BAC what’s a day sold my puts this morning made 40% and bought calls right after up 80% on those🤤. 120% day gain Looking for continuation up tmro. Hey I’m biased like everyone else. I’m bullish now.,neutral,negative,0.41684636477430065,0.40660148939388513,0.17655214583181417
+109415,test,TSLA,2020-06-13,2020-06-15,$TSLA Going WAYYYYYYY down from here!🌈,neutral,neutral,0.26327404158158313,0.483146262512158,0.25357969590625895
+109418,test,AMZN,2020-06-16,2020-06-16,$AMZN lets just go ahead and hit over 2700 tomorrow 😘,neutral,neutral,0.3507257451998971,0.4733343436460733,0.1759399111540296
+109417,test,V,2020-06-16,2020-06-16,"$V lol so why is anyone bullish on this with the possibility of hyper inflation coming? Trump prints money, people pay off thier credit cards and visa makes no money😥",neutral,neutral,0.20769162722020737,0.5773840652839313,0.21492430749586136
+109419,test,AMZN,2020-06-17,2020-06-17,"$AMZN 
+
+King of the ring, no competition to it👍",neutral,negative,0.37903624552343956,0.3547945839512996,0.2661691705252609
+109422,test,BA,2020-06-17,2020-06-17,$BA tonigh red day in Germani market too . what prices do u think Ba tmr ????😔😔😔😔😔😔,neutral,positive,0.29879158858145555,0.277338113213477,0.42387029820506744
+109420,test,NFLX,2020-06-17,2020-06-17,$NFLX 500 coming.. And rightly so.. 💹💸🤫💵,neutral,neutral,0.31378762400688776,0.5031886237765254,0.1830237522165869
+109421,test,TSLA,2020-06-17,2020-06-17,$TSLA took my gains and now betting it will go down with Q2 numbers. making money both ways📉🤑,neutral,positive,0.34231578538087515,0.303365049768982,0.3543191648501428
+109423,test,BA,2020-06-18,2020-06-18,$BA Damn everyone got Puts so far away from the money and I’m lookin at mine I bought today and like OH Snap😎,neutral,neutral,0.2547304559617041,0.48730620212460496,0.25796334191369086
+109427,test,BA,2020-06-18,2020-06-18,$BA 🚨 DO NOT BE FOOLED BY THE MESSAGE BOARD! This is the most bearish stock in the Dow. It will pushback hard before takeoff!,neutral,positive,0.261753056776642,0.26917806591696647,0.46906887730639146
+109424,test,CCL,2020-06-18,2020-06-18,$CCL this is going to drop huge huge today Falling knife!! 😃😃,neutral,neutral,0.31466953637986295,0.37000114912644394,0.315329314493693
+109426,test,CCL,2020-06-18,2020-06-18,$CCL huge 1.3M sell 😳,neutral,neutral,0.3240902027462723,0.5063825527738609,0.16952724447986672
+109425,test,WMT,2020-06-18,2020-06-18,$WMT this is an evil stock 😈,positive,positive,0.30099012563711863,0.3280516318670194,0.37095824249586196
+109431,test,AAPL,2020-06-19,2020-06-19,$AAPL who else got those CALLs for cheap? 😂🤑Lol,positive,neutral,0.335028116621827,0.3623701175017012,0.30260176587647175
+109428,test,BA,2020-06-19,2020-06-19,"$BA whats up my fellow bulls , how is that feel 🤣🤣🤣",neutral,neutral,0.30252456394246857,0.3967023053367542,0.30077313072077727
+109432,test,BA,2020-06-19,2020-06-19,"$BA as Bob Dylan said, “How does it feel!?”  🤣 bulls",neutral,positive,0.16329313358707692,0.18561319095306472,0.6510936754598584
+109429,test,CCL,2020-06-19,2020-06-19,"$CCL Got pretty lucky with puts I bought here this morning. Will hold into next week as major support was just broken
+
+😁😁📈👍",neutral,neutral,0.27183646869578926,0.532123889894965,0.19603964140924587
+109430,test,CCL,2020-06-19,2020-06-19,$CCL my puts are up .. are yours? 🐻😈🚀😃,neutral,negative,0.582492626047301,0.2823732496609826,0.13513412429171637
+109433,test,AMZN,2020-06-23,2020-06-23,"$AMZN THE FUNGUS IS AMONG US!!!!
+💯💯💯 $2800 soon 🚀🚀🚀",negative,positive,0.30609805518482475,0.299876851397303,0.3940250934178721
+109434,test,AAPL,2020-06-24,2020-06-24,"$AAPL I feel so bad for bears, I try to teach them some sense, but most lash out and call me a fool lmao futures green see you at $380, can’t wait to see my calls surge another +100% tomorrow 😎💵",neutral,neutral,0.21638888528304057,0.5028008330543406,0.28081028166261873
+109438,test,AAPL,2020-06-25,2020-06-25,"Bulls don’t know what their doing.. 
+$AAPL 🔥🌧☔️📉",negative,neutral,0.21379800743604746,0.5671816980411886,0.21902029452276414
+109436,test,CCL,2020-06-25,2020-06-25,$CCL I have puts and I'm stay putting till $14. Glad I switched positions when did. Massive jumps in covid causing fear to run wild in the markets. 😬😬😬😬,neutral,neutral,0.3010043916093206,0.427877009281258,0.27111859910942143
+109437,test,CCL,2020-06-25,2020-06-25,$CCL what happened to ship lives matter 😂😂,neutral,neutral,0.2384096750087384,0.42268807723828616,0.33890224775297545
+109435,test,DIS,2020-06-25,2020-06-25,$DIS so no parks opening and maybe no nba?🤔💭,negative,negative,0.4330399458738375,0.35299427810267475,0.21396577602348785
+109439,test,DIS,2020-06-25,2020-06-25,$DIS Sports are looking grim for this year. ESPN owned by Disney. Covid running wild in Florida and no movies being produced. Seems like a great buy 👎🏻,negative,negative,0.37401042857517325,0.31347977159345386,0.31250979983137284
+109443,test,AMZN,2020-06-26,2020-06-26,"$AMZN 1670 to 2790 in 6 month, this bulls are complaining..😂 this should atleast consolidate around 2400 which by any means best rate of return",neutral,positive,0.1968972530689035,0.3913296055501357,0.41177314138096077
+109440,test,BA,2020-06-26,2020-06-26,"$BA Green open tomorrow, BA will close red. Flat open tomorrow BA will be red. Red open tomorrow, BA will be super red. Either ways Red coming to a BA near you soon! 😳",positive,positive,0.24909110772087395,0.26285694404936744,0.4880519482297586
+109441,test,BA,2020-06-26,2020-06-26,$BA it’s not gonna go up much if it was going down before the day started 🤷🏽‍♂️,positive,negative,0.44072574483695187,0.21806097701875185,0.3412132781442962
+109442,test,FB,2020-06-26,2020-06-26,$FB kinda early for Santa to show up🤑🤑🤑🤑🤑,positive,neutral,0.2771771003592293,0.5481511397206706,0.1746717599201001
+109444,test,BA,2020-06-27,2020-06-29,$BA sell now buy back at a new low coming July very bad earnings  🐻,negative,positive,0.17240335596772055,0.27643238198764986,0.5511642620446296
+109445,test,TSLA,2020-06-29,2020-06-29,"$TSLA 
+
+🐻🐻🐻 see Silver Lining to hang on to...only to realize that was a trap! 😳😉🤨",positive,neutral,0.32875230256027654,0.3503560672239398,0.3208916302157837
+109447,test,BA,2020-06-30,2020-06-30,"$BA rsi has plenty to run.
+Trade well lions and tigers and bears 🐻. Oh no!🎰",neutral,neutral,0.18641842090833743,0.4844493195594961,0.3291322595321665
+109448,test,FB,2020-06-30,2020-06-30,"$FB the 🤡 Cramer on CNBC just finished bashing company... always do the opposite, we’re going to rip higher!",positive,neutral,0.31396822470736985,0.39176713281106734,0.2942646424815628
+109446,test,JPM,2020-06-30,2020-06-30,"$JPM yep glad I didn’t sell, 😌 dividend secure!",neutral,neutral,0.2656166180732745,0.4747480977755313,0.2596352841511942
+109449,test,TSLA,2020-06-30,2020-06-30,"$TSLA 🔥👉💸🏃‍♂️🤷‍♂️ i try... +1,000%  from alert,  1 day",positive,positive,0.15329136050705666,0.32858341385071904,0.5181252256422243
+109450,test,TSLA,2020-06-30,2020-06-30,$TSLA Bears 🐻 getting destroyed as usual! They are saying WTF?,positive,neutral,0.3324129426313772,0.3741649656997198,0.293422091668903
+109453,test,AMZN,2020-07-01,2020-07-01,$AMZN 28!!!!! lmao..what can I say🤷‍♂️,neutral,positive,0.2596250896246884,0.3225674166299053,0.4178074937454064
+109451,test,BA,2020-07-01,2020-07-01,"$BA even though I’m a bear right now, it’s not cool what they do here. They just trapped a bunch of bulls with shenanigans premarket. Market is biggest scam ever. BS manipulation needs to stop 🛑",neutral,neutral,0.131851800790451,0.5410621300586136,0.3270860691509355
+109452,test,BA,2020-07-01,2020-07-01,$BA All those gains for nothing just to head back down to last weeks prices😂🤦🏻‍♂️,neutral,negative,0.4685743030325888,0.26073600546835013,0.27068969149906125
+109455,test,AAPL,2020-07-02,2020-07-02,$AAPL  going below 359$ this week 😍😍🥰🥰 making profit on my puts :):),positive,positive,0.31385188245672574,0.31005855290685946,0.37608956463641485
+109454,test,FB,2020-07-02,2020-07-02,"$FB I absolutely loved how Zuck said these advertisers would be back 🤣 bullish AF. I’m glad some tech CEO’s still have their balls. And what bad news, we already knew they were meeting with congress this month?",positive,neutral,0.23526154468952534,0.4571863151011747,0.30755214020930005
+109457,test,MSFT,2020-07-06,2020-07-06,$MSFT 7 minutes to hit 212! 🚀🚀🚀 gonna be such a great Pre Market!  215-218 tomorrow! Has gained 3/4 dollars at the least every day! Lets get that tesla money!,neutral,negative,0.47551867475078824,0.24666376013089528,0.2778175651183164
+109456,test,TSLA,2020-07-06,2020-07-06,$TSLA what did Elon said .... its fukkn a 🚀🚀🚀🚀🚀🚀......,neutral,neutral,0.18907687176820628,0.4084842797140807,0.40243884851771305
+109459,test,DIS,2020-07-07,2020-07-07,$DIS Glad I didn't hold my puts. Excited to reenter by Friday 😀. No way this turns out profitable.,positive,neutral,0.32418841775268276,0.35389746539414835,0.32191411685316895
+109458,test,NFLX,2020-07-07,2020-07-07,$NFLX Well that didn’t last long..🤨Have no fear it will retest $500 soon..,positive,negative,0.4518402266216029,0.4046042317402856,0.14355554163811146
+109461,test,AMZN,2020-07-08,2020-07-08,$AMZN are we going higher or are we going higher 📈🏄‍♂️🤑🤩,positive,negative,0.3524157813538841,0.3149166109699609,0.332667607676155
+109460,test,TSLA,2020-07-08,2020-07-08,$TSLA I sold my puts earlier sucks😎,neutral,neutral,0.22067921895998288,0.4490981274542739,0.33022265358574326
+109462,test,AAPL,2020-07-09,2020-07-09,$AAPL whose still shorting the number 1 tech company in the world bc they closed a couple of stores🤡,neutral,positive,0.3121647707693628,0.2799163980966141,0.40791883113402305
+109465,test,AMZN,2020-07-09,2020-07-09,$AMZN if people would just listen to me they probably would have been rich already just buying calls on this horse 🚀,neutral,positive,0.2686840049056737,0.3307971435733856,0.40051885152094074
+109466,test,BA,2020-07-09,2020-07-09,$BA I wonder who will cancel orders tomorrow 🤔,neutral,neutral,0.31085647486350476,0.3583122154010102,0.3308313097354851
+109463,test,CCL,2020-07-09,2020-07-09,$CCL 🍀🍀Stay Strong 🍀Target $18.00 🚀🚀🚀,positive,neutral,0.2541338083519799,0.543111126966863,0.2027550646811571
+109464,test,TSLA,2020-07-09,2020-07-09,$TSLA curious to see what happens when everyone’s stop loss triggers in a domino affect 👀,positive,neutral,0.19941318396528362,0.5616820596930854,0.238904756341631
+109467,test,TSLA,2020-07-10,2020-07-10,"$TSLA i got in at 800 thinking aaah if this goes to like 1000 this year that would be great.  
+this is just insane. 🤣",neutral,negative,0.3608185550016489,0.3003330684767751,0.33884837652157607
+109468,test,TSLA,2020-07-10,2020-07-10,$TSLA scanners goin off! Get ready here we go 🚀,neutral,neutral,0.24953280300453204,0.43057705935823387,0.31989013763723395
+109469,test,TSLA,2020-07-10,2020-07-10,"$TSLA 
+Give a Bear a hug this week they need it!
+🤣 😆",neutral,negative,0.44842246450492124,0.36514997735180943,0.1864275581432693
+109471,test,AAPL,2020-07-13,2020-07-13,"$AAPL 🚨 selling all shares. Owned since 2014, ill buy more in a few weeks this is topped the f out",positive,negative,0.35911281396684597,0.2960172414836885,0.3448699445494655
+109470,test,KO,2020-07-11,2020-07-13,$KO 🥤🥤Going up regardless but with Pepsi-Cola earnings on Monday it should shoot it up🚀 since its the same sector.💯,positive,negative,0.3583763197255034,0.34314169243119025,0.2984819878433064
+109472,test,TSLA,2020-07-13,2020-07-13,$TSLA the boys are back in town. 🤣,neutral,neutral,0.33793723124599306,0.474880995317053,0.18718177343695397
+109473,test,TSLA,2020-07-13,2020-07-13,$TSLA hahahaha i can’t see the different between this and peny stocks. Bulls got f*ck hardddd today 😂😂😂,neutral,neutral,0.2544267367299156,0.5009670441900184,0.24460621908006608
+109474,test,TSLA,2020-07-13,2020-07-13,$TSLA BULLS WELCOME TO BAG HOLDER USA 😩😂,neutral,positive,0.2550131397090535,0.31849074649646714,0.4264961137944794
+109478,test,AMZN,2020-07-14,2020-07-14,$AMZN who else is holding onto puts? Or am i a lone wolf? 😅,negative,negative,0.5731431660836201,0.15251879715842537,0.27433803675795443
+109475,test,BABA,2020-07-14,2020-07-14,$BABA wow my puts racking in!!!! at 100% ! 💟💟💟,neutral,neutral,0.278961028567893,0.4493305851699614,0.2717083862621455
+103814,test,BRK.B,2020-07-14,2020-07-14,$BRK.B So surprised at this run! 🧐,neutral,positive,0.3266771327689504,0.23658698001030912,0.4367358872207404
+109476,test,MSFT,2020-07-14,2020-07-14,"$MSFT 9/16/2022 210c x6
+Bring this bish back to all time highs this week 🤑🙏🏼🔮",neutral,negative,0.39910575023926625,0.21233154965812542,0.38856270010260835
+103812,test,TSLA,2020-07-14,2020-07-14,$TSLA WOW AH ITS A RUNNER...💥💥🚀🚀🚀🚀,neutral,positive,0.12413116179451505,0.39902673787515863,0.4768421003303265
+109477,test,TSLA,2020-07-14,2020-07-14,$TSLA Second YASSSSSSSSSSSSS from me today...YASSSSSSSSS 🚀,neutral,neutral,0.17557837875086693,0.47002988102355653,0.3543917402255765
+109479,test,BRK.B,2020-07-16,2020-07-16,$BRK.B hope everything turns out ok 😔,neutral,positive,0.30633913883037134,0.28903967564808286,0.40462118552154575
+109484,test,NFLX,2020-07-16,2020-07-16,$NFLX How many bears gonna wake red from the gap up thats gonna happen..🤣,negative,neutral,0.2814783310367962,0.4559426892767439,0.26257897968645993
+109480,test,TSLA,2020-07-16,2020-07-16,$TSLA S3XY time baby good bye shorts last chance🌵,neutral,neutral,0.2787812481103972,0.513854343187256,0.20736440870234688
+109481,test,TSLA,2020-07-16,2020-07-16,"Don't forget what happened last Friday 
+
+$TSLA 🚀",neutral,neutral,0.21056643460823762,0.5506145598548365,0.23881900553692575
+109486,test,MSFT,2020-07-17,2020-07-17,$MSFT 😂 MSFT at this point will be below $190 because ER will have a lower guidance guaranteed!! Buy put contracts and make more money ;)),positive,negative,0.5849640772025106,0.07327177975232423,0.3417641430451651
+109485,test,TSLA,2020-07-17,2020-07-17,"$TSLA get your Captn Smith Hats Ready! 🧊 Dead Ahead! This thing loses $1,500 again today, and its going down $100 more easy!",positive,neutral,0.2690648135340501,0.48720856453874,0.2437266219272098
+109488,test,TSLA,2020-07-17,2020-07-17,"$TSLA remember it entered the squeeze on the down, good luck in the next hours to both sides of this 😘",positive,negative,0.3451161671886449,0.3403882122875382,0.3144956205238169
+109487,test,WMT,2020-07-17,2020-07-17,$WMT I looove how this stock trades! Very healthy & sustainable move🔋🔋🔋,neutral,positive,0.20405626660820583,0.2656913215999857,0.5302524117918085
+109490,test,TSLA,2020-07-21,2020-07-21,"$TSLA got shaken out @ $1,602 🤦🏻‍♂️ Sadly do not think it is wise to try and jump back in before earnings. Will be 👀 closely.",neutral,neutral,0.1940830734410766,0.4399379706639871,0.36597895589493634
+109491,test,TSLA,2020-07-21,2020-07-21,$TSLA Imagine a it gaps up to 1700ish tomorrow before bell and then 20% run after ER.. wow that would make this to break 2K .. There we go 🚀🚀🚀,neutral,neutral,0.26488708771173136,0.5473618276281308,0.18775108466013782
+109494,test,MSFT,2020-07-22,2020-07-22,$MSFT more for me to buy tomorrow 😛😛😛,negative,negative,0.40387748333301665,0.1984762928992784,0.3976462237677049
+109492,test,TSLA,2020-07-22,2020-07-22,$TSLA I've made a 🚚 🚛 load of $ on Tesla calls.  My gut is telling me to short this pig though.  GOD I am afflicted please help me!,negative,negative,0.4408989556627325,0.13629260200601073,0.42280844233125664
+109493,test,TSLA,2020-07-22,2020-07-22,"$TSLA i will call todays tesla earning as ""THE MAGICIAN""... 😂😂😂 i have no short position just for fun 🤣🤣🤣",negative,neutral,0.26326274074208755,0.46762148698436645,0.269115772273546
+109495,test,TSLA,2020-07-22,2020-07-22,$TSLA I just made 500k in 1 month 🙀,negative,neutral,0.29423833997809035,0.38924635492227494,0.3165153050996347
+109496,test,TSLA,2020-07-22,2020-07-22,$TSLA if ur a bear u just lost mate. 😂😂,negative,neutral,0.2717426423780159,0.5431001762914017,0.1851571813305824
+109497,test,TSLA,2020-07-22,2020-07-22,$TSLA Does anyone see this breaking $1675 premarket and running to $1800 by Friday? 😂😅🤣. Silly foookn bears.,negative,neutral,0.2789974763068187,0.378266014683348,0.3427365090098333
+109500,test,AAPL,2020-07-23,2020-07-23,$AAPL i like my eggs 🥚 cooked sunny side up. With a side of T-bone steak.    Apple is a 5 star company.,neutral,neutral,0.1772177297876006,0.6316717270509604,0.19111054316143908
+109498,test,MSFT,2020-07-23,2020-07-23,$MSFT great time to buy after today’s dip 💰,neutral,positive,0.2605950674888751,0.2961405720701448,0.44326436044098005
+109501,test,MSFT,2020-07-23,2020-07-23,$MSFT I hope some of you realize that entire tech sector is down.  😂.  Happens sometimes you know.,neutral,neutral,0.2664392181646577,0.43355710163314426,0.3000036802021979
+109499,test,TSLA,2020-07-23,2020-07-23,$TSLA need my beauty sleep 😴 for another stockgasm tomorrow 🤑,negative,negative,0.34857229097363884,0.333025597758496,0.31840211126786516
+109502,test,TSLA,2020-07-23,2020-07-23,$TSLA bears making up story’s on this ER.. they forgetting the 48m in profits still held over for next qtr.. = next qtr green with profits... we looking at 25c profits all ready incoming for next er😂😂😂.. next qtr greener..,negative,neutral,0.13546139042911684,0.6095004922641788,0.2550381173067043
+109503,test,TSLA,2020-07-23,2020-07-23,$TSLA . Sell cars 🚗 cars 🚗 cars 🚗. No profit. BuT Govt. Regulatory credits. Lots n lots of profit to report. what kind of fkn growth company is this now,negative,neutral,0.32949736556596076,0.493444692364924,0.1770579420691153
+109505,test,TSLA,2020-07-23,2020-07-23,"$TSLA oh my god, how did this go down? They made .50 a share profit off of regulatory credits 😂 it should have been at $2000 a share. This will end bad for the bulls who recently bought in sad to say.",negative,neutral,0.3520042842103076,0.41962719349406086,0.22836852229563148
+109506,test,TSLA,2020-07-23,2020-07-23,$TSLA  how does that China factory  look right about now let's  ask trump his opinion 😂,negative,positive,0.2941249679337224,0.2694498315501279,0.4364252005161497
+109507,test,BAC,2020-07-24,2020-07-24,$BAC every dollar this goes up warring makes $34 million 😅 let that sink in,neutral,neutral,0.3439012556532999,0.40291661309716753,0.25318213124953254
+104052,test,TSLA,2020-07-24,2020-07-24,$TSLA can we do -$100 in 1 hour? 🐖🐖🐖,positive,neutral,0.22396667320011285,0.5436430668387414,0.23239025996114565
+109508,test,TSLA,2020-07-24,2020-07-24,$TSLA Guess it finally came... especially when one no excepted it 😂,positive,neutral,0.3162166683985131,0.39232790943033086,0.2914554221711561
+109509,test,TSLA,2020-07-24,2020-07-24,$TSLA bulls running out of juice. 🤣🤣,positive,neutral,0.22361302709398584,0.4029996455489512,0.37338732735706287
+109510,test,AMZN,2020-07-28,2020-07-28,"$AMZN all the best bulls , we gonna see atleast 3500 soon .... we are with amazon 💪",neutral,neutral,0.38462480207618993,0.4127480110150802,0.20262718690872997
+109511,test,WMT,2020-07-28,2020-07-28,"$WMT 
+911 operator: yes?
+Me: I’d like to report a murder
+911: where did it happen?
+Me: to my Walmart calls right before the markets closed 😞",neutral,positive,0.24486592259608694,0.24728571486683484,0.5078483625370782
+109514,test,BA,2020-07-29,2020-07-29,$BA they want to beat it down lower so they can buy in... 🐂📈  nope... this thing flips like a light switch with pandemic news.. people reading charts like the Bible..,negative,neutral,0.32378833104599647,0.3605514064732662,0.31566026248073725
+109512,test,MSFT,2020-07-29,2020-07-29,$MSFT bulls just sound like they’re hoping 😂 good luck scrubs,neutral,positive,0.24159582625793738,0.32767992781442806,0.4307242459276346
+109513,test,PFE,2020-07-29,2020-07-29,$PFE y'all know the vibes PFE 🚀🚀🍷🍷 sip a glass of wine with me 💯,neutral,neutral,0.22825290702654452,0.683377815063671,0.0883692779097845
+109515,test,TSLA,2020-07-29,2020-07-29,$TSLA imagine being a bull or having calls above 1500 🤣,neutral,neutral,0.2589745861823182,0.39811014246373116,0.3429152713539506
+109519,test,AMZN,2020-07-30,2020-07-30,$AMZN gooo Amazon 👏🏻👏🏻 congratulations to all the bulls in this group,positive,neutral,0.3453412072177788,0.35912326495434466,0.29553552782787657
+109520,test,AMZN,2020-07-30,2020-07-30,$AMZN holy shiiiiiiit we feast tonight boys! Let’s get this DINNER! 🥘 🍴 NOM NOM NOM NOM NOM,positive,negative,0.6328440205531185,0.23527917112621347,0.13187680832066812
+109521,test,AMZN,2020-07-30,2020-07-30,"$AMZN I got some $3010 calls, bears do you all think I should hold? Will I cry to sleep tonight?? 🤣🤣🤣",positive,neutral,0.21965547484993747,0.4553800279475561,0.3249644972025064
+109522,test,AMZN,2020-07-30,2020-07-30,"$AMZN $3500? Do u smell bulls, what the Jeff Bezos is cooking 🥘 😆🚀🔥🥳🎉✈️",positive,positive,0.21464522771363662,0.2521127239030282,0.5332420483833352
+109516,test,BA,2020-07-30,2020-07-30,$BA is red your favorite color bulls 🤣,negative,positive,0.19604882308186514,0.24460045220234805,0.5593507247157868
+109518,test,DIS,2020-07-30,2020-07-30,$DIS going green put my puts up 10 percent 🤣,positive,negative,0.42682570442993545,0.36427821373494335,0.20889608183512126
+109517,test,TSLA,2020-07-30,2020-07-30,$TSLA 1600 today ?? 👀👀 what y’all think ????? 1750 by ending of Friday ?,neutral,neutral,0.3388293207254809,0.42797587923656766,0.2331948000379516
+109525,test,AAPL,2020-07-31,2020-07-31,$AAPL Aug 28 500c.....for the win 🙃🙃🙃,positive,negative,0.41054307302056786,0.27287061508771265,0.3165863118917194
+109526,test,AMZN,2020-07-31,2020-07-31,$AMZN The giant is setting up for another breakout. Just needs a bit more time. Consolidation is great! 💫,neutral,neutral,0.27126010511071535,0.44029948426383525,0.2884404106254495
+109524,test,FB,2020-07-31,2020-07-31,$FB thank you bears for the cheap calls. 240 c payed out but 🤑🤑,neutral,neutral,0.21946089603746985,0.5400662512256321,0.24047285273689795
+109527,test,MSFT,2020-07-31,2020-07-31,$MSFT let yall banks know that an massive deposit is coming 🕺🏻,positive,positive,0.33772435296440473,0.28785208724550054,0.3744235597900948
+109528,test,MSFT,2020-07-31,2020-07-31,$MSFT Shortie trap could be huge ..🤭🚀😁💪👍💲,positive,negative,0.4847225210318529,0.3171360724662413,0.1981414065019058
+109523,test,TSLA,2020-07-31,2020-07-31,$TSLA 🤡 Look like the Bulls are winning. Check out the premarket tick by tick 🏃 run up.. Money to burn 🔥 🔥 🔥 🔥 and Bulls too trap..,neutral,positive,0.22251463433816454,0.26831213311931945,0.509173232542516
+109529,test,AAPL,2020-08-03,2020-08-03,$AAPL bears are getting desperate again 🤣,neutral,neutral,0.28749760470066593,0.4991852070825549,0.21331718821677917
+109531,test,AAPL,2020-08-04,2020-08-04,$AAPL Will she run!? 🙏🙏🙏 450 please!!!,neutral,positive,0.26373623867484397,0.3218109619627662,0.4144527993623898
+109530,test,BA,2020-08-04,2020-08-04,$BA so glad I joined the BA yesterday morning 👍,positive,neutral,0.13293563965365138,0.44304625921182667,0.4240181011345219
+109534,test,AMZN,2020-08-05,2020-08-05,"$AMZN bezos selling is part of a planned sale 10b-5 plan. Not even a blip on the radar to investors, and this will outperform NASDAQ by 1% again tomorrow 💪🏼💪🏼💪🏼",neutral,negative,0.4553236091593942,0.33447560576960744,0.2102007850709984
+109532,test,BA,2020-08-05,2020-08-05,$BA $23 billion contract sealed! Lets go 🚀,neutral,positive,0.280860882081452,0.20730712481671829,0.5118319931018297
+109533,test,BA,2020-08-05,2020-08-05,"$BA shorts are done $200 plus soon 
+Trump says he would back plan helping airline industry✅✅✅✅✅✅",neutral,positive,0.33532603345900014,0.217407431572658,0.4472665349683418
+109537,test,AAPL,2020-08-06,2020-08-06,$AAPL I see my advice on those August 21/ calls was I right or was I right ? YOLO THE HELL OUT that play right 🔥,negative,negative,0.4115840607641422,0.19571881973560767,0.3926971195002502
+109538,test,AAPL,2020-08-06,2020-08-06,"$AAPL we need $463-464 for 2 Trillion market cap.
+Let's do it today only 🚀🚀🚀🚀🍾🍾🤭🤭",negative,positive,0.17141811140975913,0.3384766873285765,0.49010520126166435
+109535,test,TSLA,2020-08-06,2020-08-06,$TSLA 👁👄👁 differents from yesterday zero news and today has news. Let's see the out come play out!,neutral,neutral,0.34108444994474857,0.3904909175030565,0.2684246325521949
+109539,test,BA,2020-08-07,2020-08-07,"$BA drop monday incomingggg🙏
+
+Please dont bash me. this is just my trading strategy.",positive,negative,0.4188256711254347,0.2186323000693456,0.36254202880521963
+109540,test,BRK.B,2020-08-08,2020-08-10,$BRK.B Soo glad I built a good position in this 😊 Time for payback,neutral,neutral,0.34182740582456844,0.457337829525342,0.20083476465008968
+109543,test,AAPL,2020-08-11,2020-08-11,$AAPL I appreciate y'all letting me get back in with my call at a nice price 😁 we can move forward now! Thanks a million 😄,positive,neutral,0.2632921657685393,0.541549637721903,0.19515819650955765
+109545,test,AAPL,2020-08-11,2020-08-11,$AAPL call holders get slaughtered tomorrow. 😈,positive,negative,0.4651605711847592,0.37683799412718516,0.1580014346880557
+109544,test,PYPL,2020-08-11,2020-08-11,"$PYPL poor bulls lmao keep buying that dip, The more you buy the more he’s going to dip haha 🤣🤣🤣👊🏻🤦🏼‍♀️",neutral,neutral,0.28092871062165065,0.41320865589860895,0.3058626334797405
+109542,test,TSLA,2020-08-11,2020-08-11,"$TSLA 
+All the bulls on here
+“ BLAH BLAH !!!! Blah blah blah 😬🙏",positive,neutral,0.1789542530160537,0.5731564316212558,0.24788931536269043
+109546,test,TSLA,2020-08-12,2020-08-12,$TSLA head and shoulders just formed 📉,positive,neutral,0.18551844402872975,0.4652151163891063,0.349266439582164
+109548,test,AAPL,2020-08-13,2020-08-13,$AAPL every Day bullish making money 💰.,neutral,negative,0.37668743113862313,0.3485908353758653,0.2747217334855115
+109550,test,AAPL,2020-08-13,2020-08-13,$AAPL 🚨Power Hour didn’t even happen!,neutral,neutral,0.29004164238102864,0.4090555548247178,0.3009028027942536
+109549,test,BA,2020-08-13,2020-08-13,$BA Bulls have no clue on how to trade this equity!😃😃😃😃😃,neutral,positive,0.2264511893465167,0.33191499662010165,0.44163381403338176
+109547,test,GOOG,2020-08-13,2020-08-13,$GOOG Melt up to 2k🔥🔥🔥,neutral,neutral,0.41236433274700734,0.4276506391340933,0.15998502811889936
+109551,test,TSLA,2020-08-13,2020-08-13,$TSLA we gonna have a base in the moon is elon saying tesla would go to the moon 🌙,neutral,neutral,0.23165628346262207,0.4447700903767738,0.32357362616060414
+109555,test,AAPL,2020-08-14,2020-08-14,$AAPL who caught the double bottom and bought calls? 💰💰💰😎😴😴 Nice Trade,neutral,positive,0.30589425935636366,0.2495808086019366,0.4445249320416996
+109552,test,TSLA,2020-08-14,2020-08-14,$TSLA I don’t have power to buy this stock lol but I have question .for example if I buy one tesla stock is count to 5 stock ? Thanks for answer 🙏,positive,positive,0.12760524901296053,0.38520876289375783,0.4871859880932816
+109553,test,TSLA,2020-08-14,2020-08-14,$TSLA Markets turning green. This could run 🚀,positive,neutral,0.4065330978445799,0.4334576117028653,0.1600092904525548
+109554,test,TSLA,2020-08-14,2020-08-14,$TSLA bulls like fffff outta here 😂,positive,neutral,0.1876950460242825,0.44160322401135754,0.37070172996436
+109556,test,TSLA,2020-08-14,2020-08-14,"$TSLA why do bears think bulls will
+Sell eod and bears will hold overnight 🤦🏿‍♂️",positive,neutral,0.10605624712920321,0.5839595509085106,0.3099842019622862
+109557,test,TSLA,2020-08-15,2020-08-17,$TSLA Good night Tesla bulls!! To the moon on Monday💰💰💰💰💰🥂,neutral,positive,0.13704275514649253,0.3487241854199621,0.5142330594335455
+109558,test,TSLA,2020-08-15,2020-08-17,$TSLA Is it possible run to  1 share Tesla =  1 ounce  Gold before split? 😁🤞GL for us,neutral,neutral,0.24747558812666923,0.39430700543354386,0.35821740643978695
+109559,test,TSLA,2020-08-18,2020-08-18,$TSLA $2500 this week or I eat my socks 🧦,neutral,neutral,0.2452480929326905,0.4992587748696501,0.25549313219765935
+109560,test,TSLA,2020-08-18,2020-08-18,"$TSLA Could run to $2,000 today, wouldn’t be surprised if we see a quick sell off/profit taking and then bounce for a run to $2,000. Play it safe my friends 🚀",neutral,positive,0.12449937361646475,0.2685559111781288,0.6069447152054065
+109562,test,TSLA,2020-08-18,2020-08-18,$TSLA How much will these be worth at open 🤩,neutral,negative,0.3901228718659704,0.28789958128250837,0.3219775468515212
+109564,test,TSLA,2020-08-18,2020-08-18,$TSLA will hit 2k. BEARS keep losing 🤣. My profile will be hella green. How about yours last few days bears?,neutral,neutral,0.19824453527810693,0.491046295799338,0.310709168922555
+109565,test,TSLA,2020-08-18,2020-08-18,$TSLA Why did I sell my 8/21 calls yesterday 🤦🏻‍♂️,neutral,positive,0.25352676581601763,0.22170869685897324,0.524764537325009
+109566,test,TSLA,2020-08-18,2020-08-18,$TSLA  Bears 🐻 are out for a little feast 😂😂😂😂😂😂😂,neutral,neutral,0.26305108561361035,0.4267773136343842,0.31017160075200534
+109567,test,TSLA,2020-08-18,2020-08-18,$TSLA stock & SpaceX timing their rocket launches... get ready 🚀 #2000,neutral,neutral,0.1684258038736642,0.45888526854168876,0.37268892758464695
+109568,test,TSLA,2020-08-18,2020-08-18,$TSLA i am long until it retraces 10 % then i dump my 💼,neutral,neutral,0.3605481184243346,0.410357857701903,0.22909402387376243
+109563,test,WMT,2020-08-18,2020-08-18,$WMT never thought I'd be this pumped about ole Wally world 🤑,negative,neutral,0.30654611303777884,0.46334096352139525,0.23011292344082598
+109570,test,GOOG,2020-08-19,2020-08-19,$GOOG Keep eating Big Dawg! Glad I bought the dip at 1460💪💪,positive,neutral,0.2565107728407824,0.5557289411249449,0.18776028603427275
+109569,test,TSLA,2020-08-19,2020-08-19,$TSLA were down a $1!! Wth! 🤦‍♂️,positive,neutral,0.16274583022149028,0.4479716634766175,0.3892825063018922
+109571,test,TSLA,2020-08-19,2020-08-19,"$TSLA market maker isn’t going to be so nice &generous anymore, will lose grip from the selling that will occur. 40%+ drop coming. 📉🔪👋🏻",positive,positive,0.22592434720613058,0.35209579306932304,0.4219798597245465
+104568,test,AAPL,2020-08-20,2020-08-20,$AAPL 500$ a pop before the stock split 💫💫💫📈📈📈🇺🇸🇺🇸🇺🇸🇺🇸🇺🇸🇺🇸,positive,neutral,0.21162515217427486,0.4316839541417756,0.35669089368394963
+109574,test,AAPL,2020-08-20,2020-08-20,$AAPL just hold that’s another  10 million people to buy up shares 💰😂,positive,neutral,0.23082075540710936,0.4996265709145337,0.2695526736783569
+109575,test,BA,2020-08-20,2020-08-20,$BA consolidating gains for the next leg up 🤔😉,neutral,neutral,0.18785119884199894,0.5504449480976447,0.26170385306035643
+109572,test,NVDA,2020-08-20,2020-08-20,$NVDA Tried to warn some of y’all. I’m seeing a broader based sell off in tech coming. We’ll see. GLTA 👍🏾💙,positive,neutral,0.29889031311864656,0.44888423761305746,0.252225449268296
+109573,test,TSLA,2020-08-20,2020-08-20,"$TSLA You forgot about the last and true Greek to your options Robinhood... Omega. Sweet dreams, it may be the last for a long time. We’re here  🔱😈",neutral,neutral,0.26533560293966785,0.41647780191109196,0.31818659514924025
+109577,test,AAPL,2020-08-21,2020-08-21,$AAPL lol don’t recommend buying contracts Monday is the split just enjoy the ride🚀🤑🚀🤑,neutral,positive,0.24793882600418995,0.3676388828633724,0.38442229113243775
+109581,test,AAPL,2020-08-21,2020-08-21,$AAPL 510 today 🚀🚀🚀🤑🤑🤑🤑try to get in on the morning dip if there is one,neutral,neutral,0.272084734990058,0.5391595946827638,0.18875567032717822
+109584,test,AAPL,2020-08-21,2020-08-21,$AAPL I’ve never been so excited like this before for a stock. Their 4-1 split will surely bring new investors to acquire affordable shares. Long term investors will be rewarded significantly 🙏 GLTA,neutral,negative,0.5369736563390938,0.3038396630511979,0.15918668060970825
+109586,test,AAPL,2020-08-21,2020-08-21,$AAPL should I buy more for the long term??🥶🥶,neutral,negative,0.593970359110223,0.19020476859137442,0.2158248722984026
+109587,test,AAPL,2020-08-21,2020-08-21,$AAPL we all know this is going to $505 right????? 🚀🚀🚀🚀🚀🚀🚀🧲🧲🧲🧲🧲🧲🧲🧲$505🧲🧲🧲🧲🧲🧲🧲🧲🧲$505,neutral,neutral,0.34982795868161276,0.4479813071102449,0.20219073420814232
+109591,test,AAPL,2020-08-21,2020-08-21,$AAPL successful day scalping apple 🎯 $505+ monday,neutral,negative,0.3802042694722394,0.3614141674925151,0.25838156303524557
+109589,test,MSFT,2020-08-21,2020-08-21,$MSFT gets $10 billion dollar deal still won’t even move 1 percent 😂,neutral,negative,0.3821126851420504,0.2930266383668007,0.3248606764911489
+109576,test,NVDA,2020-08-21,2020-08-21,"$NVDA ..all weak hands that sold before ER will be coming back in ✅
+
+ $550 ... sooner than later ✅",neutral,neutral,0.35830816618425515,0.4604697233886578,0.18122211042708714
+109585,test,NVDA,2020-08-21,2020-08-21,$NVDA I’m so happy with this stock 🚀🔥,neutral,neutral,0.28253398473022706,0.39807424322422164,0.3193917720455513
+109578,test,TSLA,2020-08-21,2020-08-21,$TSLA It's not Tesla Motors. It's Planet 🌏 Tesla 💹💸,neutral,positive,0.20893753409422078,0.32669772811603737,0.46436473778974185
+109579,test,TSLA,2020-08-21,2020-08-21,$TSLA A complete beast. Will be back to 2k within 5 years. Easiest ROI ever 🤗,neutral,neutral,0.3590720414930318,0.4596218058857385,0.18130615262122973
+109580,test,TSLA,2020-08-21,2020-08-21,$TSLA bears salty about yesterday but I’m grateful 🙏🏼 also OPTT looking like she ready to pop,neutral,neutral,0.11967827158025643,0.6571304478030637,0.22319128061667992
+109582,test,TSLA,2020-08-21,2020-08-21,$TSLA every time you stay in area for too long you get uncomfortable and leave 🥴,neutral,neutral,0.3399386341108656,0.34044806879785466,0.31961329709127967
+109583,test,TSLA,2020-08-21,2020-08-21,"$TSLA poised to run, can it make the push to 2100 before eod?🤔🚀💪",neutral,positive,0.23050557739646804,0.37837780668838883,0.39111661591514324
+109588,test,TSLA,2020-08-21,2020-08-21,$TSLA not cool TSLA I wanted $2099 to sell and it took the rug o it from under me! Hope we get our $2100 Monday we’ll maybe 🤷‍♂️,neutral,positive,0.27618333674889733,0.31726971865066866,0.40654694460043395
+109590,test,TSLA,2020-08-21,2020-08-21,$TSLA take your meds for crying out loud 😹😹😹😹😹😹😹😹😹😹😹,neutral,positive,0.21232916976194857,0.29262968257907684,0.49504114765897456
+109592,test,AAPL,2020-08-24,2020-08-24,$AAPL I don’t know what to say 😭,neutral,neutral,0.23610143835874736,0.42418695813853924,0.3397116035027133
+109593,test,AAPL,2020-08-24,2020-08-24,$AAPL last day to buy Apple before the split. Enjoy the party! 🍎🤙🏻,neutral,positive,0.28563736952622243,0.3349675832562615,0.37939504721751605
+109594,test,AAPL,2020-08-24,2020-08-24,"$AAPL $505 looking good for another 1,000 come on y’all let’s make another push 💪💪💪💪💪💪💪💪💪",neutral,neutral,0.2845204197442047,0.39986638289383636,0.31561319736195886
+109595,test,AAPL,2020-08-24,2020-08-24,$AAPL look how its doing during lunch 🤔🤑,neutral,negative,0.44672960627382474,0.3038826494052071,0.2493877443209683
+109596,test,AAPL,2020-08-24,2020-08-24,$AAPL Apple 🍎 only goes up against Newton’s law of gravity.,neutral,neutral,0.36866194721018103,0.44761015395706005,0.1837278988327588
+109597,test,MSFT,2020-08-24,2020-08-24,$MSFT 25th anniversary of Windows 95 ❤️,neutral,negative,0.6552574945143254,0.20244597806766176,0.142296527418013
+109598,test,AAPL,2020-08-25,2020-08-25,"$AAPL laugh now cry later you bears,Back to hibernation you go ✌️🥱🐻",neutral,neutral,0.1886942332381282,0.5920943774497726,0.21921138931209933
+109599,test,AMZN,2020-08-25,2020-08-25,$AMZN first time I decided to hold and not day trade this stock and I’m bag holding with no end in sight 😂,positive,positive,0.23489942528444901,0.32584570291209364,0.43925487180345735
+109600,test,AMZN,2020-08-25,2020-08-25,$AMZN fool proof plan today. 3250 was your LIS. 😛,positive,positive,0.3026301077571407,0.24194253890830167,0.45542735333455764
+109601,test,TSLA,2020-08-25,2020-08-25,$TSLA crashed just a bit the front of a model 3 and the authorised repair centre asked him 45.000€ good luck buying one 😂 I’ll tell u sooner than later people will get it,positive,neutral,0.2239400189734473,0.5627494534149093,0.21331052761164337
+109602,test,TSLA,2020-08-25,2020-08-25,$TSLA 🚀🚀🚀🚀🚀🚀🚀 wait for what happen tmr 🤑🤑🤑🤑🤑🤑,positive,negative,0.41628121326979295,0.3692133496305092,0.2145054370996979
+104761,test,AMZN,2020-08-26,2020-08-26,$AMZN NOW ANNOUNCE THE SPLIT! BOOM 💥,neutral,negative,0.48315016938450855,0.24390758539421895,0.2729422452212725
+109608,test,FB,2020-08-26,2020-08-26,$FB  took a little profits around $298 and buying the dips for next week 💥🔥,negative,neutral,0.12152050716130998,0.590715809092579,0.2877636837461109
+109609,test,FB,2020-08-26,2020-08-26,$FB  investing is the healthiest addiction I’ve ever had. 💰,negative,positive,0.20590251455974085,0.3568582313617989,0.43723925407846026
+109610,test,FB,2020-08-26,2020-08-26,$FB you bought puts on the 30-minute dip because you're going to outsmart the trend🤔🤤,negative,negative,0.6089253774172891,0.16326387041470855,0.22781075216800237
+109606,test,PFE,2020-08-26,2020-08-26,$PFE I got a 37.5p guys and I’m gonna use my first bear tag 🤪😂,neutral,neutral,0.4177590232198349,0.45821909502276004,0.12402188175740504
+109603,test,TSLA,2020-08-26,2020-08-26,$TSLA signs can’t get clearer than this dont sell bulls we going to mars 🚀,positive,positive,0.29966851027238894,0.31414384259960904,0.3861876471280021
+109604,test,TSLA,2020-08-26,2020-08-26,$TSLA is this going to 2100 for a split at 420???? 🤣🧐,positive,neutral,0.24031841179035124,0.4312571216656255,0.3284244665440232
+109605,test,TSLA,2020-08-26,2020-08-26,"$TSLA  TSLA doing well but the new kid on the block?
+
+There's your 10 x
+I remember nio at 2.19
+O the heady days of last year 😎",positive,neutral,0.3917379100754841,0.4017878750072691,0.20647421491724677
+109607,test,TSLA,2020-08-26,2020-08-26,$TSLA And the money machine keeps printing 🤒,positive,neutral,0.18404567720269469,0.5830264057780762,0.23292791701922919
+109611,test,AAPL,2020-08-27,2020-08-27,$AAPL One apple a day keeps the Bears away 😂,neutral,neutral,0.14999778231331926,0.5870978345046294,0.26290438318205134
+109614,test,AAPL,2020-08-27,2020-08-27,$AAPL most expensive luck break i ever took. 😆 all good now!,neutral,positive,0.18654061825697993,0.35571815730565287,0.45774122443736714
+104799,test,MSFT,2020-08-27,2020-08-27,$MSFT omg this can’t get past 230 🤬,neutral,negative,0.535422081406937,0.2700707262344015,0.19450719235866148
+109612,test,TSLA,2020-08-27,2020-08-27,$TSLA Not jumping back in at the top range. Will jump in after the split settles down and consolidates for a few months. GLTA 💎💸,neutral,positive,0.3233569026535146,0.2924472234830093,0.38419587386347603
+109613,test,WMT,2020-08-27,2020-08-27,$WMT this is only the beginning 🥱🚀🤑,positive,neutral,0.22187157771403293,0.5648884465690184,0.21323997571694875
+109620,test,AAPL,2020-08-28,2020-08-28,$AAPL big short coming 2 week notice !!! Red Alert 🍏 to 🍎,positive,negative,0.43331952888033026,0.30469997117864284,0.26198049994102707
+109621,test,BA,2020-08-28,2020-08-28,$BA Strong 💪 close come on sept.,negative,negative,0.3636963741046239,0.29511792060940295,0.3411857052859732
+109617,test,FB,2020-08-28,2020-08-28,$FB MOMO HEDGE SHORTS AGGRESSIVE FADE 🔥,neutral,neutral,0.27733138365684246,0.4797908878915153,0.24287772845164224
+109615,test,TSLA,2020-08-28,2020-08-28,$TSLA no bears in sight 😳 they’ll come later when it drops 0.5% and try to get you to sell all your shares 🤣,positive,neutral,0.15918917149261458,0.6992415936203056,0.14156923488707987
+109616,test,TSLA,2020-08-28,2020-08-28,"$TSLA Usually this is when you sell, but this is a freak stock. 😅😅😅",positive,neutral,0.3173050505754741,0.36767515168413184,0.3150197977403941
+109618,test,TSLA,2020-08-28,2020-08-28,"$TSLA back in, fully leveraged. Let’s fly 🤑",positive,neutral,0.27235249677039286,0.5584479560804365,0.1691995471491706
+109619,test,TSLA,2020-08-28,2020-08-28,"$TSLA this is what Monday looks like, added 7 shares 😀",positive,neutral,0.37546311043565966,0.3852115764641486,0.23932531310019173
+109623,test,AAPL,2020-08-31,2020-08-31,$AAPL I’ll give you one guess as to what stock is rippin the markets futes 😂😂😂,positive,neutral,0.36265588516068586,0.3817531413816592,0.2555909734576549
+109624,test,AAPL,2020-08-31,2020-08-31,$AAPL It‘s over for you bears this time for reals! This kitty‘s going to eat Fancy Feast tonight! Calls Locked & Loaded! 😻💰👍🏻🍎,positive,negative,0.42384411665066746,0.3590561687501967,0.21709971459913582
+109625,test,AAPL,2020-08-31,2020-08-31,$AAPL what calls are we loading up on yall!💲💲💲,positive,positive,0.24338091792764383,0.2483890906673132,0.508229991405043
+109622,test,MSFT,2020-08-29,2020-08-31,$MSFT China had FB and other social media banned for awhile already so what’s wrong with the tencent and tik tok ban 🥱🤷‍♂️,neutral,negative,0.392756084349244,0.3442809707616471,0.2629629448891089
+109626,test,TSLA,2020-08-31,2020-08-31,"$TSLA seriously!! 
+ it’s like a real Rocket 🚀 no jokes it’s REAL!! 😋😋😋😋😋😋😋😋😋😋😋😋😋😋😋😋😋😋",negative,positive,0.27645073342718063,0.35362373429868155,0.3699255322741379
+109627,test,TSLA,2020-08-31,2020-08-31,$TSLA I’ve fallen in love all over again 🚀🤣💪🏼,negative,neutral,0.304569543693848,0.35669093093166654,0.3387395253744855
+109628,test,TSLA,2020-08-31,2020-08-31,$TSLA back on the road to 2kville 6days of driving see ya soon 😎,negative,neutral,0.3388765441278447,0.3758356557140359,0.2852878001581194
+109629,test,TSLA,2020-08-31,2020-08-31,$TSLA if you don’t sell you don’t have to pay taxes 🤔🤔🤔,negative,neutral,0.1234971736661226,0.5451634927622213,0.33133933357165624
+109644,test,AAPL,2020-09-01,2020-09-01,$AAPL it never stops!!!🚀🚀🚀 not too late to hop on the money train,negative,positive,0.3565910317859999,0.21415526575023694,0.4292537024637632
+109630,test,TSLA,2020-09-01,2020-09-01,"$TSLA From the SP movement both before and after split, I really think there is a big announcement in works. Hopefully SpaceX merger 🤞",negative,positive,0.2857039778775134,0.3093946576895525,0.40490136443293406
+109631,test,TSLA,2020-09-01,2020-09-01,"$TSLA bears waiting for this to go to 300, you will wait forever! 🤡",negative,positive,0.27882451263193997,0.31283048773766053,0.40834499963039944
+109632,test,TSLA,2020-09-01,2020-09-01,$TSLA keep watching bears - YOU CANNOT WIN ON THIS BAD BOY 😂😂😂😂😂😂😂😂😂😂😂😂😂,negative,neutral,0.160287273660151,0.680168255223397,0.159544471116452
+109633,test,TSLA,2020-09-01,2020-09-01,$TSLA Sounds like they need help getting shares for the s and p!!!  🤑,negative,negative,0.4972635491737076,0.3079707494541675,0.1947657013721248
+109634,test,TSLA,2020-09-01,2020-09-01,"$TSLA  Alls I'm saying is..
+
+If this stock price drops bc of the offering, I'm freeing up some capital to buy more. Seems like a win, win situation to me. 🤷🏽‍♀️",negative,neutral,0.27478131607178147,0.37619010958302085,0.3490285743451977
+109635,test,TSLA,2020-09-01,2020-09-01,$TSLA LISTEN TO THOSE BEARS THEY HAVE BEEN RIGHT 2k points ago 🤣🤣🤣,negative,neutral,0.36991416619111767,0.37701342968041573,0.25307240412846654
+109636,test,TSLA,2020-09-01,2020-09-01,$TSLA last call to get on the train 🚂,negative,neutral,0.3807345818219142,0.439330883245608,0.1799345349324777
+109637,test,TSLA,2020-09-01,2020-09-01,$TSLA Still much higher than yesterdays lowest.. Just wait. 🦄🦄💕💕😍😍,negative,negative,0.3936651914741135,0.2819715040889687,0.32436330443691785
+109638,test,TSLA,2020-09-01,2020-09-01,$TSLA who TF TOOK A DUMP 🗣!!!!?????,negative,negative,0.39321928845654724,0.21532096873674472,0.3914597428067081
+109639,test,TSLA,2020-09-01,2020-09-01,$TSLA stop trying to kee this down! Let it go to $520-$550 and stay in your own lane 😂,negative,neutral,0.1758413610737415,0.47943459226851326,0.34472404665774525
+109640,test,TSLA,2020-09-01,2020-09-01,$TSLA   OMG !!!  Seriously..... who would sell this stock ????  Very long.  Buy and Hold.   This is how Millionaires are mad people 🙄🙄,negative,positive,0.20339865789236727,0.2749690953918935,0.5216322467157393
+109641,test,TSLA,2020-09-01,2020-09-01,$TSLA made a tiny little profit shorting for a few minutes. I know better than to bet against TSLA for too long. Bought some $600 calls for this Friday 😁😆😆,negative,positive,0.3028724360091784,0.3407388450522222,0.35638871893859936
+109642,test,TSLA,2020-09-01,2020-09-01,$TSLA I bought the March dip at $434 and rode that rocket to the split! I am loading up the rocket again preparing for another blast off!!! 🚀🚀🚀🚀🚀,negative,neutral,0.25893068137525943,0.4945693267205187,0.24649999190422178
+109643,test,TSLA,2020-09-01,2020-09-01,"$TSLA  I remember Toyota trying to get electric hybrids off the ground 20 years + ago. No one executes like TSLA. Earnings rocket  while costs level out 🏆 TSLA‘s learning rate is insane. Bulls win over and over. Hold on, no regrets.",negative,neutral,0.3174060643618593,0.3670330256879849,0.3155609099501556
+109645,test,AAPL,2020-09-02,2020-09-02,$AAPL ONE  THIRTY  FIVE  on the dot... 🤣😂🤣😂💪🍏🍏💰🍏💸🍏🤑🤑🤑 Excellent...,negative,negative,0.38567512478413973,0.3204224346870275,0.29390244052883263
+109652,test,AAPL,2020-09-02,2020-09-02,$AAPL 160 calls for Sept 18 come on Apple make me rich💰💰💰,negative,negative,0.4888239972410787,0.2518556198524296,0.25932038290649173
+109646,test,TSLA,2020-09-02,2020-09-02,$TSLA pinning some trolls on my wall of shame again. They prob still holding and lost out on profits while I locked in $7K today.  I plan to reshort on any bounce tomorrow. Time after time these ppl holding for the moon 🤦🏻‍♂️.,negative,positive,0.1122748079799767,0.38370427485727077,0.5040209171627524
+109647,test,TSLA,2020-09-02,2020-09-02,$TSLA wonder how many people gon a cry for SEC when this hits $400 EOD tomorrow 🤣✌,negative,neutral,0.18939291884044634,0.5622142147569633,0.24839286640259026
+109648,test,TSLA,2020-09-02,2020-09-02,$TSLA should have hold my puts overnight 🤦‍♂️,negative,neutral,0.3189098951731355,0.41146945147857944,0.26962065334828517
+109649,test,TSLA,2020-09-02,2020-09-02,$TSLA Hold until battery day 🤡🤡🤡 That you all 114k record day for me,negative,neutral,0.3537598979822756,0.36618858802413184,0.28005151399359274
+109651,test,TSLA,2020-09-02,2020-09-02,"$TSLA : “Oops, I did it again
+I played with your heart, got lost in the game
+Oh baby, baby” 🎼 🎶 🎵",negative,positive,0.2801070408856139,0.25803202086623017,0.46186093824815594
+109653,test,TSLA,2020-09-02,2020-09-02,$TSLA maybe another stock split 10-1 can make this thing go up 😄🤣🤣😂😅,negative,positive,0.3598807192988669,0.24996960399776214,0.390149676703371
+109650,test,WMT,2020-09-02,2020-09-02,$WMT Bought back the 55 calls I sold as a hedge yesterday. Expecting consolidation for a day or two and then another rip up. After a day or two I will sell all my ITM calls and buy OTM. 😎,negative,neutral,0.24442319722311628,0.4745899649375725,0.28098683783931105
+109655,test,AAPL,2020-09-03,2020-09-03,"$AAPL should’ve sold today, this looks like a clear down day tomorrow 😔",neutral,neutral,0.328677964803402,0.3572253218807528,0.31409671331584516
+109662,test,AAPL,2020-09-03,2020-09-03,$AAPL $124  is going be to new resistance 🐻🐻,neutral,negative,0.5150489043467781,0.1656950211073386,0.3192560745458833
+109667,test,AAPL,2020-09-03,2020-09-03,$AAPL Lmao will Apple be a $50 stock soon?😂😂,neutral,negative,0.3767624708706746,0.29773827545229475,0.32549925367703075
+109654,test,TSLA,2020-09-03,2020-09-03,$TSLA Can we get Pullback to 313 50MA so that Bulls can reload 😂. Any news on offerings ? Is it done or yet to commence?,neutral,neutral,0.29956275169514124,0.5020854722534315,0.19835177605142726
+109656,test,TSLA,2020-09-03,2020-09-03,$TSLA germany news was released yesterday😂😂bulls getting desperate,neutral,neutral,0.3238597495631542,0.42795661032056875,0.248183640116277
+109657,test,TSLA,2020-09-03,2020-09-03,$TSLA Pray to Musk he is your GOD. 😂😂😂,neutral,positive,0.3043686451079855,0.21974123379228502,0.4758901210997294
+109658,test,TSLA,2020-09-03,2020-09-03,"$TSLA Don't worry bulls, Elon can always announce another stock split if the stock gets too low !! 😂",neutral,positive,0.23787350389504036,0.266070950282033,0.4960555458229266
+109659,test,TSLA,2020-09-03,2020-09-03,$TSLA battery day battery day. Keep loading your savings and see what happens 💣😂,neutral,neutral,0.28674956790618406,0.5605648374918787,0.15268559460193726
+109660,test,TSLA,2020-09-03,2020-09-03,$TSLA million mile 🍆 for the 🐂s,neutral,neutral,0.33042509345170973,0.4610640003250709,0.2085109062232193
+109661,test,TSLA,2020-09-03,2020-09-03,$TSLA .... But by all means keep buying the dips. 🤦 Fukin retards. 380 today,neutral,neutral,0.24219522151379982,0.4994471679353438,0.2583576105508562
+109663,test,TSLA,2020-09-03,2020-09-03,$TSLA if this drops below 400... look out below 👀,neutral,neutral,0.19927427383618743,0.6139460932049539,0.18677963295885866
+109664,test,TSLA,2020-09-03,2020-09-03,$TSLA wahooo after market doesn’t look good. But that can change tomorrow let’s see what futures say 🙃,neutral,neutral,0.14692176758825515,0.6005928358478333,0.2524853965639115
+109665,test,TSLA,2020-09-03,2020-09-03,$TSLA I’ll see you guys at 150$ nothing more . 🐷 stock,neutral,negative,0.37869955130418376,0.2856507837829722,0.3356496649128439
+109666,test,TSLA,2020-09-03,2020-09-03,$TSLA sold everything on Monday 🙌🏼 do the same before it’s too late 👎🏻,neutral,positive,0.37017009129202083,0.17412486891462944,0.45570503979334964
+109673,test,AAPL,2020-09-04,2020-09-04,$AAPL Retail getting slaughtered. Keep buying lil piggies🐷,negative,negative,0.3731675955348838,0.26269856657297974,0.3641338378921364
+109675,test,AAPL,2020-09-04,2020-09-04,$AAPL next week back 130 by iPhone 12 launch 150🚀🚀🚀🚀🚀🚀🚀🚀,negative,negative,0.3904750481378637,0.2658900130201805,0.34363493884195584
+109668,test,TSLA,2020-09-04,2020-09-04,$TSLA I heard Tesla is an energy company. Go look at energy company valuations.. 🤦‍♂️,negative,neutral,0.3694643281625637,0.42949872459412797,0.20103694724330823
+109669,test,TSLA,2020-09-04,2020-09-04,$TSLA I don’t think y’all understand the power of MMs. Well I’m trying to warn you 🤷‍♂️ tech bubble about to burst,negative,neutral,0.2726567619734382,0.4146748015134792,0.3126684365130827
+109670,test,TSLA,2020-09-04,2020-09-04,$TSLA Imagine not getting out at $424🤡,negative,neutral,0.34900773944066077,0.3943070772267665,0.2566851833325728
+109671,test,TSLA,2020-09-04,2020-09-04,$TSLA PEOPLE! For the love of God! 🛑 buying $600 calls for a week from now!,negative,positive,0.3307576695983717,0.27756651631334095,0.3916758140882873
+109672,test,TSLA,2020-09-04,2020-09-04,$TSLA sold my put too early 🥴😂 how much longer will this drop lol,negative,positive,0.15889244461764557,0.36399271595007215,0.4771148394322823
+109674,test,TSLA,2020-09-04,2020-09-04,$TSLA listen all i want is elon to tweet got the invite to go 🍓 picking,negative,positive,0.31338464682576667,0.2322739527684931,0.45434140040574034
+109676,test,TSLA,2020-09-04,2020-09-04,$TSLA better gap down so i can get cheap share. 🤡,negative,neutral,0.31988867274803323,0.5066935459961279,0.17341778125583882
+109678,test,AAPL,2020-09-06,2020-09-08,"$AAPL Short term idea, this should trade below 109 by end of 09/18. Share holders/ longs need not worry. Option holders plan accordingly. 🙌🏻",positive,negative,0.44311587105295336,0.346371631388088,0.21051249755895848
+109679,test,AAPL,2020-09-08,2020-09-08,$AAPL seen this time and time again. When the comments on here look overwhelmingly green the rug pull is certain. Buying puts at open 😈,positive,neutral,0.32366107164571273,0.46160917595159984,0.2147297524026874
+109680,test,AAPL,2020-09-08,2020-09-08,$AAPL My poor puts! They’re getting greener & greener 🤑,positive,neutral,0.3256706061599377,0.37058738067447355,0.30374201316558874
+109681,test,AAPL,2020-09-08,2020-09-08,$AAPL Went short at $114.99 since that’s the only way to make now apparently 🤷🏻‍♂️,positive,positive,0.3207841801904042,0.25355723210100956,0.42565858770858617
+109677,test,TSLA,2020-09-05,2020-09-08,$TSLA  Always a run up after markets close for holiday etc.. 🚀🚀,positive,neutral,0.13915703765372037,0.4425939578117528,0.4182490045345269
+109682,test,TSLA,2020-09-08,2020-09-08,"$TSLA hey bulls, it for along haul or long hole?😂😂😂😂😂😂😂😂😂😂😂",positive,negative,0.47233976847959486,0.3044884312733885,0.22317180024701655
+109683,test,TSLA,2020-09-08,2020-09-08,$TSLA But there is BUTTery day! 😂,positive,neutral,0.31950218590392815,0.4176480164565424,0.2628497976395294
+109684,test,TSLA,2020-09-08,2020-09-08,$TSLA “just keep averaging down” “will you tell your grandkids you sold cause you were to pussy?” Idiots 🤣🤣🤣🤣,positive,positive,0.15766106371404176,0.4147273995834798,0.4276115367024784
+109689,test,BA,2020-09-09,2020-09-09,"$BA That's right keep coming down. We know the pops are all cap. Keep coming, keep coming..$150 🎯",neutral,neutral,0.2778518405830101,0.4022585571228746,0.3198896022941152
+109693,test,NVDA,2020-09-09,2020-09-09,"$NVDA Listen to Financial Dinosaurs and Fake Traders and you will do well.
+Not.
+
+Invest in Future Not Past 💸 💸 💸 💸 💸",negative,neutral,0.1220369847281803,0.6343449169263528,0.24361809834546697
+109685,test,TSLA,2020-09-09,2020-09-09,"$TSLA 500 tomorrow 🤡 500 at battery day! 500 next year, wait another year after that 🤣",neutral,positive,0.19830542890340772,0.3891666506777391,0.41252792041885333
+109686,test,TSLA,2020-09-09,2020-09-09,$TSLA 4 times the market cap of Ford and GM combined.  😆,neutral,positive,0.1811229062276513,0.3845439425537675,0.4343331512185812
+109687,test,TSLA,2020-09-09,2020-09-09,"$TSLA first you guys bought the 5:1 split, and now you are buying the overvalued dip. Funds are loading shares to you while raising price target and you don't even realize. 😔",neutral,neutral,0.28203090142721776,0.4254215943697814,0.292547504203001
+109688,test,TSLA,2020-09-09,2020-09-09,$TSLA I love the love between bears and bulls on this board 😂😂😂 bears getting burned today tomorrow we enjoy the ride down again 🥳,neutral,neutral,0.14221713972632666,0.6206099200272526,0.2371729402464208
+109690,test,TSLA,2020-09-09,2020-09-09,"$TSLA 
+
+This is the fakest pump I’ve ever seen in my life!!! 🤣",neutral,neutral,0.2850834893150857,0.38280614103208194,0.3321103696528323
+109691,test,TSLA,2020-09-09,2020-09-09,$TSLA This is going back to the ground AH 👏 MARK 👏 MY 👏 WORDS 👏,neutral,positive,0.202519551534216,0.34922006656631094,0.44826038189947304
+109692,test,TSLA,2020-09-09,2020-09-09,"$TSLA bro wtf😡🤬 RH sold my shares automatically by itself, I never even placed an order to sell. I’m officially pulling my money out of this trash brokerage and moving to another.",neutral,neutral,0.33649658428049706,0.4150483687270388,0.24845504699246412
+109697,test,AAPL,2020-09-10,2020-09-10,$AAPL WTH 😬 just bought last week at 130!!! Will check back in three weeks,neutral,neutral,0.4097274537790749,0.4505499913523838,0.13972255486854146
+109694,test,BABA,2020-09-10,2020-09-10,$BABA Oppenheimer PT $323 your  little brother is coming ANT 🐜 Financial 🤠,neutral,neutral,0.20976366801802823,0.520332001067446,0.2699043309145257
+109696,test,TSLA,2020-09-10,2020-09-10,$TSLA ✅LETS HAVE AN AMAZING DAY!! 400+ EOD😍,neutral,positive,0.2956095197117059,0.3120909566808645,0.39229952360742953
+109698,test,TSLA,2020-09-10,2020-09-10,$TSLA 350 I’m in for call but for now my put are working 😂😂,neutral,positive,0.2625998081062083,0.2938805759146532,0.44351961597913847
+109699,test,TSLA,2020-09-10,2020-09-10,$TSLA staying green despite market sell off 👍😂,neutral,neutral,0.29123818179463346,0.48352288287086365,0.22523893533450295
+109695,test,WMT,2020-09-10,2020-09-10,"$WMT the wsj piece literally has no new information- just a negative headline.  Nothing has changed and we still have a legit shot at TT, and, along with all the other positives....🤯",neutral,negative,0.4269576936866059,0.4134425146743523,0.15959979163904178
+109703,test,AAPL,2020-09-11,2020-09-11,"$AAPL bulls on today’s losses, “it’s just a pullback bro! Totally healthy. Everything is fine! Bears are a bunch of clowns 🤡...everything is fine...”",positive,positive,0.1895101514511069,0.40367053722797197,0.4068193113209211
+109700,test,TSLA,2020-09-11,2020-09-11,$TSLA I see a lot of 420 should I light a blunt before market opens 😂🚀💪,positive,neutral,0.34316551762064373,0.4808345222954865,0.17599996008386976
+109701,test,TSLA,2020-09-11,2020-09-11,"$TSLA come to think about it, I’m glad this company was not included in the s&p 500 index. Have you seen the performance of those stocks included? Abysmal since...😂😂😂😂😂",positive,neutral,0.29081307913809407,0.5055709033697765,0.20361601749212938
+109702,test,TSLA,2020-09-11,2020-09-11,$TSLA ok you bears can go back to your graves now 😂,positive,neutral,0.13943746954200784,0.5795399436583544,0.28102258679963776
+109704,test,TSLA,2020-09-11,2020-09-11,$TSLA Another split after battery day!!!💰💰💰💰💰💰💰💰😁😁😁🥂,positive,negative,0.4398330795129593,0.3912660631661727,0.1689008573208679
+109705,test,AAPL,2020-09-14,2020-09-14,$AAPL   Wow so much bs here today 😂😂😂.   Go on and sell do it !! 😂😂😂,neutral,positive,0.16859615751307858,0.3208760650835819,0.5105277774033395
+109706,test,TSLA,2020-09-14,2020-09-14,$TSLA in my opinion tesla should continue to run the rest of this week due to the battery day catalyst 🤷‍♂️,positive,neutral,0.3455347590567128,0.49237311518791727,0.16209212575536985
+109707,test,TSLA,2020-09-14,2020-09-14,$TSLA today was a decent day. Need $500 tomorrow to make it even against the 🐻.,positive,negative,0.3790606275023973,0.3315506868993936,0.28938868559820896
+109715,test,AAPL,2020-09-15,2020-09-15,$AAPL I bought 150 more at $115.42!  Thank you for those cheap shares!! 💪💪💵💵,negative,negative,0.48084411689859335,0.320274395260438,0.19888148784096868
+109718,test,AAPL,2020-09-15,2020-09-15,$AAPL - And that’s what I call a bounce. ↗️🍎↗️,negative,positive,0.3132082053982552,0.30549896548619315,0.38129282911555157
+109710,test,NFLX,2020-09-15,2020-09-15,$NFLX another short day🤑🤑 in pedoville,neutral,negative,0.4828768963611282,0.34926601809429475,0.167857085544577
+109708,test,TSLA,2020-09-15,2020-09-15,$TSLA who’s ready for 430-450 pre market tmw!? 🥵,neutral,neutral,0.3458333734685284,0.3731716441193595,0.28099498241211207
+109709,test,TSLA,2020-09-15,2020-09-15,$TSLA bears in the morning after buying puts 🤦🏼‍♀️👊🏻,neutral,positive,0.30848384158036907,0.3395078428004904,0.35200831561914053
+109711,test,TSLA,2020-09-15,2020-09-15,$TSLA Bears are not welcome...in this party 🎉,neutral,neutral,0.12842669932967735,0.6441328569716982,0.22744044369862443
+109713,test,TSLA,2020-09-15,2020-09-15,"$TSLA its looking like a massive bull trap or bear trap on the 15mins,  😂🔥🧸",neutral,neutral,0.21355473316428847,0.435067285470687,0.35137798136502446
+109714,test,TSLA,2020-09-15,2020-09-15,$TSLA might need another split next year 🤣,neutral,positive,0.29754778914246816,0.31755417358924554,0.3848980372682862
+109716,test,TSLA,2020-09-15,2020-09-15,$TSLA Time after time again i mentioned ELON IS GOD‼️‼️‼️‼️‼️‼️‼️😵😵😵😵😵😵,neutral,neutral,0.22591203048651756,0.42882598899542884,0.3452619805180536
+109717,test,TSLA,2020-09-15,2020-09-15,"$TSLA this stock never 
+Never disappoints 💪💪💪💪💯💯💯💯💯🤣",neutral,neutral,0.32503161730329205,0.3845876356073403,0.2903807470893676
+109719,test,TSLA,2020-09-15,2020-09-15,$TSLA Desperate silly bears🤣  lol “you guys only gained 30 pts instead of 50! It’s going down! “,neutral,neutral,0.19886330355947696,0.572940313115131,0.22819638332539202
+109720,test,TSLA,2020-09-15,2020-09-15,"$TSLA Whoa, Elon just tweeted that under ground tunnels for autonomous driving are almost finished under Las Vegas! 🤯🚀",neutral,positive,0.3369057705846313,0.24883705235722023,0.4142571770581484
+109712,test,XOM,2020-09-15,2020-09-15,"$XOM I don't see a future here. Unless they break off and start another venture (sell coffee😄). Once dividends go, it's a wrap...",positive,neutral,0.1461627335346423,0.46002547825349677,0.3938117882118611
+109721,test,AAPL,2020-09-16,2020-09-16,$AAPL bears complaining when this is one event to show iPad and iwatch still have two more events lmao 🤣 we booked solid for the rest of the year what you got?,neutral,neutral,0.24427258390484854,0.5146838691287047,0.24104354696644684
+109722,test,AAPL,2020-09-16,2020-09-16,$AAPL I no longer see the ClayTrader. THE CURSE IS LIFTED! 🚨💥🚀,neutral,negative,0.4609526656698907,0.27242490573602296,0.2666224285940863
+109723,test,AAPL,2020-09-16,2020-09-16,$AAPL see a morning red candle and everybody turns bearish 🤣🤣🤣,neutral,negative,0.5638812210028096,0.24556864362170816,0.19055013537548235
+109724,test,TSLA,2020-09-16,2020-09-16,"$TSLA 
+
+My lil put debit spreads still safe at $432-$433 expiring 9/18.🧐",neutral,negative,0.4704893597210875,0.2152474494697963,0.31426319080911624
+109725,test,TSLA,2020-09-16,2020-09-16,$TSLA will close green for sure matter of minutes before it rips to 460 ! Tomorrow this will hit 490 ! Note that almost all stocks turned green after Powell’s speech so Tesla will not fail on that 💪💥💣,neutral,neutral,0.28818636530445774,0.37859710490341136,0.33321652979213096
+109726,test,AAPL,2020-09-17,2020-09-17,"$AAPL crapple to $108 or below! hot trash 🔥 big money screws retailers again. 
+ 
+lets see if the crooks take it to 90’s",negative,neutral,0.3273348732932908,0.44719828289271857,0.22546684381399065
+109728,test,AAPL,2020-09-17,2020-09-17,$AAPL buy the dip! To the moon!! 🤣🤣🤣🤣🤣,negative,neutral,0.26499502088805454,0.43726684441596025,0.2977381346959851
+109730,test,NFLX,2020-09-17,2020-09-17,"$NFLX looooook our below pedos, TIMbER 📉",neutral,negative,0.6735175370221763,0.2043597628685896,0.12212270010923426
+109731,test,NFLX,2020-09-17,2020-09-17,$NFLX seems to be a trend with this POS. it’s the only content they allow nowadays. definitely strange 🧐,neutral,neutral,0.3250728285611657,0.3795846837134527,0.2953424877253816
+109727,test,TSLA,2020-09-17,2020-09-17,$TSLA Down she blows this on low volume pre market.. imagine when the tutes dump their bags to retail at market open 😂😂😂,neutral,negative,0.44052853970794215,0.20121085735918237,0.35826060293287554
+109729,test,TSLA,2020-09-17,2020-09-17,$TSLA bulls when the realise that shares don’t go up for ever and they turn from traders into loooong term investors...😂,neutral,neutral,0.23909762191862588,0.472802345864855,0.28810003221651914
+109733,test,AAPL,2020-09-18,2020-09-18,"$AAPL 
+“ FED won’t let this drop “ 🤭",positive,positive,0.2698471664961275,0.2807418270235199,0.44941100648035265
+109734,test,AAPL,2020-09-18,2020-09-18,$AAPL  cmon bagholders  it’s time to start crying and sh*tig in your pants 😂😂😂,positive,positive,0.18887043469641723,0.2598582891532124,0.5512712761503703
+109735,test,AAPL,2020-09-18,2020-09-18,$AAPL You guys crack me up 🤣 !!!   Gap fill down to 106.25.  Let's close it up.,positive,negative,0.6079781869524117,0.18671960208851515,0.20530221095907306
+109736,test,AAPL,2020-09-18,2020-09-18,$AAPL sell off friday 👇 104 EOD🍎,positive,positive,0.25799582893042006,0.33299383835993535,0.4090103327096447
+109737,test,AAPL,2020-09-18,2020-09-18,"$AAPL I called it, that was the “pits fly, calls die” Apple event on Tuesday 🤣",positive,negative,0.493208297574853,0.2525452695861271,0.25424643283902
+109738,test,AAPL,2020-09-18,2020-09-18,$AAPL cheers to whoever bought my put in the am. 🤦🏻‍♂️ opex is chopex today. See you all Monday,positive,positive,0.17495742506312875,0.3083710035136665,0.5166715714232047
+109739,test,AAPL,2020-09-18,2020-09-18,"$AAPL Congrats, Bears. Celebrating this weekend. 🥳",positive,positive,0.2373504425872375,0.19011717005470688,0.5725323873580556
+109742,test,NFLX,2020-09-18,2020-09-18,$NFLX ya'll looked into insider trades on this POS? Too bad netflix execs dont believe in themselves as much as you bulls do 😂,positive,neutral,0.33145097708068644,0.4443814906611521,0.22416753225816147
+109732,test,TSLA,2020-09-18,2020-09-18,$TSLA looking more and more like a bear day tomorrow. Sorry bulls 😂,neutral,negative,0.43419463272527004,0.28925141380146774,0.27655395347326234
+109740,test,TSLA,2020-09-18,2020-09-18,$TSLA Not holding this over the weekend!!!Lets cover and  head for the hills my fellow 🐻 will live to fight another day 😢,neutral,negative,0.3593138948422982,0.29476002512972066,0.34592608002798114
+109741,test,TSLA,2020-09-18,2020-09-18,$TSLA Will look to get back in on Monday! MOON coming up🚀💯,neutral,neutral,0.18791440829546793,0.6421993537798782,0.16988623792465377
+109744,test,AAPL,2020-09-21,2020-09-21,"$AAPL Cute selloff, back to our regularly scheduled bullish programming 📈",neutral,neutral,0.4011061494227082,0.4452580000095296,0.15363585056776213
+109748,test,AMZN,2020-09-21,2020-09-21,$AMZN I like what I’m seeing here! 🤑 will post my technicals later tonight 💰,positive,neutral,0.27725249870088553,0.474484637005356,0.2482628642937586
+109743,test,MSFT,2020-09-19,2020-09-21,$MSFT bag holders getting desperate here 🤗,positive,negative,0.3873047610016951,0.38219813012966886,0.23049710886863606
+109745,test,TSLA,2020-09-21,2020-09-21,$TSLA 😂 way oversold before event day,neutral,neutral,0.36845816661304287,0.37808429885240474,0.25345753453455233
+109746,test,TSLA,2020-09-21,2020-09-21,$TSLA  What just happened? 😱😱😱 Suddenly it's down?,neutral,neutral,0.3168619351444557,0.35472995884922437,0.32840810600632
+109747,test,TSLA,2020-09-21,2020-09-21,$TSLA $457 at open and a close of $621+ remember where you heard it first 😁,neutral,neutral,0.3667387940485199,0.41947616145080513,0.21378504450067493
+109749,test,AAPL,2020-09-22,2020-09-22,$AAPL this could still gapfill down 🤷🏼‍♂️,negative,neutral,0.39890935729977073,0.45375528766730583,0.14733535503292347
+109759,test,NKE,2020-09-22,2020-09-22,$NKE oh man how much are these calls going to be worth tomorrow 😬,positive,positive,0.23954341696230924,0.17928508824509912,0.5811714947925916
+109750,test,TSLA,2020-09-22,2020-09-22,"$TSLA
+Back to eating outta cans Bears and stealing out your mom's purse 
+😂😂💵🤣🤣 Teslas going up today way up!",negative,neutral,0.18586654034561134,0.6489540814774379,0.16517937817695072
+109751,test,TSLA,2020-09-22,2020-09-22,"$TSLA 4:30pm Eastern Time
+              3:30 Pacific time 
+🚀🚀🚀💥💥💥🚀🚀🚀",negative,neutral,0.3439177976082506,0.4311134819917049,0.22496872040004454
+109752,test,TSLA,2020-09-22,2020-09-22,$TSLA This dummy can’t even turn on the sound 🤣🤣,negative,neutral,0.3356823095907966,0.37506154165687056,0.2892561487523328
+109753,test,TSLA,2020-09-22,2020-09-22,"$TSLA . Biggest Baddest Event in the world. BATTERY DAY. should have been called battery hour😆. all this time i thought the entire day would be dedicated to talking about batteries, from 8 am to 8 pm. but i guess not",negative,negative,0.4935605874899453,0.3489400794787894,0.15749933303126534
+109754,test,TSLA,2020-09-22,2020-09-22,$TSLA HAHAHAHAHAHA. Fucking clowns. Say bye bye to 500. Bag holders created. ✌🏼🤡,negative,neutral,0.13459284532787696,0.6749372585125918,0.19046989615953122
+109755,test,TSLA,2020-09-22,2020-09-22,$TSLA what a surprise. sell the news 😂😂😂,negative,negative,0.5927462222491103,0.2168008707887113,0.1904529069621783
+109756,test,TSLA,2020-09-22,2020-09-22,$TSLA - Tesla has a solid support at $150. 🔥,negative,neutral,0.18867284041122187,0.4294053912146316,0.38192176837414654
+109757,test,TSLA,2020-09-22,2020-09-22,$TSLA Tesla told you they won’t make money for 3 years😂,negative,neutral,0.18855971795497264,0.46949144573466894,0.34194883631035855
+109758,test,TSLA,2020-09-22,2020-09-22,$TSLA Sub 300 inbound worst event ever 🐑 Getting slaughtered Tendie Timeee!!!,negative,negative,0.3724948685234433,0.3294358590100399,0.2980692724665167
+109760,test,TSLA,2020-09-22,2020-09-22,$TSLA Everyone rn who was expecting TSLA to skyrocket to Venus 🙁 It will recover tho 🤷‍♂️,negative,negative,0.4043661615188702,0.2847309553916461,0.31090288308948366
+109761,test,TSLA,2020-09-23,2020-09-23,$TSLA See yall at open when RH start panicking 😈,neutral,negative,0.45423345546335325,0.3437997265460483,0.20196681799059843
+109762,test,TSLA,2020-09-23,2020-09-23,$TSLA  now I gotta wait until earnings in October to sell 🤦‍♂️,neutral,negative,0.41006591580040846,0.33518777656855436,0.2547463076310373
+109763,test,TSLA,2020-09-23,2020-09-23,$TSLA basically saying there’s nothing to see. Come back in 3 years 🤷🏻‍♂️ i’d take my money out and put it elsewhere.,neutral,neutral,0.2554730829656976,0.42557301086283905,0.3189539061714634
+109764,test,TSLA,2020-09-23,2020-09-23,$TSLA this market is selling people Koolaid and telling them it’s patron 🤦‍♂️,neutral,neutral,0.19100228501981198,0.5164387400421272,0.2925589749380608
+109765,test,TSLA,2020-09-23,2020-09-23,"$TSLA support wall at 375 gone, next big wall 370 😳",neutral,neutral,0.08697812231166943,0.7354166002336407,0.17760527745468982
+109766,test,TSLA,2020-09-23,2020-09-23,"$TSLA if you’re a new investor here, just listen and sell!!! You’re gonna lose all your hard earned money easily 🤯",neutral,positive,0.1233363092057443,0.3347456228983878,0.5419180678958679
+109767,test,TSLA,2020-09-23,2020-09-23,$TSLA just think. If this halfed in price from here it would still be trading at 500 times earnings. 😂😂,neutral,neutral,0.3387098222946891,0.4185451067858796,0.24274507091943132
+109772,test,AAPL,2020-09-24,2020-09-24,$AAPL 9/25 puts are primed and printing. Up 60% 🕵️‍♂️ do your DD,positive,negative,0.47424902237392413,0.3557616672709786,0.16998931035509732
+109769,test,AMZN,2020-09-24,2020-09-24,$AMZN I’m a bull here and usually always am but this weeks market... 🙃,positive,negative,0.42643434141914033,0.37246976266698234,0.20109589591387728
+109774,test,BA,2020-09-24,2020-09-24,$BA Guys we all need to post BEAR post here so Stock can go up tomorrow 🤞🏻. Thats how auto trading bots work.,positive,negative,0.34811688153842885,0.3248118452826892,0.327071273178882
+109768,test,TSLA,2020-09-24,2020-09-24,$TSLA according to Tesla bulls when it bounces of the new bottom it starts moving up and 🚀🤣😂🤣,neutral,neutral,0.21677739867665702,0.464011513937985,0.31921108738535797
+109770,test,TSLA,2020-09-24,2020-09-24,$TSLA where all the bulls at now 🤣,neutral,neutral,0.249771531932342,0.43553610261923764,0.3146923654484202
+109771,test,TSLA,2020-09-24,2020-09-24,$TSLA did you buy the dip?! 🤣🤣🤣🤣,neutral,negative,0.37348239963247787,0.3078998761225337,0.31861772424498847
+109773,test,TSLA,2020-09-24,2020-09-24,"$TSLA and remember..friday belong to bears..dont hold"" baggers""😀🤣🤣🤣",neutral,neutral,0.235634396107413,0.49176235566173454,0.27260324823085247
+109776,test,AAPL,2020-09-25,2020-09-25,"$AAPL 
+
+Apple is slowly cutting into all the bears 😂",neutral,neutral,0.30704346488674117,0.5185745486401631,0.17438198647309583
+109777,test,AAPL,2020-09-25,2020-09-25,$AAPL with out the bears I couldn’t of got the deal i wanted With that said  thanks 💰🤪😆,neutral,neutral,0.138435323181856,0.6004272632244811,0.2611374135936628
+109778,test,AAPL,2020-09-25,2020-09-25,$AAPL sorry guys....who is still waiting the 96$ 😂😂😂,neutral,positive,0.29059824578391613,0.2565675992838964,0.45283415493218737
+109779,test,AAPL,2020-09-25,2020-09-25,$AAPL I repeat someone was waiting to load $95 😂😂😂😂😂😂😂😂.,neutral,negative,0.4196227611787863,0.32756863771416783,0.2528086011070459
+109780,test,AAPL,2020-09-25,2020-09-25,"$AAPL Up 4.06, last .400+ hitter Ted Williams, who hit .406⚾️⚾️⚾️⚾️",neutral,neutral,0.2604429479424222,0.464446243597261,0.2751108084603169
+109775,test,TSLA,2020-09-25,2020-09-25,$TSLA see y’all post market great day bulls 🥳,neutral,positive,0.356824413687434,0.2602905710471889,0.3828850152653771
+109782,test,AAPL,2020-09-28,2020-09-28,$AAPL lolol 🤡 you bears be out here lookin like clowns talkin about switching teams why don’t you double down on thos puts there more then half off,neutral,neutral,0.2670949945245827,0.4105130615607642,0.32239194391465303
+109783,test,NFLX,2020-09-28,2020-09-28,$NFLX TV 2.0 for 21st century. Now Cinema too 🎦💵💸💸,neutral,negative,0.41099664604644304,0.29611144519766275,0.29289190875589427
+109781,test,TSLA,2020-09-26,2020-09-28,"$TSLA different scenarios with probability and price targets..
+
+So no other company could be a clearer buy...no space for two meanings💥💥💥🚅🚅🚅
+
+Powertrain so comming...",neutral,neutral,0.2810623666387311,0.41850401977688295,0.30043361358438603
+109784,test,AAPL,2020-09-29,2020-09-29,$AAPL Will be another 🍏day tomorrow.,neutral,negative,0.4227063927600192,0.21465581521970303,0.36263779202027774
+109786,test,BA,2020-09-29,2020-09-29,$BA Going 🤑GREEN🤑 in.....3....2...1...🚀,neutral,neutral,0.2831290670359859,0.4062003607803315,0.31067057218368255
+109785,test,TSLA,2020-09-29,2020-09-29,$TSLA Who is buying the $420 dip? ❤️,neutral,positive,0.2792923027293076,0.23295813698288279,0.48774956028780947
+109787,test,TSLA,2020-09-29,2020-09-29,$TSLA bears last chance to run for cover 🤠,neutral,neutral,0.16472048578436466,0.5821370634194402,0.25314245079619513
+109788,test,TSLA,2020-09-29,2020-09-29,$TSLA after debate . up 500 🚀🚀🚀🚀🚀🚀🚀🚀,neutral,neutral,0.14445759334857305,0.5230915608952421,0.3324508457561849
+109789,test,BA,2020-09-30,2020-09-30,$BA It will need to break the $170 for a nice squeeze! She’s almost back to day highs in AH trading 🔥,neutral,positive,0.2363063484810396,0.3320157141680156,0.4316779373509447
+109790,test,AAPL,2020-10-01,2020-10-01,$AAPL Direct payments to Americans and pretty soon in a few weeks a Corona virus vaccine 💉,negative,negative,0.42929357606467794,0.28557022155122275,0.2851362023840992
+109791,test,BA,2020-10-01,2020-10-01,$BA someone is really holding this below $170 oh well I’m green!!!🏦🏦🏦,neutral,positive,0.21915323315371665,0.2480095540666724,0.5328372127796109
+109799,test,BA,2020-10-01,2020-10-01,"$BA damn, I wish there was no such thing as deadlines at my job also, I'd just prolong everything forever and never actually get anything done..... And still get paid and take my vacations. Maybe I should go into politics 🤷🏼‍♂️🤦‍♂️🚀",neutral,negative,0.3802452546177472,0.30049714058474153,0.3192576047975112
+109792,test,TSLA,2020-10-01,2020-10-01,"$TSLA It's time to board the choo choo train  🚂 .... 🏃‍♀️🏃‍♂️
+
+🚀🚀🚀",negative,positive,0.2405139745301076,0.3196688362616028,0.43981718920828955
+109793,test,TSLA,2020-10-01,2020-10-01,$TSLA added one lotto call January 2021 $500 strike looking to double this month 🤞🏻,negative,positive,0.24940782950873203,0.35075548643012144,0.39983668406114653
+109794,test,TSLA,2020-10-01,2020-10-01,$TSLA hope you guys seen the charts I’ve been posting all week! Breakout was super obvious😎😏,negative,negative,0.34979799814989077,0.3346989265073233,0.31550307534278604
+109796,test,TSLA,2020-10-01,2020-10-01,$TSLA literally went up the entire day😂,negative,neutral,0.3787555167915843,0.4244968370298533,0.19674764617856239
+109797,test,TSLA,2020-10-01,2020-10-01,"$TSLA calm down bears it’s not tomm morning yet
+
+If your lucky maybe your bank is closed and won’t margin call!
+😂",negative,positive,0.2150681518823614,0.2581416180751928,0.5267902300424459
+109798,test,XOM,2020-10-01,2020-10-01,"$XOM buy at 20 post dividend cut in half.  
+ 
+still got plenty of room to drop.  
+ 
+what is the say? “Still has several shows to drop”. 😂🤡",neutral,neutral,0.3777992770839515,0.47127438977150216,0.15092633314454626
+109801,test,AAPL,2020-10-02,2020-10-02,$AAPL easy money 💰 buy the dip!,positive,negative,0.4318836157759272,0.21952004709328313,0.3485963371307896
+109804,test,BA,2020-10-02,2020-10-02,$BA  green on the day nice enjoy the weekend and bulls  see you Monday on the moon 🌝 🌙 !!!!!,neutral,positive,0.23093183019441998,0.3376567590994301,0.4314114107061499
+109800,test,MSFT,2020-10-02,2020-10-02,"$MSFT i have calls expiring 10/23- take my losses and rip or hold? I never ever ask this kind of question but given the nature of the market, i dont know what to believe anymore. 🤦🏽",positive,neutral,0.3361472851091777,0.3759048700905654,0.287947844800257
+109802,test,MSFT,2020-10-02,2020-10-02,$MSFT So what is to believe about an upside-down head and shoulders?   ⛩⛩⛩,positive,neutral,0.3618277363403212,0.38947625467020547,0.2486960089894733
+109803,test,TSLA,2020-10-02,2020-10-02,$TSLA MONDAY IS GOING GO BE HUUUUUGE. THE BULLS WITH BALLS OF STEEL WITH BE HANDSOMELY REWARDED 💰💰💰💰💰💰💰🚀🚀,neutral,neutral,0.40099686460833345,0.42250047743723695,0.17650265795442957
+109806,test,AAPL,2020-10-06,2020-10-06,$AAPL who else picking up the new IPhone when it releases?🔥,neutral,neutral,0.3487360642628873,0.38372434218111395,0.26753959355599877
+109807,test,CCL,2020-10-06,2020-10-06,"$CCL went short at $15.90. Like clock work. 
+
+Now we ride this baby down, flip and add profits to 2023 calls. 🤣🤣🤣",positive,negative,0.5059024741944173,0.19426789817755383,0.2998296276280288
+109808,test,CCL,2020-10-06,2020-10-06,"$CCL Earnings thursday pre market :)    "" earnings"" lol 😆",positive,neutral,0.3077624332726466,0.41368576749612435,0.27855179923122914
+109805,test,TSLA,2020-10-06,2020-10-06,"$TSLA 
+Bear 🐻 STFU ... ITS green TUES BIAAATCCHHH
+LMAO
+$$$$",neutral,negative,0.4361138369412356,0.4057987043481566,0.1580874587106077
+109810,test,TSLA,2020-10-06,2020-10-06,$TSLA 280 next leg down !!! You guys think insider sell 15 000k shares if he knows There is more to come?! Bulls are 2 funny 🥳🥂💥,neutral,neutral,0.13846503361720255,0.5547865728479298,0.30674839353486766
+109809,test,UPS,2020-10-06,2020-10-06,"$UPS still looking for $200 $4.50 dividends eoy  goal , but I’ll never sell anyway ..✅✅✅",positive,positive,0.22026773349459686,0.365297485261064,0.41443478124433913
+109811,test,AAPL,2020-10-07,2020-10-07,$AAPL outside your mind if you think this will hold 😂,neutral,positive,0.20340264954817233,0.2287810689748833,0.5678162814769444
+109812,test,BA,2020-10-07,2020-10-07,$BA In puts for next week. 🎲,neutral,positive,0.13252262592292893,0.3018857481732122,0.5655916259038589
+109814,test,DIS,2020-10-07,2020-10-07,"$DIS guys just wait to see Disney+
+Growing Subscriptions on Q4 ER 11.06.20 
+I see soon a huge Bullish explosion 💥 
+$175-$250",neutral,negative,0.49336350774816945,0.29333552197170176,0.21330097028012882
+109813,test,TSLA,2020-10-07,2020-10-07,$TSLA Is S&P global an American company or Russian company? They don’t like American cars n they never want the best American automaker to include into S&P. WTF is going on? 😤🧐🤔,neutral,neutral,0.2806951080683123,0.49185791783543004,0.22744697409625766
+109816,test,BAC,2020-10-08,2020-10-08,BTO $BAC CALLS $26 10/30 @ .52 💖,neutral,neutral,0.34242354659628943,0.4152926772723764,0.24228377613133426
+109815,test,TSLA,2020-10-08,2020-10-08,$TSLA bought cheap call spread for tomorrow. Looking like 440 could happen tomorrow 😉,neutral,neutral,0.19845849240986085,0.6020526946643155,0.1994888129258237
+109818,test,AAPL,2020-10-09,2020-10-09,$AAPL took debit spreads for the swing on news as well. 🤑🤑🤑🤑 Been on fire and I also post every morning before market open,positive,negative,0.4873668504831406,0.2042978945402219,0.3083352549766375
+109817,test,TSLA,2020-10-09,2020-10-09,"$TSLA $500 pop this! 
+All bears beware when this was 250 post split everyone said it would drop to $40 lol now your all hiding and bulls keep this power train going 🦾🦾🦾🦾🚀",neutral,neutral,0.2791951320744874,0.39843649289230076,0.3223683750332119
+109819,test,AAPL,2020-10-12,2020-10-12,$AAPL Did you guys saw that monster candle earlier?? 🚀🚀🚀🚀🚀🚀🚀🚀🚀,negative,positive,0.26273277650234067,0.29077512829360347,0.44649209520405597
+109820,test,AAPL,2020-10-12,2020-10-12,"$AAPL $130 by Friday, $150 at or after earnings 🚀🚀🚀",negative,positive,0.25635308090094616,0.2635930438616894,0.4800538752373645
+109821,test,TSLA,2020-10-12,2020-10-12,"$TSLA 
+
+No mentioning of Tesla on CNBC  for a while now ! Once this hits $500+ negative campaigns will resume again from competition, P/E, overvalued, hyped and so forth !! 
+
+🙏🏻",neutral,neutral,0.28514167502964344,0.46483710988592636,0.2500212150844301
+109823,test,AAPL,2020-10-13,2020-10-13,"$AAPL last new iPhone reveal sky rocketed stock day before and after, imagine this year being the event of a decade, to the moon!!! Let's make some 💰",neutral,negative,0.3743850639820727,0.32734553025274393,0.2982694057651834
+109824,test,AAPL,2020-10-13,2020-10-13,$AAPL  💰🍻 looking GOOD 🇺🇸 Christmas in October 😉,neutral,neutral,0.35090584423209126,0.381189909206427,0.26790424656148176
+109826,test,AAPL,2020-10-13,2020-10-13,$AAPL where are the bears now 😂😂😂,neutral,positive,0.1736197804887529,0.36477286642640955,0.4616073530848375
+109827,test,AAPL,2020-10-13,2020-10-13,$AAPL It’s really beautiful. I’m upgrading. ♥️🍏🍏🍏♥️,neutral,positive,0.22128008944667674,0.3644696842661542,0.4142502262871691
+109822,test,JPM,2020-10-13,2020-10-13,"$JPM Good Morning 🌄🌞💰💖  🚀 
+Good ER, gain $2.92, up a lot today🚀🚀 🚀",neutral,neutral,0.14671813447028,0.5681031461956231,0.28517871933409683
+109828,test,NFLX,2020-10-13,2020-10-13,"$NFLX many are confused as to why this is happening, broke huge resistance and was trading in this channel for a while next Price Target 572 🎯",negative,negative,0.3968996769968766,0.34668191832617345,0.25641840467694993
+109825,test,TSLA,2020-10-13,2020-10-13,$TSLA MAKE TESLA GREAT AGAIN! BOUNCE BACK BITCH 😂,neutral,neutral,0.28643476403120316,0.3880666930112695,0.3254985429575273
+109830,test,JNJ,2020-10-14,2020-10-14,$JNJ down down down this stock will go see y’all at $145 tomorrow morning 🤞🏼,neutral,positive,0.2676263440879359,0.3591282774105145,0.37324537850154954
+109829,test,TSLA,2020-10-14,2020-10-14,$TSLA Biden is screwed.  Emails came out about him and Hunter today!  Trump Train is coming through! Economy is going to 🚀🚀🚀🚀🚀🇺🇲🇺🇲🇺🇲🇺🇲,neutral,neutral,0.20493697933096824,0.47422715530421927,0.32083586536481246
+109831,test,TSLA,2020-10-14,2020-10-14,$TSLA Who's all been here pre split? 🖐,neutral,negative,0.5802022942966855,0.22321378340843173,0.19658392229488275
+109832,test,TSLA,2020-10-14,2020-10-14,"$TSLA it's that time of year again 📈 $69,420 🚀. Q3 '19 anniversary launch",neutral,positive,0.16390283744047054,0.34919456352833605,0.48690259903119354
+109834,test,AAPL,2020-10-15,2020-10-15,$AAPL I’m not buying stocks during any election next time. 🤷🏻‍♂️,neutral,neutral,0.15846042470499608,0.48228913388279887,0.359250441412205
+109833,test,TSLA,2020-10-15,2020-10-15,$TSLA don’t dream 🛌 too much bears 🐻 $5 🆙 and down all day😂😂 get out as fast as you can 🚀🚀🚀🚀,neutral,neutral,0.2483433391157787,0.4076909965561077,0.3439656643281135
+109835,test,AAPL,2020-10-16,2020-10-16,$AAPL Demand and average selling price is going down. 😴,negative,negative,0.46490181192825075,0.3095899396334739,0.22550824843827524
+109836,test,AAPL,2020-10-19,2020-10-19,$AAPL I see everyone posted about this. My turn. 👇👇👇,neutral,positive,0.2934549158876296,0.2625291783406283,0.44401590577174216
+109837,test,NFLX,2020-10-20,2020-10-20,"$NFLX I can not wait to see the subs in this tonight. Either everyone on social media is full of shut and didn’t cancel their sub, or Thisnis gonna fricken tank if they did!!! OFF WITH ITS HEAD!!! 🐍",negative,neutral,0.400678347167264,0.44054802923291103,0.158773623599825
+109838,test,NFLX,2020-10-20,2020-10-20,$NFLX lol it goes up a little and everyone is like see told you so it’s bullish 😭😂😂💀,negative,neutral,0.22706451912630257,0.5812636450682002,0.19167183580549735
+109839,test,TSLA,2020-10-21,2020-10-21,$TSLA  all be buying at 360 thanks 🤣,neutral,neutral,0.23838452450327752,0.4233934586937115,0.33822201680301106
+109841,test,TSLA,2020-10-21,2020-10-21,$TSLA Bears 🐻 are still BS’ing.....Wake Up Bears...LMFAO!!,neutral,neutral,0.21036089950462492,0.5109025197500826,0.27873658074529245
+109845,test,AMZN,2020-10-22,2020-10-22,"$AMZN ahhh the old amazon bleed, gotta love it 🩸",neutral,negative,0.423017177186354,0.23047390186032832,0.3465089209533178
+109846,test,AMZN,2020-10-22,2020-10-22,$AMZN lmao I buy a put and I loss 600 lmao 😂,neutral,positive,0.25022523226811594,0.2431767777528641,0.5065979899790201
+109844,test,FB,2020-10-22,2020-10-22,$FB News news and more news and still we sit. 😂,positive,negative,0.4682651677554408,0.42929508451964477,0.10243974772491432
+109842,test,TSLA,2020-10-22,2020-10-22,"$TSLA BEARS I can’t sleep becuase I made so much money.
+You can’t sleep becuase BUWHAHAAHAH
+🤣🤣🤣",neutral,positive,0.31892020636072194,0.2734652520378314,0.4076145416014467
+109843,test,TSLA,2020-10-22,2020-10-22,"$TSLA  Holy shit, the gravity up here is awesome 🚀🌚",neutral,neutral,0.3366253248800707,0.4012424078167806,0.2621322673031487
+109847,test,AAPL,2020-10-26,2020-10-26,"$AAPL Got My iPhone 12 Pro this weekend.....Faster, Louder Speakers, Nice OLED, Quick Charging MagSafe.....I’m Loving it! 🥰📱👍🏻🚀",neutral,negative,0.4382276816339834,0.2161459034550511,0.3456264149109655
+109848,test,AAPL,2020-10-26,2020-10-26,$AAPL buy the dip. This is the lowest before the earnings 🚀🚀🚀,neutral,positive,0.39188901026801265,0.18634989756231515,0.42176109216967217
+109849,test,FB,2020-10-27,2020-10-27,$FB pretty sure this is going to sink with everything else 🙄 market sucks right now,negative,neutral,0.2833666772003375,0.47720770325730655,0.23942561954235617
+109850,test,TSLA,2020-10-28,2020-10-28,$TSLA Can’t believe everything you read.  Question is who paid of consumer reports🤔,neutral,neutral,0.3939031679778044,0.42617963341752935,0.17991719860466626
+109851,test,TSLA,2020-10-28,2020-10-28,$TSLA Maybe Biden will win and save the country?  He said his plan is to have more testing 😂🤣😂,neutral,positive,0.29781665906687904,0.33009690955106324,0.3720864313820577
+109852,test,AAPL,2020-10-29,2020-10-29,"$AAPL Top Top Insiders at Apple 🍎 sold $29 million worth of stock at $119 to $116 highs .. before Earnings 
+
+Doesn’t this concern you when TOP insiders are jumping Apple ship?",negative,negative,0.4250184286451183,0.37061709155800177,0.20436447979687997
+109853,test,AAPL,2020-10-29,2020-10-29,$AAPL tanking at EOD bull trap 😁 $109,negative,positive,0.1477184190145503,0.4076582405872427,0.4446233403982071
+109855,test,AAPL,2020-10-29,2020-10-29,$AAPL Relax and breath. Very soon 👻,negative,negative,0.48428897376474245,0.24230656740709244,0.273404458828165
+109856,test,AAPL,2020-10-29,2020-10-29,$AAPL lol this market is to funny. Adding more here 🙌,negative,neutral,0.2277389691732389,0.5451727444290975,0.2270882863976635
+109854,test,NFLX,2020-10-29,2020-10-29,$NFLX I mean “Queens Gambit” was ok but not good enough to raise prices for 😂,negative,negative,0.38949983566907187,0.2991553069098795,0.3113448574210486
+109857,test,AAPL,2020-10-30,2020-10-30,$AAPL how it will be if open at 115 😍,neutral,negative,0.3764504434885751,0.26922572180019577,0.3543238347112292
+109858,test,AAPL,2020-10-30,2020-10-30,"$AAPL The quarter was a beat, the fact that IPhone sales were down is legitimate and profit margins were up! This is a buying opportunity for us longs!
+🚀🚀💰💰💵💵",neutral,neutral,0.1965204021937851,0.5634035021461878,0.24007609566002705
+109859,test,AAPL,2020-10-30,2020-10-30,$AAPL Buying the Fear Today🤘🤑🤘!!!,neutral,negative,0.3626458417306304,0.34332770476339347,0.294026453505976
+109860,test,AAPL,2020-10-31,2020-11-02,$AAPL Get ready for next weeks discounts. Let’s  See 90’s😋😋😋😋 Have a great weekend Everyone.,neutral,positive,0.1750747279385702,0.3085340374351045,0.5163912346263253
+109861,test,AAPL,2020-11-02,2020-11-02,"$AAPL Damn I thought AAPL had enough red weeks, I should’ve never stopped buying puts 😂",neutral,negative,0.42451263572427916,0.2991724222256293,0.2763149420500916
+109862,test,AAPL,2020-11-02,2020-11-02,$AAPL who’s shorting this in an iPhone 😂,neutral,negative,0.46216635958095514,0.2619438152242927,0.2758898251947521
+109863,test,AAPL,2020-11-03,2020-11-03,$AAPL T-Minus 30 or less until BOOM 💥 GOES THE DYNAMITE 🧨,positive,neutral,0.37144595719455653,0.3715418687468674,0.25701217405857596
+109864,test,AAPL,2020-11-04,2020-11-04,$AAPL you guys got it wrong. The liberals can’t get anymore sad because they were already sad to begin with 🤷‍♂️. Got all my money vested in Apple. Apple is still gonna be the future as long as people needs phone for communication and life.,positive,negative,0.47196694651054355,0.30380645851107013,0.22422659497838637
+109865,test,TSLA,2020-11-04,2020-11-04,$TSLA remember wat I said last night. We could see a 📉 which will lead to a 📈 by the end of the day,positive,negative,0.42921462259146637,0.3048808034551397,0.265904573953394
+109866,test,AAPL,2020-11-05,2020-11-05,"$AAPL Hey 🐻, 125 is on the table. 📈🔥😛🇺🇸",neutral,negative,0.41475135088414944,0.37076231941464227,0.21448632970120837
+109867,test,BABA,2020-11-05,2020-11-05,"$BABA 
+
+Got in at the low today.👍",positive,neutral,0.35719129484959666,0.4263790312959986,0.21642967385440476
+109868,test,TSLA,2020-11-06,2020-11-06,$TSLA GOOD MORNING TO ALL TESLA BULLS!!!! The great Sleepy Joe has provided us with another buying opportunity!!!!!!!! ❤️❤️,neutral,positive,0.27309605973877316,0.3024116473039668,0.42449229295726015
+109870,test,AAPL,2020-11-09,2020-11-09,$AAPL look how bullish this stock setup is...oh wait that’s Apple’s VIX ticker 😬,neutral,negative,0.41941653835389586,0.3022808045900553,0.2783026570560489
+109869,test,PFE,2020-11-09,2020-11-09,$PFE Anyone else YOLO with $55 Nov 20 calls? 😂,neutral,neutral,0.17607487987218123,0.5686837721992992,0.2552413479285197
+109871,test,BAC,2020-11-10,2020-11-10,$BAC wall street dummies had zero clue that rising bond yields last week were a banks buy signal 🤣,neutral,neutral,0.22381119919703663,0.43342255490727005,0.3427662458956933
+109873,test,MSFT,2020-11-10,2020-11-10,$MSFT let it drop again tomorrow. Gap on daily looking to get filled. 😈💦,positive,neutral,0.22363058910123243,0.5690321178413904,0.20733729305737733
+109872,test,PFE,2020-11-10,2020-11-10,$PFE THIS IS ABOUT TO BLOOOOOOOOOOOOOOWWWWWWWWWWWWWWW‼️‼️‼️‼️‼️‼️‼️‼️💣💣💣💣💣💣🧨🧨🧨🧨🧨🔥🔥🔥🔥🔥🚀🚀🚀🚀🚀🚀👏👏👏👏👏👏💪💪💪💪💪💰💰💰💰💰💰💸💸💸💸💸💸💸💸💸💸💸💸💸🏦🏦🏦🏦🏦🏦🏦🏦🏦,neutral,neutral,0.29366065314123235,0.5513091452215844,0.15503020163718328
+109874,test,AAPL,2020-11-11,2020-11-11,"$AAPL Nomore uptrend , multi month slow bleed 🩸",neutral,negative,0.5413631430470704,0.1751633971914742,0.2834734597614554
+109875,test,BABA,2020-11-11,2020-11-11,"$BABA Break of 260, she wants to go to 250, get ready for some juicy juice, and let’s get some Peking 🦆 and 🥠 for you.",neutral,neutral,0.16618873020508546,0.4652388479695643,0.3685724218253504
+109876,test,CCL,2020-11-11,2020-11-11,$CCL The Pfizer Scam was a great way of luring retail money back into the market. Well done 👏,negative,positive,0.34140717240287816,0.28537625670393973,0.3732165708931822
+109877,test,BA,2020-11-12,2020-11-12,$BA When I see a time to short I short 😌,positive,neutral,0.186965154939506,0.43422363962641664,0.37881120543407737
+109880,test,BA,2020-11-12,2020-11-12,$BA are you guys ready for this gap down to 155?!? Better sell quick ! 😂😂😂,positive,negative,0.36436864799989943,0.296340940396631,0.3392904116034696
+109879,test,DIS,2020-11-12,2020-11-12,$DIS THIS STOCK IS SO OVERPRICED LMAO THREE DAYS AGO IT WAS $125 😂😂😂😂😂😂,neutral,negative,0.6313076252049019,0.17711542740199185,0.19157694739310638
+109878,test,TSLA,2020-11-12,2020-11-12,$TSLA Squeeze the $$$$ out of shorty! Nasdaq up. S&P and Dow down. Rotate back! Lol😎,neutral,neutral,0.2234341774458491,0.502070487188311,0.2744953353658398
+109881,test,BABA,2020-11-13,2020-11-13,$BABA let's go back to 220 next week 👍🏽,neutral,neutral,0.2931758238608882,0.45673540856247724,0.2500887675766345
+109882,test,TSLA,2020-11-17,2020-11-17,$TSLA SOLD & SOLD MY NIO BE SMART TAKE GAINS & get back in on dips 🤑🤑🤑,positive,neutral,0.15108037129676533,0.6899418950776858,0.15897773362554887
+109883,test,TSLA,2020-11-17,2020-11-17,"$TSLA what a joke. The value of BMW up, afterhours! 🤮",positive,neutral,0.3828959514114917,0.4359587635395276,0.18114528504898075
+109885,test,TSLA,2020-11-17,2020-11-17,Best case scenario would be a gap and open > $462 🙏🏽 $TSLA,positive,neutral,0.24248262779477864,0.6111114085704915,0.14640596363472988
+109884,test,WMT,2020-11-17,2020-11-17,$WMT holding onto my $149 puts. Ache out is $39. Got a handful 😋💰,neutral,negative,0.40052714831806235,0.3189102107051702,0.28056264097676736
+109886,test,BA,2020-11-18,2020-11-18,$BA See ya’ll back at $350+ 🤑🙄🤑,neutral,neutral,0.24786197676023605,0.5453415741021111,0.20679644913765274
+109889,test,NVDA,2020-11-18,2020-11-18,$NVDA Every earnings this stock drops. 🤦🏻‍♂️,neutral,neutral,0.16248668579624614,0.5191673814147648,0.31834593278898904
+109891,test,NVDA,2020-11-18,2020-11-18,"$NVDA beat all top to bottom, but down cause Biden shutdown and lock down.  Get it,  you vote then what you get.  No cried 😢 😭.  Buy dips and Trump trade intact.",neutral,neutral,0.21319405575282133,0.4461455371682116,0.3406604070789671
+109892,test,PFE,2020-11-18,2020-11-18,$PFE FDA working for approval 🚀🚀🚀🇺🇸🇺🇸,neutral,neutral,0.15795609136210156,0.731069985747164,0.1109739228907345
+109887,test,TSLA,2020-11-18,2020-11-18,"$TSLA LETS SHOW ALL THE
+ DOUBTERS!!✅",positive,negative,0.35928171714671514,0.29322263244760877,0.3474956504056761
+109888,test,TSLA,2020-11-18,2020-11-18,$TSLA the rally is gonna be unstoppable bye bears we are taking off fasten your seatbelt😂,positive,neutral,0.29613006543483017,0.42745454457051857,0.2764153899946512
+109890,test,TSLA,2020-11-18,2020-11-18,$TSLA bears stop we going to $500 plus 🚀🚀✈️✈️✈️✈️,positive,neutral,0.08956707893385725,0.535456238013304,0.3749766830528387
+109898,test,AAPL,2020-11-19,2020-11-19,$AAPL hey guess what I got a surprise for everyone!!!!!! Apple closes around 118-119 today 😀😀😀🖕🏼,neutral,neutral,0.37618582974307635,0.42973584884680216,0.19407832141012152
+109893,test,BA,2020-11-19,2020-11-19,$BA this is becoming a day traders dream stock.  So easy with This pumper dumper 😎👍. Rinse and repeat,neutral,positive,0.30567458210790116,0.3261528712221092,0.3681725466699896
+109895,test,PFE,2020-11-19,2020-11-19,$PFE the day this thing gets fda approval 😈,neutral,neutral,0.2932371022977248,0.5654234052655126,0.14133949243676253
+109894,test,TSLA,2020-11-19,2020-11-19,"$TSLA Alright, that's it...... I'm in. Show me the moon and stars Elon 🚀🎉",neutral,neutral,0.14629143469530653,0.5018152301173752,0.3518933351873184
+109896,test,TSLA,2020-11-19,2020-11-19,$TSLA Aerosmith - Cryin' plays loud in the background. When you failed to load up on more shares at $408 😭😭😢😢🤣🤣,neutral,positive,0.3297401179452062,0.293810008590727,0.37644987346406694
+109897,test,TSLA,2020-11-19,2020-11-19,"$TSLA wow look what I’ve just purchased, you can all make positions now and thank me later 😂🚀💥",neutral,neutral,0.30375555741003796,0.45503647174511297,0.24120797084484905
+109901,test,AAPL,2020-11-20,2020-11-20,$AAPL there’s your calls. Enjoy the 🩸,negative,positive,0.2449956864700698,0.3266946193323872,0.42830969419754295
+109899,test,BA,2020-11-20,2020-11-20,$BA silly bears... it's way too early to be predicting the futures markets by open tomorrow. Nice try tho! 👍,positive,neutral,0.12752167278193555,0.581202558588274,0.2912757686297906
+109900,test,TSLA,2020-11-20,2020-11-20,$TSLA Buy before S&P 500 Index Dec. 21!!! You won't have chance to buy Tesla because it will fly to the moon!!!! 🚀🚀🚀💎💎💎,positive,positive,0.18460497202668097,0.40711275247424644,0.4082822754990724
+109902,test,AAPL,2020-11-24,2020-11-24,$AAPL not allowed to go up👊👊👊👊,neutral,neutral,0.351785808325589,0.3828351459266595,0.26537904574775145
+109904,test,CCL,2020-11-24,2020-11-24,"$CCL  coronavirus vaccine will begin to become available in the United States ""probably by the end of the second week in December,"" Centers for Disease Control and Prevention Director Dr. Robert Redfield 🕺🇺🇸🎉",neutral,negative,0.4024677930566034,0.26194089252172786,0.33559131442166884
+109903,test,PYPL,2020-11-24,2020-11-24,$PYPL - New high of day! 🦈,positive,neutral,0.29434547321607474,0.49170917698644345,0.21394534979748187
+109905,test,TSLA,2020-11-24,2020-11-24,"$TSLA  wow shorts are about to lose another 40 billions usd. Remember when tesla was 2200 per share a couple of months ago????  
+that‘s right!  
+IT IS GOING BACK TO 2200 + 
+ 
+PT 2200 -7000!!!  
+🚀🚀🚀🚀🚀🚀🚀🚀💸💸💸💸💸💸💸💸💸💸💸🇺🇸🇺🇸🇺🇸🇺🇸🇺🇸",positive,negative,0.5124698324799797,0.3387606222743709,0.14876954524564948
+109906,test,FB,2020-11-25,2020-11-25,$FB oh baby my 277.5 roll ups 😍😍😍,neutral,positive,0.21280144729454614,0.289179055305084,0.4980194974003699
+109908,test,TSLA,2020-11-25,2020-11-25,$TSLA what if it printed $600 today 😂😛,neutral,positive,0.24079081203134264,0.2988091752673755,0.4604000127012818
+109909,test,TSLA,2020-11-25,2020-11-25,$TSLA only ev I wouldn’t short haha 🩳🩳🩳🔥,neutral,neutral,0.1713404829098058,0.553403544277796,0.2752559728123981
+109910,test,TSLA,2020-11-25,2020-11-25,$TSLA I am officially 16x on this stock in about a year and 1/2. INSAIN! 🥂,neutral,positive,0.2667629578873217,0.2936555973497579,0.43958144476292044
+109911,test,TSLA,2020-11-25,2020-11-25,$TSLA ms & wedbush got there 🎯’s as predicted 🙄,neutral,neutral,0.24545145574834082,0.5454960633648314,0.20905248088682787
+109907,test,XOM,2020-11-25,2020-11-25,"$XOM ...happy 🦃 day!
+I'm thankful for the last two days.",neutral,negative,0.48251909136896926,0.29595447602905056,0.22152643260198013
+109912,test,CCL,2020-11-26,2020-11-27,$CCL I'm in here for the swimwear ..lol...😂 sail away to oblivion,neutral,neutral,0.20009239235045506,0.6190254100429502,0.18088219760659477
+109913,test,TSLA,2020-11-30,2020-11-30,"$TSLA sold 10 puts at close 😥 still have a fair amount, but kickin myself a little rn",neutral,neutral,0.30975618444606845,0.39725543421486303,0.29298838133906857
+109914,test,TSLA,2020-11-30,2020-11-30,$TSLA old news 🥱. Still holding my puts,neutral,positive,0.281629760816631,0.24466690869944388,0.47370333048392516
+109917,test,AAPL,2020-12-01,2020-12-01,$AAPL are we gonna see another forward split next year because it feels we are going to the moon 😁😁,neutral,negative,0.4045397383682275,0.2189484197200442,0.3765118419117283
+109920,test,AAPL,2020-12-01,2020-12-01,$AAPL Sold all my 117.5 Calls 12/18 here ... 💰,neutral,neutral,0.3360706966496827,0.3688882991454079,0.2950410042049095
+109915,test,PFE,2020-12-01,2020-12-01,$PFE lol at 🐻s who thought this has no legs. Over 5% today on the power of pure hype again! Just wait until news. Your puts are worthless.,positive,negative,0.49778752538351534,0.3137914140776756,0.18842106053880905
+109916,test,PFE,2020-12-01,2020-12-01,$PFE pfizer up almlst 6% in 40 minutes unheard of 😂😂💰💰💰😂,positive,neutral,0.18922475180497733,0.6874392526850825,0.1233359955099401
+109919,test,PFE,2020-12-01,2020-12-01,$PFE idk why ud go bearish because Warren Buffet got 136 million in PFE😍😚😚😚😚😚😚,positive,neutral,0.3783278974818789,0.5377281447804468,0.08394395773767424
+109921,test,PFE,2020-12-01,2020-12-01,"$PFE yesterday market cap was $212 billion, today's it's $219 billion and the stock price hardly moved $1.5 , for this to reach 50 0r 60 as you all saying , how much money should flow in... 🙄, But still a believer in this 💁",positive,positive,0.23493578944708032,0.35011625435395677,0.4149479561989629
+109918,test,TSLA,2020-12-01,2020-12-01,$TSLA tsla only go up. Valuation should be 3 trillions. 😂,neutral,negative,0.4521609484048503,0.35370761787453137,0.19413143372061825
+109922,test,BABA,2020-12-02,2020-12-02,$BABA check for a bounce around $259 💰,neutral,neutral,0.1250490589794561,0.5468148646734398,0.3281360763471041
+109923,test,HD,2020-12-02,2020-12-02,$HD resistance @ $271 support @ $270 bulls may give up the day 🤓🐻,neutral,neutral,0.16724136316637828,0.5347577923932656,0.29800084444035607
+109924,test,AAPL,2020-12-03,2020-12-03,$AAPL you do realize 🍏 has been up 6 straight days since 11/23.,neutral,negative,0.5292786427152094,0.30810168907292873,0.1626196682118618
+109925,test,TSLA,2020-12-04,2020-12-04,$TSLA Part of me wants the stock to drop because Chanos just cut his short position. 😂,positive,positive,0.19640580116528406,0.3300868162243959,0.47350738261032
+109926,test,TSLA,2020-12-04,2020-12-04,$TSLA volume was low today. MM’s are going to have a fun two weeks coming up trying to hold this down. 😭😭,positive,negative,0.4779299877930766,0.24490527535378803,0.27716473685313525
+109927,test,TSLA,2020-12-04,2020-12-04,"$TSLA $650+ see how they are accumulating below $600, they aren’t gonna pay out those weeklies 😂",positive,positive,0.13690476039933341,0.2893531063266222,0.5737421332740444
+109930,test,PFE,2020-12-07,2020-12-07,$PFE finally it’s moving I got on just in time. Let’s go time to double up 🚀,positive,neutral,0.4063594565014653,0.411118814176549,0.18252172932198563
+109928,test,TSLA,2020-12-05,2020-12-07,$TSLA money does grow on tree huh! Me buying tsla at 400 😂,neutral,positive,0.17162074325130994,0.2401534592971125,0.5882257974515777
+109933,test,PFE,2020-12-08,2020-12-08,$PFE guy!!! This is more important than that toy 🧸 company Apple 🍏.... $85.00 soon,neutral,neutral,0.2548632996085055,0.5345514113005668,0.21058528909092772
+109931,test,TSLA,2020-12-08,2020-12-08,$TSLA I am buying 20 extra shares from.Elons offering .who is with me ?? 🙂,negative,neutral,0.33352471609095863,0.36916762110856305,0.29730766280047827
+109932,test,TSLA,2020-12-08,2020-12-08,$TSLA the dip was more then expected and the rip will be even higher then expected 😈,negative,neutral,0.23865607663628036,0.43423546733541907,0.3271084560283005
+109937,test,CCL,2020-12-09,2020-12-09,"$CCL All these bulls “BUYING BACK IN TODAY” 😂😂
+
+This has farther downside before we see any swing. 
+
+Puts are what you should have bought. 💰",neutral,negative,0.517848983545598,0.2703787895305975,0.2117722269238044
+109935,test,PFE,2020-12-09,2020-12-09,$PFE Just entered at 42.14 😁,neutral,neutral,0.25353152824359576,0.5914620723859149,0.15500639937048935
+109934,test,TSLA,2020-12-09,2020-12-09,$TSLA Will be green as usual 😍🍀,positive,neutral,0.36142155784816815,0.3940551663197674,0.2445232758320644
+109936,test,TSLA,2020-12-09,2020-12-09,$TSLA bottom yet? No? Going back to sleep then 😴,positive,neutral,0.2706733947992475,0.3968265562970793,0.33250004890367313
+109938,test,TSLA,2020-12-09,2020-12-09,"$TSLA 😁 Thanks TSLA bulls! FYI (I’m a bull just not here) When is this going to 300?
+
+Been waiting to make a Millie here off shorting and puts.",positive,neutral,0.27502778465822636,0.40075985721283397,0.3242123581289397
+109939,test,TSLA,2020-12-09,2020-12-09,$TSLA Imagine stock spikes to $700 after this tweet😂 His stock is already landed on the mars and on its way to come back to earth. Mission is completed,positive,neutral,0.22156786596787706,0.3913245244103839,0.3871076096217391
+109940,test,BA,2020-12-10,2020-12-10,$BA will be below 215 by Friday. The angry gamblers here are all holding 240 calls 💁🏻‍♀️🥀😁,neutral,positive,0.23364713965371983,0.29235892884945064,0.47399393149682967
+109946,test,DIS,2020-12-10,2020-12-10,"$DIS the gift that keeps on giving... 🎁🍾 getting Disney at $87.00 hast turned priceless... 138 million Disney plus subscribers, imagine when they finally open the parks.",positive,negative,0.3641607814448509,0.34578305017254457,0.29005616838260456
+109943,test,FB,2020-12-10,2020-12-10,$FB what if the TREASON where Zuck paid for 400 million of ballet boxes and training is brought up in court. Maybe it’s just a way to reveal their corruption. You have to show the people first. 😉,negative,neutral,0.27233445023840436,0.37172668078537013,0.35593886897622545
+109945,test,PFE,2020-12-10,2020-12-10,$PFE my spidy senses tell me this is gonna swan 🦢 dive and won’t go pass 45 bucks,neutral,neutral,0.29040767816786167,0.4464235378052127,0.2631687840269256
+109941,test,TSLA,2020-12-10,2020-12-10,$TSLA TFW robinhood traders become bag holders 😪,neutral,neutral,0.2558661931935368,0.4464914926440649,0.2976423141623982
+109951,test,DIS,2020-12-11,2020-12-11,$DIS DISNEY IS ABOUT TO GET NEW PTs. Especially after yesterday’s presentation. Too many catalysts 🚀🚀🚀,negative,negative,0.45533157590890255,0.27746512384937916,0.26720330024171834
+109950,test,PFE,2020-12-11,2020-12-11,$PFE all this wait for only 2% on a vaccine news smh are you kidding 😡😡😡😡,negative,neutral,0.3878290327593187,0.42115287798902407,0.19101808925165725
+109947,test,TSLA,2020-12-11,2020-12-11,"$TSLA Jeffries? Never heard of her. 
+Bull GG on 3  🚀🚀🚀",positive,neutral,0.28109418918232304,0.40489817318392196,0.31400763763375505
+109948,test,TSLA,2020-12-11,2020-12-11,$TSLA too early to tell! Papa elon gonna rescue us😈,positive,positive,0.21849710695092966,0.36091477262111676,0.42058812042795357
+109949,test,TSLA,2020-12-11,2020-12-11,$TSLA complete confidence in 650 bonkers style today. Watch. 🍓👨‍🎤,positive,positive,0.2157712919068584,0.3722697753316137,0.41195893276152784
+109952,test,TSLA,2020-12-11,2020-12-11,"$TSLA  Hey, bears! Just letting you know...$800 coming soon. Not pumping...just letting you know what will happen  😉👍",positive,neutral,0.20469381937901932,0.4825511921228873,0.3127549884980935
+109953,test,AAPL,2020-12-14,2020-12-14,"$AAPL got some puts here, they were at a discount, what can I say 👻",positive,positive,0.1905932900684332,0.324705422058623,0.4847012878729437
+109954,test,AAPL,2020-12-14,2020-12-14,$AAPL I can't laughing at people who bought options for this.week. sell it before it goes to 115$ 😂😂😂😂🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣,positive,positive,0.21442939524024895,0.2923165743956068,0.4932540303641441
+109956,test,BABA,2020-12-14,2020-12-14,$BABA gif bless Baba and it’s investors. Wake up Jack! You need to learn politics along with business 😃,neutral,neutral,0.2509031700962933,0.5534568255955552,0.1956400043081514
+109955,test,PFE,2020-12-14,2020-12-14,"$PFE I think bulls should load 40$ 12/18 calls, going for cheap 😆",neutral,neutral,0.3471630675926046,0.443174471619632,0.20966246078776338
+109961,test,BA,2020-12-15,2020-12-15,$BA Cramer Boing planning on $30 billion offering holy shit🤯,neutral,positive,0.2512323780634351,0.19436638243054238,0.5544012395060225
+109958,test,TSLA,2020-12-15,2020-12-15,$TSLA welcome to 700$ today buy some popcorns 🍭,neutral,negative,0.39787084140800766,0.3499306761091748,0.2521984824828175
+109959,test,TSLA,2020-12-15,2020-12-15,"$TSLA  up in premarket, will be run up more when the market opens, imo, 👍🔥🔥",neutral,neutral,0.25255155263848894,0.41178780931777004,0.335660638043741
+109960,test,TSLA,2020-12-15,2020-12-15,$TSLA I can’t wait for these shorts to get squeezed again 🤦‍♂️ y’all have lost so much money. Do you know the definition of insanity??,neutral,neutral,0.2828843447997314,0.46458397086443376,0.25253168433583495
+109963,test,AAPL,2020-12-16,2020-12-16,"$AAPL 
+
+But it did not fill a 82 dollar gap ... 😂😂😂",neutral,neutral,0.19172717536960812,0.4086281274513155,0.39964469717907647
+109964,test,AMZN,2020-12-16,2020-12-16,$AMZN most people on here should be diagnosed with a bipolar disorder. Y’all are wild😂,neutral,negative,0.49684830769176297,0.2871927911502354,0.2159589011580015
+109962,test,TSLA,2020-12-16,2020-12-16,$TSLA 🤣🤣🤣 Bulls r SCREWED!!! TSLA downgraded to $60 to $80 price target!!! Told u noone is buying at these insane LEVELS! You'll be lucky if this doesnt gap down 20% tomorrow morning!,positive,neutral,0.2707063686119518,0.4481435535303605,0.28115007785768775
+109967,test,PFE,2020-12-17,2020-12-17,$PFE ouch. See you break $34 by end of week. I wish I shorted this 💩,neutral,neutral,0.33192687432626977,0.44375947073936384,0.2243136549343665
+109966,test,TSLA,2020-12-17,2020-12-17,$TSLA 🤣🤣🤣🤣🤣 Bulls r still waiting for the FOMO buying that isnt going to happen. Enjoy being back in the 400's monday 🤣🤣🤣🤣,positive,positive,0.3115618714412346,0.3406680105817691,0.3477701179769963
+109968,test,TSLA,2020-12-17,2020-12-17,$TSLA good luck with those teslas in this freezing cold 🤣,positive,neutral,0.33745936392539533,0.4276951321461493,0.23484550392845538
+109969,test,AMZN,2020-12-18,2020-12-18,$AMZN hope u naiive Bulls took profits today 🤣🤣🤣🤣🤣,neutral,positive,0.1621825901642936,0.3817662713990791,0.4560511384366272
+109971,test,AMZN,2020-12-18,2020-12-18,"$AMZN 
+
+Going lower , diamond pattern is the most bearish , will drop down to 2500 📉📉📉 then it will rise to 4000",neutral,neutral,0.30626353507008575,0.38901236278345475,0.30472410214645956
+109970,test,FB,2020-12-18,2020-12-18,$FB Mark 🚨 Selling his personal shares today😬😱😳,negative,positive,0.21035467793800244,0.3614282568944379,0.42821706516755964
+109972,test,FB,2020-12-18,2020-12-18,"$FB 
+
+Going lower , diamond pattern is the most bearish , plus lawsuits and higher taxes , this company will drop down to 225 . 📉📉📉 this is a great time to still get puts",negative,neutral,0.28131419773169747,0.4936930256185598,0.22499277664974268
+109973,test,AAPL,2020-12-21,2020-12-21,$AAPL ho ho ho! Let it rain money!💰,positive,neutral,0.2396186036900101,0.43462664447835786,0.325754751831632
+109974,test,AAPL,2020-12-22,2020-12-22,$AAPL Breaking: Apple is working with Tesla to make an icar pro. Wheels sold separately 💰💰,neutral,negative,0.41745155742224865,0.3678891547923819,0.21465928778536947
+109976,test,AAPL,2020-12-22,2020-12-22,$AAPL cathie picking up over 400k shares today in ARK.  🧠,neutral,neutral,0.3526698146243529,0.37507539074934143,0.27225479462630564
+109977,test,AAPL,2020-12-22,2020-12-22,$AAPL Ah so the trick to this “investing thing” is just to let your money sit... who knew?!?! 🤪,neutral,positive,0.3302330553596123,0.19144555151303297,0.47832139312735467
+109979,test,AAPL,2020-12-22,2020-12-22,"$AAPL holding $125 Jan c, $135 Feb call, $150 March call no plans to sell till the month of then buy shares 🍏🍏🍏",neutral,positive,0.1550149408312545,0.20034070544064764,0.6446443537280979
+109978,test,BABA,2020-12-22,2020-12-22,"$BABA for me is a long term hold but this reallly hurts knowing I coulda put my money in almost anything and it would be up 🤬
+
+Long term well all be fine but sucks to wait lol",neutral,neutral,0.15496053974215934,0.4752609811499892,0.3697784791078514
+109975,test,FB,2020-12-22,2020-12-22,$FB ZUCK DUMPS AGAIN LOL. BUT KEEP BUYING 😊,neutral,neutral,0.1354288740373367,0.5095084344687475,0.3550626914939157
+109980,test,TSLA,2020-12-22,2020-12-22,$TSLA This stock is overvalued. The Iranian rial is probably worth more. 😂 Tesla should make its own currency 💴 it would probably be worthless though. Elon is a joke,neutral,positive,0.30939062692226166,0.30083542949488723,0.3897739435828511
+109981,test,TSLA,2020-12-23,2020-12-23,"$TSLA i think the glory days for this pig are over.  See you <200 by March.  
+Sorry Elon fanboys.  Need to do a little research and understand valuations and hype.  🙈🙈🙈🙈🙈🐒🤡",neutral,positive,0.25678299004564203,0.2881965020049365,0.4550205079494214
+109982,test,TSLA,2020-12-23,2020-12-23,"$TSLA definitely won’t be surprised if this goes under $600 today. It’s going to happen, WHEN is the question. Could be today....💡 
+ 
+📉🔥",neutral,positive,0.2573122025004705,0.2939645255613247,0.4487232719382049
+109983,test,TSLA,2020-12-23,2020-12-23,$TSLA Ah yes. A nice and slow selloff for the greedy bulls. This way they won’t panic and sell at reasonable prices. It will make the pain all that much worse once selling accelerates  😈,neutral,neutral,0.30121619028973695,0.3589771200139569,0.3398066896963062
+109984,test,TSLA,2020-12-23,2020-12-23,$TSLA strong strong strong!!!! Let’s push it $650!!! Wow can’t wait for tomorrow bulls 🎁🎁🎁,neutral,positive,0.218324157803183,0.34352745852913674,0.4381483836676804
+109986,test,BABA,2020-12-24,2020-12-24,$BABA people acting like they lucked up and cheated on the Mother Luckin earnings😂,neutral,neutral,0.33972464631249766,0.399363771198939,0.2609115824885632
+109987,test,BABA,2020-12-24,2020-12-24,$BABA Broke out of that downtrend. That 211 seems like it was the bottom📈,neutral,positive,0.28764672791667456,0.2999637822954711,0.4123894897878542
+109985,test,GOOG,2020-12-24,2020-12-24,$GOOG Lets do a stock split baby😉,positive,negative,0.4132861140735057,0.20329748351272336,0.38341640241377095
+109988,test,AAPL,2020-12-27,2020-12-28,$AAPL let’s have a great week !  🚀🚀🚀,negative,positive,0.34505743437040887,0.26243162580083546,0.39251093982875573
+109989,test,BABA,2020-12-29,2020-12-29,"$BABA bought a single $250 call for 1/8/21 yesterday.  Yep, I’m a real baller😂",neutral,neutral,0.20592261543588802,0.4347826274952772,0.3592947570688348
+109991,test,BABA,2020-12-29,2020-12-29,$BABA may go parabolic to my 2nd pt from here💸💸,neutral,neutral,0.21292499389660596,0.4442992705640387,0.34277573553935536
+109990,test,PFE,2020-12-29,2020-12-29,$PFE MILLION $ CALL expire in 3 days . THINK 🤔🤔🤔🤔,neutral,neutral,0.34106991382398255,0.49886495509980566,0.16006513107621181
+109992,test,BABA,2020-12-30,2020-12-30,$BABA 245-250 tmr I asked for 235 for today and it gave me more 😂,neutral,negative,0.3993330161370787,0.3062782138254826,0.2943887700374385
+109993,test,BABA,2020-12-30,2020-12-30,$BABA Moment of silence for shorts and puts... 🙏🏽,neutral,negative,0.39239473499954036,0.31342987467506445,0.2941753903253952
+109994,test,BABA,2020-12-30,2020-12-30,"$BABA 😖😖😖😖
+
+I’ll be making adjustments to this plan.
+
+Hopefully get a pullback and enter on the 245.45 break",neutral,neutral,0.33472477681774737,0.4113179509678512,0.25395727221440156
+109995,test,TSLA,2020-12-30,2020-12-30,$TSLA all I see the green 🕯️,neutral,neutral,0.17552358213712424,0.4964056804770561,0.32807073738581977
+109998,test,BABA,2020-12-31,2020-12-31,$BABA Who else is glad they sold in 240s yesterday... 😅,neutral,neutral,0.3010074295384985,0.4001896785632991,0.2988028918982024
+109999,test,CCL,2020-12-31,2020-12-31,$CCL $23 calls for .79 you know what to do 🥳,negative,positive,0.24542759766915903,0.3506131974443612,0.40395920488647985
+109997,test,TSLA,2020-12-31,2020-12-31,"$TSLA 
+Good news... now bears can get help when they have a breakdown.. if they own a Tesla 😁",positive,neutral,0.1803169940580143,0.6129587567520196,0.2067242491899661
+110000,test,TSLA,2020-12-31,2020-12-31,$TSLA  🔥 closed out 15k in profit!Happy New Year 🎊 can’t wait to buy back in on the dips 🚀,positive,positive,0.2769162386147557,0.3454507240922477,0.3776330372929966

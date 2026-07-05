@@ -16,6 +16,7 @@ paths:
   figures_dir: outputs/figures
   predictions_dir: outputs/predictions
   error_analysis_dir: outputs/error_analysis
+  backtest_dir: outputs/backtest
   classical_model_dir: models/classical
   deep_fusion_model_dir: models/deep_fusion
 

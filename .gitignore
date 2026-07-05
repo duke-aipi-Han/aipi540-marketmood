@@ -9,21 +9,22 @@ __pycache__/
 .ipynb_checkpoints/
 .DS_Store
 
-# Local datasets and generated artifacts.
+# Local datasets.
 data/*
 !data/stockemo/
 data/stockemo/*
 !data/stockemo/readme.md
 !data/**/.gitkeep
 
-outputs/*
-!outputs/**/.gitkeep
+# Keep generated evaluation/report artifacts in git for transparency.
+!outputs/**
 
 models/*
 !models/**/.gitkeep
 
 *.log
 
+# ignore agents stuff if generated
 .agents/
 AGENTS.md
 planner.md
